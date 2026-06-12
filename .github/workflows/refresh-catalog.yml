@@ -21,7 +21,7 @@ jobs:
           cache: 'npm'
 
       - name: Install
-        run: npm ci
+        run: npm install --no-audit --no-fund
 
       - name: Bump @mdn/browser-compat-data
         run: npm install @mdn/browser-compat-data@latest web-features@latest
