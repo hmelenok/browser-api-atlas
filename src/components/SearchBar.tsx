@@ -1,7 +1,35 @@
-import {Search, X} from 'lucide-react'
-import {useStore} from '@/store'
+import {ArrowDownAZ, Layers, Search, Sparkle, X} from 'lucide-react'
+import type {ComponentType, SVGProps} from 'react'
+
 import {CATEGORIES, CATEGORY_ORDER} from '@/data/categories'
 import {cn} from '@/lib/cn'
+import {useStore, type SortMode} from '@/store'
+
+const SORT_OPTIONS: Array<{
+  id: SortMode
+  label: string
+  icon: ComponentType<SVGProps<SVGSVGElement> & {size?: number}>
+  hint: string
+}> = [
+  {
+    id: 'category',
+    label: 'category',
+    icon: Layers,
+    hint: 'Group nodes by their cluster (Storage, Network, …). The default — best for exploring related APIs.',
+  },
+  {
+    id: 'baseline',
+    label: 'baseline',
+    icon: Sparkle,
+    hint: 'Group by Baseline status (Widely / Newly / Limited) and sort by year within each group. Tells the story of “when did the web platform get X?”',
+  },
+  {
+    id: 'alphabetic',
+    label: 'A–Z',
+    icon: ArrowDownAZ,
+    hint: 'Group by leading letter for quick lookup by API name.',
+  },
+]
 
 export function SearchBar() {
   const search = useStore((s) => s.search)
@@ -13,6 +41,8 @@ export function SearchBar() {
   const visible = useStore((s) => s.visibleCategories)
   const toggle = useStore((s) => s.toggleCategory)
   const setAll = useStore((s) => s.setAllCategories)
+  const sortMode = useStore((s) => s.sortMode)
+  const setSortMode = useStore((s) => s.setSortMode)
 
   // Bulk toggle: if every category is on, the next click clears them all.
   // Otherwise (any subset is off) the next click turns them all on.
@@ -61,6 +91,39 @@ export function SearchBar() {
       >
         Has demo
       </Toggle>
+
+      <div className="mx-1 hidden h-5 w-px bg-[var(--color-border)] md:block" />
+
+      {/* Sort mode segmented control */}
+      <div
+        role="group"
+        aria-label="Sort"
+        className="inline-flex h-8 items-center rounded-md border border-[var(--color-border)] overflow-hidden"
+      >
+        <span className="px-2 text-[10px] uppercase tracking-wide text-[var(--color-muted)]">Sort</span>
+        {SORT_OPTIONS.map((opt) => {
+          const Icon = opt.icon
+          const active = sortMode === opt.id
+          return (
+            <button
+              key={opt.id}
+              type="button"
+              onClick={() => setSortMode(opt.id)}
+              aria-pressed={active}
+              title={opt.hint}
+              className={cn(
+                'inline-flex h-full items-center gap-1 border-l border-[var(--color-border)] px-2 text-xs transition',
+                active
+                  ? 'bg-[var(--color-accent)]/10 text-[var(--color-accent)]'
+                  : 'text-[var(--color-muted)] hover:text-[var(--color-fg)]'
+              )}
+            >
+              <Icon size={12} strokeWidth={2} />
+              {opt.label}
+            </button>
+          )
+        })}
+      </div>
 
       <div className="mx-2 hidden h-5 w-px bg-[var(--color-border)] md:block" />
 

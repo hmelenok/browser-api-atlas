@@ -25,6 +25,7 @@ function GraphInner() {
   const relationships = useStore((s) => s.relationships)
   const runtime = useStore((s) => s.runtime)
   const select = useStore((s) => s.select)
+  const sortMode = useStore((s) => s.sortMode)
 
   const [layoutNodes, setLayoutNodes] = useState<Node[]>([])
   const [layoutEdges, setLayoutEdges] = useState<Edge[]>([])
@@ -49,8 +50,15 @@ function GraphInner() {
     setLayingOut(true)
 
     layoutWithGroups(
-      entries.map((e) => ({id: e.id, category: e.category})),
-      visibleEdges.map((r, i) => ({id: `e${i}`, source: r.from, target: r.to}))
+      entries.map((e) => ({
+        id: e.id,
+        category: e.category,
+        title: e.title,
+        baseline: e.baseline,
+        baselineYear: e.baselineYear,
+      })),
+      visibleEdges.map((r, i) => ({id: `e${i}`, source: r.from, target: r.to})),
+      sortMode
     )
       .then(({nodes: positions}) => {
         if (cancelled) return
@@ -63,7 +71,7 @@ function GraphInner() {
             entry,
             runtime: runtime[entry.id],
           } satisfies ApiNodeData,
-          draggable: false,
+          draggable: true,
           selectable: true,
         }))
 
@@ -97,7 +105,7 @@ function GraphInner() {
     return () => {
       cancelled = true
     }
-  }, [entries, visibleEdges, runtime, rf])
+  }, [entries, visibleEdges, runtime, rf, sortMode])
 
   // Update runtime on existing nodes without re-laying-out
   useEffect(() => {
@@ -118,7 +126,7 @@ function GraphInner() {
       onNodeClick={(_, node) => select(node.id)}
       onPaneClick={() => select(null)}
       nodesConnectable={false}
-      nodesDraggable={false}
+      nodesDraggable
       panOnScroll
       zoomOnDoubleClick={false}
       minZoom={0.15}

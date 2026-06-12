@@ -1,4 +1,13 @@
-import {ExternalLink, X, Sparkles, BookOpen, FileCode2, MessageSquare, Link2} from 'lucide-react'
+import {
+  BookOpen,
+  ExternalLink,
+  FileCode2,
+  Info,
+  Link2,
+  MessageSquare,
+  Sparkles,
+  X,
+} from 'lucide-react'
 import {useState} from 'react'
 
 import {CATEGORIES} from '@/data/categories'
@@ -105,7 +114,41 @@ export default function DetailPanelContents({
                 </span>
               )}
             </Stat>
-            <Stat label="Baseline">{BASELINE_LABEL[entry.baseline]}</Stat>
+            <Stat
+              label={
+                <span className="inline-flex items-center gap-1">
+                  Baseline
+                  <a
+                    href="https://web.dev/baseline"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    title="What is Baseline? A W3C / Web Platform DX classification of cross-browser support."
+                    className="text-[var(--color-muted)] hover:text-[var(--color-accent)]"
+                  >
+                    <Info size={9} />
+                  </a>
+                </span>
+              }
+            >
+              {entry.webFeatureId ? (
+                <a
+                  href={`https://webstatus.dev/features/${entry.webFeatureId}`}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  title={`See the source data for this Baseline status on webstatus.dev (web-features id: ${entry.webFeatureId})`}
+                  className="inline-flex items-center gap-1 hover:text-[var(--color-accent)] hover:underline"
+                >
+                  {BASELINE_LABEL[entry.baseline]}
+                  {entry.baselineYear ? ` ${entry.baselineYear}` : ''}
+                  <ExternalLink size={10} className="opacity-50" />
+                </a>
+              ) : (
+                <span title="No web-features entry for this API yet — Baseline status is unknown.">
+                  {BASELINE_LABEL[entry.baseline]}
+                  {entry.baselineYear ? ` ${entry.baselineYear}` : ''}
+                </span>
+              )}
+            </Stat>
             <Stat label="Standard status">{entry.status}</Stat>
             <Stat label="Runtime check">
               <code className="font-mono text-[11px]">{entry.runtimeKey}</code>
@@ -197,7 +240,7 @@ function SectionHeader({icon, children}: {icon: React.ReactNode; children: React
   )
 }
 
-function Stat({label, children}: {label: string; children: React.ReactNode}) {
+function Stat({label, children}: {label: React.ReactNode; children: React.ReactNode}) {
   return (
     <div>
       <div className="text-[10px] uppercase tracking-wide text-[var(--color-muted)]">{label}</div>

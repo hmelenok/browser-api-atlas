@@ -7,6 +7,8 @@ import {detectAll} from '@/lib/detection'
 import {findUnknownGlobals, type UnknownGlobal} from '@/lib/introspect'
 import type {ApiEntry, CategoryId, RuntimeStatus} from '@/lib/types'
 
+export type SortMode = 'category' | 'baseline' | 'alphabetic'
+
 import catalogJson from '@/data/catalog.json'
 
 const catalog = catalogJson as {
@@ -35,6 +37,7 @@ interface State {
   visibleCategories: Set<CategoryId>
   onlySupported: boolean
   onlyWithDemos: boolean
+  sortMode: SortMode
 
   // actions
   initialize: () => Promise<void>
@@ -44,6 +47,7 @@ interface State {
   setAllCategories: (visible: boolean) => void
   setOnlySupported: (v: boolean) => void
   setOnlyWithDemos: (v: boolean) => void
+  setSortMode: (m: SortMode) => void
   resetFilters: () => void
 }
 
@@ -62,6 +66,7 @@ export const useStore = create<State>((set, get) => ({
   visibleCategories: allCategories,
   onlySupported: false,
   onlyWithDemos: false,
+  sortMode: 'category',
 
   initialize: async () => {
     const runtime = detectAll(catalog.entries)
@@ -84,12 +89,14 @@ export const useStore = create<State>((set, get) => ({
   },
   setOnlySupported: (v) => set({onlySupported: v}),
   setOnlyWithDemos: (v) => set({onlyWithDemos: v}),
+  setSortMode: (m) => set({sortMode: m}),
   resetFilters: () =>
     set({
       search: '',
       visibleCategories: new Set(allCategories),
       onlySupported: false,
       onlyWithDemos: false,
+      sortMode: 'category',
     }),
 }))
 
