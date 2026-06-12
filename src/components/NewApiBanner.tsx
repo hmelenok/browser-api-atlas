@@ -29,14 +29,14 @@ export function NewApiBanner() {
   const issueUrl = `https://github.com/${REPO}/issues/new?title=${issueTitle}&body=${issueBody}&labels=new-api`
 
   return (
-    <div className="flex items-start gap-3 border-b border-[var(--color-border)] bg-[var(--color-bg-soft)] px-4 py-2.5 text-xs">
-      <Sparkles size={14} className="mt-0.5 shrink-0 text-[var(--color-accent)]" />
+    <div className="flex items-start gap-3 border-b border-[var(--color-border)] bg-[var(--color-bg-soft)] px-4 py-2.5 text-sm">
+      <Sparkles size={15} className="mt-0.5 shrink-0 text-[var(--color-accent)]" />
       <div className="flex-1">
         <p className="font-medium">
           {unknown.length} {unknown.length === 1 ? 'API' : 'APIs'} detected in your browser that aren't in the
           atlas yet.
         </p>
-        <p className="mt-0.5 text-[var(--color-muted)]">
+        <p className="mt-1 text-xs text-[var(--color-muted)]">
           <span className="font-mono">{preview}</span>
           {unknown.length > 5 && <span> · +{unknown.length - 5} more</span>}
         </p>
@@ -44,7 +44,7 @@ export function NewApiBanner() {
           href={issueUrl}
           target="_blank"
           rel="noreferrer noopener"
-          className="mt-1 inline-block text-[var(--color-accent)] hover:underline"
+          className="mt-1.5 inline-block text-xs text-[var(--color-accent)] hover:underline"
         >
           Open a contribution issue with these →
         </a>
@@ -55,7 +55,7 @@ export function NewApiBanner() {
         className="shrink-0 rounded p-1 text-[var(--color-muted)] hover:text-[var(--color-fg)]"
         aria-label="Dismiss"
       >
-        <X size={14} />
+        <X size={16} />
       </button>
     </div>
   )

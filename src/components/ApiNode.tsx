@@ -21,7 +21,7 @@ export function ApiNode({data, selected}: NodeProps & {data: ApiNodeData}) {
   return (
     <div
       className={cn(
-        'group relative w-[240px] rounded-lg border bg-[var(--color-bg)] px-3.5 py-3 text-left transition',
+        'group relative w-[260px] rounded-lg border bg-[var(--color-bg)] px-3.5 py-3 text-left transition',
         'shadow-[0_1px_0_0_var(--color-border)] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-12px_rgba(0,0,0,0.18)]',
         selected
           ? 'border-[var(--color-accent)] ring-2 ring-[var(--color-accent)]/40'
@@ -42,7 +42,7 @@ export function ApiNode({data, selected}: NodeProps & {data: ApiNodeData}) {
           aria-label={status.label}
           title={status.label}
         />
-        <h3 className="truncate text-[15px] font-semibold leading-tight">{entry.title}</h3>
+        <h3 className="truncate text-base font-semibold leading-tight">{entry.title}</h3>
         {entry.hasDemo && (
           <span title="Has interactive demo" className="ml-auto shrink-0">
             <Sparkles size={13} className="text-[var(--color-accent)]" />
@@ -50,8 +50,8 @@ export function ApiNode({data, selected}: NodeProps & {data: ApiNodeData}) {
         )}
       </div>
 
-      <div className="mt-2 flex items-center gap-1.5 text-[11px] text-[var(--color-muted)]">
-        <CatIcon size={11} strokeWidth={2} style={{color: cat.color}} className="shrink-0" />
+      <div className="mt-2 flex items-center gap-1.5 text-xs text-[var(--color-muted)]">
+        <CatIcon size={12} strokeWidth={2} style={{color: cat.color}} className="shrink-0" />
         <span>{cat.title}</span>
         <span className="opacity-30">·</span>
         <span style={{color: status.color}} className="font-medium">

@@ -19,8 +19,8 @@ export function DemoInput(props: React.InputHTMLAttributes<HTMLInputElement>) {
     <input
       {...props}
       className={cn(
-        'h-7 flex-1 rounded border border-[var(--color-border)] bg-[var(--color-bg)]',
-        'px-2 text-xs focus:outline-none focus:ring-1 focus:ring-[var(--color-accent)]',
+        'h-8 flex-1 rounded border border-[var(--color-border)] bg-[var(--color-bg)]',
+        'px-2 text-sm focus:outline-none focus:ring-1 focus:ring-[var(--color-accent)]',
         props.className
       )}
     />
@@ -36,7 +36,7 @@ export function DemoButton({
       type="button"
       {...props}
       className={cn(
-        'h-7 rounded border px-2.5 text-xs font-medium transition',
+        'h-8 rounded border px-3 text-sm font-medium transition',
         variant === 'primary' &&
           'border-[var(--color-accent)] bg-[var(--color-accent)]/10 text-[var(--color-accent)] hover:bg-[var(--color-accent)]/20',
         variant === 'ghost' &&
@@ -52,7 +52,7 @@ export function DemoButton({
 
 export function DemoOutput({children}: {children: ReactNode}) {
   return (
-    <pre className="max-h-32 overflow-y-auto rounded border border-[var(--color-border)] bg-[var(--color-bg)] p-2 font-mono text-[10px] text-[var(--color-muted)]">
+    <pre className="max-h-40 overflow-y-auto rounded border border-[var(--color-border)] bg-[var(--color-bg)] p-2.5 font-mono text-xs leading-relaxed text-[var(--color-muted)]">
       {children}
     </pre>
   )
@@ -61,11 +61,11 @@ export function DemoOutput({children}: {children: ReactNode}) {
 export function DemoKeyValue({pairs}: {pairs: Array<readonly [string, string]>}) {
   if (pairs.length === 0) {
     return (
-      <p className="text-[11px] italic text-[var(--color-muted)]">(empty)</p>
+      <p className="text-xs italic text-[var(--color-muted)]">(empty)</p>
     )
   }
   return (
-    <ul className="space-y-0.5 text-[11px]">
+    <ul className="space-y-1 text-xs">
       {pairs.map(([k, v]) => (
         <li key={k} className="flex gap-2 font-mono">
           <span className="text-[var(--color-muted)]">{k}</span>

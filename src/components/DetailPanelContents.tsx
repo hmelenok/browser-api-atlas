@@ -55,16 +55,16 @@ export default function DetailPanelContents({
           aria-hidden
         />
         <div className="min-w-0 flex-1">
-          <div className="flex items-center gap-2 text-[10px] uppercase tracking-wide text-[var(--color-muted)]">
+          <div className="flex items-center gap-2 text-[11px] uppercase tracking-wide text-[var(--color-muted)]">
             <span className="inline-flex items-center gap-1">
-              <CatIcon size={11} strokeWidth={2} style={{color: cat.color}} />
+              <CatIcon size={12} strokeWidth={2} style={{color: cat.color}} />
               {cat.title}
             </span>
             <span className="opacity-40">·</span>
             <span style={{color: status.color}}>{status.label}</span>
           </div>
-          <h2 className="mt-1 text-lg font-semibold leading-tight">{entry.title}</h2>
-          <p className="mt-1 font-mono text-[11px] text-[var(--color-muted)]">{entry.id}</p>
+          <h2 className="mt-1 text-xl font-semibold leading-tight">{entry.title}</h2>
+          <p className="mt-1.5 font-mono text-[13px] text-[var(--color-muted)]">{entry.id}</p>
         </div>
         <div className="flex shrink-0 items-center gap-1">
           <button
@@ -91,13 +91,13 @@ export default function DetailPanelContents({
         {/* Description */}
         {entry.description && (
           <section className="border-b border-[var(--color-border)] px-5 py-4">
-            <p className="text-sm leading-relaxed text-[var(--color-fg)]">{entry.description}</p>
+            <p className="text-base leading-relaxed text-[var(--color-fg)]">{entry.description}</p>
           </section>
         )}
 
         {/* Runtime status */}
         <section className="border-b border-[var(--color-border)] px-5 py-4">
-          <div className="grid grid-cols-2 gap-3 text-xs">
+          <div className="grid grid-cols-2 gap-4 text-sm">
             <Stat label="In your browser">
               <span
                 style={{
@@ -109,7 +109,7 @@ export default function DetailPanelContents({
                 {runtime?.supported ? 'Yes' : 'No'}
               </span>
               {!runtime?.supported && runtime?.reason && (
-                <span className="ml-1 text-[10px] text-[var(--color-muted)]">
+                <span className="ml-1 text-xs text-[var(--color-muted)]">
                   ({runtime.reason})
                 </span>
               )}
@@ -151,7 +151,7 @@ export default function DetailPanelContents({
             </Stat>
             <Stat label="Standard status">{entry.status}</Stat>
             <Stat label="Runtime check">
-              <code className="font-mono text-[11px]">{entry.runtimeKey}</code>
+              <code className="font-mono text-[13px]">{entry.runtimeKey}</code>
             </Stat>
           </div>
         </section>
@@ -164,7 +164,7 @@ export default function DetailPanelContents({
               <demo.Demo />
             </DemoBoundary>
           ) : (
-            <div className="rounded-md border border-dashed border-[var(--color-border)] p-3 text-xs text-[var(--color-muted)]">
+            <div className="rounded-md border border-dashed border-[var(--color-border)] p-3 text-sm text-[var(--color-muted)]">
               No interactive demo yet.{' '}
               <a
                 href={`https://github.com/hmelenok/browser-api-atlas/issues/new?title=Demo%20wanted%3A%20${encodeURIComponent(entry.title)}&labels=demo-wanted&body=${encodeURIComponent(`Add a demo for \`${entry.id}\`.\n\nSee [ADDING-AN-API.md](https://github.com/hmelenok/browser-api-atlas/blob/main/docs/ADDING-AN-API.md).`)}`}
@@ -187,7 +187,7 @@ export default function DetailPanelContents({
             </div>
           )}
           {demo?.notes && (
-            <p className="mt-2 text-[11px] text-[var(--color-muted)]">{demo.notes}</p>
+            <p className="mt-2.5 text-xs text-[var(--color-muted)]">{demo.notes}</p>
           )}
         </section>
 
@@ -201,8 +201,8 @@ export default function DetailPanelContents({
 
         {/* Links */}
         <section className="px-5 py-4">
-          <SectionHeader icon={<BookOpen size={12} />}>Resources</SectionHeader>
-          <ul className="space-y-1.5 text-xs">
+          <SectionHeader icon={<BookOpen size={13} />}>Resources</SectionHeader>
+          <ul className="space-y-2 text-sm">
             {entry.mdnUrl && <LinkRow href={entry.mdnUrl}>MDN documentation</LinkRow>}
             {entry.specUrl && <LinkRow href={entry.specUrl}>Specification</LinkRow>}
             {entry.webFeatureId && (
@@ -221,9 +221,9 @@ export default function DetailPanelContents({
             href={`https://github.com/hmelenok/browser-api-atlas/discussions/new?category=apis&title=${encodeURIComponent(`Discuss: ${entry.title}`)}`}
             target="_blank"
             rel="noreferrer noopener"
-            className="inline-flex items-center gap-1.5 text-[11px] text-[var(--color-muted)] hover:text-[var(--color-fg)]"
+            className="inline-flex items-center gap-1.5 text-xs text-[var(--color-muted)] hover:text-[var(--color-fg)]"
           >
-            <MessageSquare size={11} /> Discuss this API
+            <MessageSquare size={12} /> Discuss this API
           </a>
         </section>
       </div>
@@ -233,7 +233,7 @@ export default function DetailPanelContents({
 
 function SectionHeader({icon, children}: {icon: React.ReactNode; children: React.ReactNode}) {
   return (
-    <h3 className="mb-2 flex items-center gap-1.5 text-[10px] font-medium uppercase tracking-wider text-[var(--color-muted)]">
+    <h3 className="mb-2.5 flex items-center gap-1.5 text-[11px] font-medium uppercase tracking-wider text-[var(--color-muted)]">
       {icon}
       {children}
     </h3>
@@ -243,8 +243,8 @@ function SectionHeader({icon, children}: {icon: React.ReactNode; children: React
 function Stat({label, children}: {label: React.ReactNode; children: React.ReactNode}) {
   return (
     <div>
-      <div className="text-[10px] uppercase tracking-wide text-[var(--color-muted)]">{label}</div>
-      <div className="mt-0.5 font-medium">{children}</div>
+      <div className="text-[11px] uppercase tracking-wide text-[var(--color-muted)]">{label}</div>
+      <div className="mt-1 font-medium">{children}</div>
     </div>
   )
 }

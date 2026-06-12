@@ -8,10 +8,10 @@ const ITEMS: Array<{color: string; label: string}> = [
 
 export function Legend() {
   return (
-    <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[10px] text-[var(--color-muted)]">
+    <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-[var(--color-muted)]">
       {ITEMS.map((i) => (
         <span key={i.label} className="inline-flex items-center gap-1.5">
-          <span className="inline-block size-1.5 rounded-full" style={{background: i.color}} />
+          <span className="inline-block size-2 rounded-full" style={{background: i.color}} />
           {i.label}
         </span>
       ))}

@@ -56,7 +56,7 @@ export function CodeBlock({code, lang = 'typescript'}: {code: string; lang?: str
 
   if (!html) {
     return (
-      <pre className="overflow-x-auto rounded-md border border-[var(--color-border)] bg-[var(--color-bg-soft)] p-3 font-mono text-xs">
+      <pre className="overflow-x-auto rounded-md border border-[var(--color-border)] bg-[var(--color-bg-soft)] p-3 font-mono text-[13px] leading-relaxed">
         {code}
       </pre>
     )
@@ -64,7 +64,7 @@ export function CodeBlock({code, lang = 'typescript'}: {code: string; lang?: str
 
   return (
     <div
-      className="overflow-x-auto rounded-md border border-[var(--color-border)] [&_pre]:!bg-transparent [&_pre]:p-3 [&_pre]:font-mono [&_pre]:text-xs"
+      className="overflow-x-auto rounded-md border border-[var(--color-border)] [&_pre]:!bg-transparent [&_pre]:p-3 [&_pre]:font-mono [&_pre]:text-[13px] [&_pre]:leading-relaxed"
       dangerouslySetInnerHTML={{__html: html}}
     />
   )

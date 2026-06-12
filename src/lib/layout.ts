@@ -13,8 +13,8 @@ function getElk() {
   return elkPromise
 }
 
-const NODE_WIDTH = 240
-const NODE_HEIGHT = 68
+const NODE_WIDTH = 260
+const NODE_HEIGHT = 76
 
 export interface LayoutInputNode {
   id: string

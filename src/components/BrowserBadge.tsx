@@ -12,8 +12,8 @@ export function BrowserBadge() {
 
   if (!browser) {
     return (
-      <div className="flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-[var(--color-bg-soft)] px-3 py-1 text-xs text-[var(--color-muted)]">
-        <Globe2 size={13} className="animate-pulse" />
+      <div className="flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-[var(--color-bg-soft)] px-3 py-1 text-sm text-[var(--color-muted)]">
+        <Globe2 size={14} className="animate-pulse" />
         detecting…
       </div>
     )
@@ -26,10 +26,10 @@ export function BrowserBadge() {
 
   return (
     <div
-      className="flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-[var(--color-bg-soft)] px-3 py-1 text-xs"
+      className="flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-[var(--color-bg-soft)] px-3 py-1.5 text-sm"
       title={`Your browser, as detected at runtime. ${browserDetectionMethod}`}
     >
-      <Globe2 size={13} className="text-[var(--color-accent)]" aria-hidden />
+      <Globe2 size={14} className="text-[var(--color-accent)]" aria-hidden />
       <span
         className="font-medium"
         title={
@@ -52,7 +52,7 @@ export function BrowserBadge() {
         </span>
       )}
       <span
-        className="ml-1 rounded-full bg-[var(--color-accent)]/10 px-1.5 py-0.5 font-mono text-[10px] text-[var(--color-accent)]"
+        className="ml-1 rounded-full bg-[var(--color-accent)]/10 px-2 py-0.5 font-mono text-xs text-[var(--color-accent)]"
         title={
           missing === 0
             ? `\u{1F389} Your browser supports every API in the atlas (${supported} of ${entries.length}).`

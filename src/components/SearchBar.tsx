@@ -58,7 +58,7 @@ export function SearchBar() {
     <div className="flex flex-wrap items-center gap-2">
       <label className="relative">
         <Search
-          size={14}
+          size={15}
           className="pointer-events-none absolute left-2.5 top-1/2 -translate-y-1/2 text-[var(--color-muted)]"
         />
         <input
@@ -67,8 +67,8 @@ export function SearchBar() {
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Search APIs…"
           className={cn(
-            'h-8 w-56 rounded-md border border-[var(--color-border)] bg-[var(--color-bg)]',
-            'pl-8 pr-7 text-sm placeholder:text-[var(--color-muted)] focus:outline-none focus:ring-1 focus:ring-[var(--color-accent)]'
+            'h-9 w-60 rounded-md border border-[var(--color-border)] bg-[var(--color-bg)]',
+            'pl-9 pr-8 text-sm placeholder:text-[var(--color-muted)] focus:outline-none focus:ring-1 focus:ring-[var(--color-accent)]'
           )}
         />
         {search && (
@@ -78,7 +78,7 @@ export function SearchBar() {
             className="absolute right-1 top-1/2 -translate-y-1/2 rounded p-1 text-[var(--color-muted)] hover:text-[var(--color-fg)]"
             aria-label="Clear search"
           >
-            <X size={12} />
+            <X size={14} />
           </button>
         )}
       </label>
@@ -104,9 +104,9 @@ export function SearchBar() {
       <div
         role="group"
         aria-label="Sort"
-        className="inline-flex h-8 items-center rounded-md border border-[var(--color-border)] overflow-hidden"
+        className="inline-flex h-9 items-center rounded-md border border-[var(--color-border)] overflow-hidden"
       >
-        <span className="px-2 text-[10px] uppercase tracking-wide text-[var(--color-muted)]">Sort</span>
+        <span className="px-2.5 text-[11px] uppercase tracking-wide text-[var(--color-muted)]">Sort</span>
         {SORT_OPTIONS.map((opt) => {
           const Icon = opt.icon
           const active = sortMode === opt.id
@@ -118,13 +118,13 @@ export function SearchBar() {
               aria-pressed={active}
               title={opt.hint}
               className={cn(
-                'inline-flex h-full items-center gap-1 border-l border-[var(--color-border)] px-2 text-xs transition',
+                'inline-flex h-full items-center gap-1.5 border-l border-[var(--color-border)] px-2.5 text-sm transition',
                 active
                   ? 'bg-[var(--color-accent)]/10 text-[var(--color-accent)]'
                   : 'text-[var(--color-muted)] hover:text-[var(--color-fg)]'
               )}
             >
-              <Icon size={12} strokeWidth={2} />
+              <Icon size={14} strokeWidth={2} />
               {opt.label}
             </button>
           )
@@ -138,7 +138,7 @@ export function SearchBar() {
           type="button"
           onClick={() => setAll(!allOn)}
           className={cn(
-            'inline-flex h-[22px] items-center rounded-full border px-2 text-[11px] font-medium transition',
+            'inline-flex h-6 items-center rounded-full border px-2.5 text-xs font-medium transition',
             'border-[var(--color-border)] text-[var(--color-muted)] hover:text-[var(--color-fg)]'
           )}
           title={allOn ? 'Hide every category' : 'Show every category'}
@@ -157,14 +157,14 @@ export function SearchBar() {
               type="button"
               onClick={() => toggle(id)}
               className={cn(
-                'inline-flex items-center gap-1.5 rounded-full border px-2 py-0.5 text-[11px] transition',
+                'inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs transition',
                 active
                   ? 'border-[var(--color-border)] bg-[var(--color-bg-soft)] text-[var(--color-fg)]'
                   : 'border-[var(--color-border)] text-[var(--color-muted)] opacity-60'
               )}
               aria-pressed={active}
             >
-              <Icon size={11} strokeWidth={2} className="shrink-0" style={{color: cat.color}} />
+              <Icon size={12} strokeWidth={2} className="shrink-0" style={{color: cat.color}} />
               {cat.title}
             </button>
           )
@@ -192,7 +192,7 @@ function Toggle({
       aria-pressed={pressed}
       title={title}
       className={cn(
-        'inline-flex h-8 items-center rounded-md border px-2.5 text-xs transition',
+        'inline-flex h-9 items-center rounded-md border px-3 text-sm transition',
         pressed
           ? 'border-[var(--color-accent)] bg-[var(--color-accent)]/10 text-[var(--color-accent)]'
           : 'border-[var(--color-border)] text-[var(--color-muted)] hover:text-[var(--color-fg)]'

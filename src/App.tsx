@@ -28,11 +28,11 @@ function App() {
       {/* Header */}
       <header className="border-b border-[var(--color-border)]">
         <div className="flex flex-wrap items-center gap-4 px-4 py-3">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2.5">
             <Logo />
             <div>
-              <h1 className="text-sm font-semibold leading-none">Browser API Atlas</h1>
-              <p className="mt-0.5 text-[10px] text-[var(--color-muted)]">
+              <h1 className="text-base font-semibold leading-none">Browser API Atlas</h1>
+              <p className="mt-1 text-xs text-[var(--color-muted)]">
                 {entries.length} APIs · {entries.filter((e) => e.hasDemo).length} live demos
               </p>
             </div>
@@ -44,7 +44,7 @@ function App() {
               href="https://github.com/hmelenok/browser-api-atlas"
               target="_blank"
               rel="noreferrer noopener"
-              className="inline-flex items-center gap-1.5 text-xs text-[var(--color-muted)] hover:text-[var(--color-fg)]"
+              className="inline-flex items-center gap-1.5 text-sm text-[var(--color-muted)] hover:text-[var(--color-fg)]"
               aria-label="GitHub repository"
             >
               <GithubIcon />
@@ -67,7 +67,7 @@ function App() {
       </main>
 
       {/* Footer */}
-      <footer className="flex flex-wrap items-center gap-3 border-t border-[var(--color-border)] px-4 py-2 text-[10px] text-[var(--color-muted)]">
+      <footer className="flex flex-wrap items-center gap-4 border-t border-[var(--color-border)] px-4 py-2.5 text-xs text-[var(--color-muted)]">
         <Legend />
         <span
           className="ml-auto font-mono"
@@ -91,8 +91,8 @@ function GithubIcon() {
 function Logo() {
   return (
     <svg
-      width="20"
-      height="20"
+      width="22"
+      height="22"
       viewBox="0 0 32 32"
       fill="none"
       stroke="currentColor"
