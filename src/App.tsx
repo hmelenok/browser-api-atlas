@@ -6,6 +6,8 @@ import {Graph} from '@/components/Graph'
 import {Legend} from '@/components/Legend'
 import {NewApiBanner} from '@/components/NewApiBanner'
 import {SearchBar} from '@/components/SearchBar'
+import {useDocumentMeta} from '@/lib/document-meta'
+import {useUrlSync} from '@/lib/url-sync'
 import {useStore} from '@/store'
 
 function App() {
@@ -17,6 +19,9 @@ function App() {
   useEffect(() => {
     initialize().catch(console.error)
   }, [initialize])
+
+  useUrlSync()
+  useDocumentMeta()
 
   return (
     <div className="flex h-full flex-col">
