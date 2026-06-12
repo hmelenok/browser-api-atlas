@@ -1,6 +1,7 @@
 import {
   Background,
   BackgroundVariant,
+  ControlButton,
   Controls,
   MiniMap,
   ReactFlow,
@@ -9,6 +10,7 @@ import {
   type Edge,
   type Node,
 } from '@xyflow/react'
+import {Maximize2} from 'lucide-react'
 import '@xyflow/react/dist/style.css'
 import {useEffect, useMemo, useState} from 'react'
 
@@ -82,8 +84,12 @@ function GraphInner() {
         setLayoutEdges(flowEdges)
         setLayingOut(false)
 
-        // Fit after a frame so nodes are measured
-        requestAnimationFrame(() => rf.fitView({padding: 0.1, duration: 400}))
+        // Fit after a frame so nodes are measured. Cap maxZoom so the
+        // initial view stays readable even with many nodes — users can
+        // zoom out via the controls/minimap to see everything.
+        requestAnimationFrame(() =>
+          rf.fitView({padding: 0.15, duration: 400, maxZoom: 0.9, minZoom: 0.3})
+        )
       })
       .catch((err) => {
         console.error('Layout failed', err)
@@ -121,9 +127,17 @@ function GraphInner() {
       maxZoom={2.5}
       proOptions={{hideAttribution: false}}
       fitView
+      fitViewOptions={{padding: 0.15, maxZoom: 0.9, minZoom: 0.3}}
     >
       <Background variant={BackgroundVariant.Dots} gap={28} size={1} color="var(--color-border)" />
-      <Controls position="bottom-right" showInteractive={false} />
+      <Controls position="bottom-right" showInteractive={false}>
+        <ControlButton
+          onClick={() => rf.fitView({padding: 0.05, duration: 400, maxZoom: 1.5})}
+          title="Fit everything in view"
+        >
+          <Maximize2 size={12} />
+        </ControlButton>
+      </Controls>
       <MiniMap
         position="top-right"
         zoomable

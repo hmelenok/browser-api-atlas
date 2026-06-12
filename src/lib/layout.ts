@@ -12,8 +12,8 @@ function getElk() {
   return elkPromise
 }
 
-const NODE_WIDTH = 220
-const NODE_HEIGHT = 76
+const NODE_WIDTH = 240
+const NODE_HEIGHT = 68
 
 export interface LayoutInputNode {
   id: string
@@ -56,9 +56,9 @@ export async function layoutGraph(
     id: `cat:${cat}`,
     layoutOptions: {
       'elk.algorithm': 'rectpacking',
-      'elk.padding': '[top=44,left=20,bottom=20,right=20]',
-      'elk.spacing.nodeNode': '14',
-      'elk.aspectRatio': '1.6',
+      'elk.padding': '[top=20,left=12,bottom=12,right=12]',
+      'elk.spacing.nodeNode': '10',
+      'elk.aspectRatio': '1.3',
     },
     children: (byCategory.get(cat) ?? []).map((n) => ({
       id: n.id,
@@ -80,9 +80,9 @@ export async function layoutGraph(
     layoutOptions: {
       'elk.algorithm': 'layered',
       'elk.direction': 'RIGHT',
-      'elk.layered.spacing.nodeNodeBetweenLayers': '120',
-      'elk.spacing.nodeNode': '80',
-      'elk.padding': '[top=40,left=40,bottom=40,right=40]',
+      'elk.layered.spacing.nodeNodeBetweenLayers': '60',
+      'elk.spacing.nodeNode': '40',
+      'elk.padding': '[top=20,left=20,bottom=20,right=20]',
       'elk.layered.crossingMinimization.semiInteractive': 'true',
       'elk.hierarchyHandling': 'INCLUDE_CHILDREN',
     },
@@ -132,9 +132,9 @@ export async function layoutWithGroups(
     id: `cat:${cat}`,
     layoutOptions: {
       'elk.algorithm': 'rectpacking',
-      'elk.padding': '[top=44,left=20,bottom=20,right=20]',
-      'elk.spacing.nodeNode': '14',
-      'elk.aspectRatio': '1.4',
+      'elk.padding': '[top=20,left=12,bottom=12,right=12]',
+      'elk.spacing.nodeNode': '10',
+      'elk.aspectRatio': '1.3',
     },
     children: (byCategory.get(cat) ?? []).map((n) => ({
       id: n.id,
@@ -147,9 +147,9 @@ export async function layoutWithGroups(
     id: 'root',
     layoutOptions: {
       'elk.algorithm': 'rectpacking',
-      'elk.spacing.nodeNode': '50',
-      'elk.padding': '[top=40,left=40,bottom=40,right=40]',
-      'elk.aspectRatio': '1.7',
+      'elk.spacing.nodeNode': '24',
+      'elk.padding': '[top=20,left=20,bottom=20,right=20]',
+      'elk.aspectRatio': String(typeof window !== 'undefined' ? Math.max(window.innerWidth / Math.max(window.innerHeight - 180, 400), 1) : 1.4),
     },
     children,
     edges: edges.map((e) => ({id: e.id, sources: [e.source], targets: [e.target]})),

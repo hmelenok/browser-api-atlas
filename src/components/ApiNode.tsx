@@ -20,7 +20,7 @@ export function ApiNode({data, selected}: NodeProps & {data: ApiNodeData}) {
   return (
     <div
       className={cn(
-        'group relative w-[220px] rounded-lg border bg-[var(--color-bg)] px-3 py-2.5 text-left transition',
+        'group relative w-[240px] rounded-lg border bg-[var(--color-bg)] px-3.5 py-3 text-left transition',
         'shadow-[0_1px_0_0_var(--color-border)] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-12px_rgba(0,0,0,0.18)]',
         selected
           ? 'border-[var(--color-accent)] ring-2 ring-[var(--color-accent)]/40'
@@ -28,7 +28,7 @@ export function ApiNode({data, selected}: NodeProps & {data: ApiNodeData}) {
       )}
       style={{
         // category accent strip on the left
-        boxShadow: selected ? undefined : `inset 3px 0 0 0 ${cat.color}`,
+        boxShadow: selected ? undefined : `inset 4px 0 0 0 ${cat.color}`,
       }}
     >
       <Handle type="target" position={Position.Left} className="!h-2 !w-2 !border-0 !bg-[var(--color-border)]" />
@@ -36,27 +36,25 @@ export function ApiNode({data, selected}: NodeProps & {data: ApiNodeData}) {
 
       <div className="flex items-center gap-2">
         <span
-          className="inline-block size-2 rounded-full"
+          className="inline-block size-2.5 rounded-full"
           style={{background: status.color}}
           aria-label={status.label}
           title={status.label}
         />
-        <h3 className="truncate text-sm font-medium leading-none">{entry.title}</h3>
+        <h3 className="truncate text-[15px] font-semibold leading-tight">{entry.title}</h3>
         {entry.hasDemo && (
-          <span title="Has interactive demo" className="ml-auto">
-            <Sparkles size={12} className="opacity-60" />
+          <span title="Has interactive demo" className="ml-auto shrink-0">
+            <Sparkles size={13} className="text-[var(--color-accent)]" />
           </span>
         )}
       </div>
 
-      <p className="mt-1.5 line-clamp-2 text-xs text-[var(--color-muted)]">
-        {entry.description || cat.title}
-      </p>
-
-      <div className="mt-1.5 flex items-center gap-1.5 text-[10px] uppercase tracking-wide text-[var(--color-muted)]">
-        <span className="opacity-60">{cat.title}</span>
+      <div className="mt-2 flex items-center gap-1.5 text-[11px] text-[var(--color-muted)]">
+        <span>{cat.title}</span>
         <span className="opacity-30">·</span>
-        <span style={{color: status.color}}>{status.label}</span>
+        <span style={{color: status.color}} className="font-medium">
+          {status.label}
+        </span>
       </div>
     </div>
   )
