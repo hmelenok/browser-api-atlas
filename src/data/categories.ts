@@ -1,6 +1,7 @@
 import {
   Activity,
   Bell,
+  Boxes,
   Camera,
   Cpu,
   Database,
@@ -11,6 +12,7 @@ import {
   Shield,
   Usb,
   Volume2,
+  Waves,
   Wifi,
 } from 'lucide-react'
 import type {Category, CategoryId} from '@/lib/types'
@@ -107,15 +109,31 @@ export const CATEGORIES: Record<CategoryId, Category> = {
     color: 'oklch(60% 0.14 320)',
     icon: Rocket,
   },
+  streams: {
+    id: 'streams',
+    title: 'Streams',
+    blurb: 'Pipe data through readers, transformers, and writers.',
+    color: 'oklch(60% 0.14 210)',
+    icon: Waves,
+  },
+  components: {
+    id: 'components',
+    title: 'Components',
+    blurb: 'Custom elements, shadow DOM, templates.',
+    color: 'oklch(60% 0.14 270)',
+    icon: Boxes,
+  },
 }
 
 export const CATEGORY_ORDER: CategoryId[] = [
   'storage',
   'files',
+  'streams',
   'network',
   'workers',
   'observation',
   'platform-ui',
+  'components',
   'media-capture',
   'audio-video',
   'graphics',

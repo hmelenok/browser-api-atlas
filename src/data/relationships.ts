@@ -11,30 +11,84 @@ export const RELATIONSHIPS: CatalogRelationship[] = [
   // Storage cluster — internal connections
   {from: 'api.Window.localStorage', to: 'api.BroadcastChannel', label: 'cross-tab sync'},
   {from: 'api.IDBDatabase', to: 'api.BroadcastChannel', label: 'cross-tab sync'},
+  {from: 'api.IDBDatabase', to: 'api.IDBObjectStore'},
+  {from: 'api.IDBObjectStore', to: 'api.IDBIndex'},
+  {from: 'api.IDBObjectStore', to: 'api.IDBTransaction'},
+  {from: 'api.IDBKeyRange', to: 'api.IDBObjectStore'},
   {from: 'api.StorageManager', to: 'api.IDBDatabase', label: 'quota'},
   {from: 'api.StorageManager', to: 'api.CacheStorage', label: 'quota'},
   {from: 'api.StorageManager', to: 'api.FileSystemDirectoryHandle', label: 'OPFS root'},
+  {from: 'api.StorageBucketManager', to: 'api.StorageManager'},
 
   // Files
   {from: 'api.FileSystemHandle', to: 'api.File'},
   {from: 'api.Blob', to: 'api.File', label: 'inherits'},
   {from: 'api.FileSystemDirectoryHandle', to: 'api.FileSystemHandle'},
+  {from: 'api.FileSystemFileHandle', to: 'api.FileSystemHandle'},
+  {from: 'api.FileSystemFileHandle', to: 'api.FileSystemWritableFileStream'},
+  {from: 'api.FileReader', to: 'api.Blob'},
+  {from: 'api.DataTransfer', to: 'api.File'},
+
+  // Streams
+  {from: 'api.TransformStream', to: 'api.ReadableStream'},
+  {from: 'api.TransformStream', to: 'api.WritableStream'},
+  {from: 'api.CompressionStream', to: 'api.TransformStream', label: 'is a'},
+  {from: 'api.DecompressionStream', to: 'api.TransformStream', label: 'is a'},
+  {from: 'api.TextEncoderStream', to: 'api.TransformStream', label: 'is a'},
+  {from: 'api.TextDecoderStream', to: 'api.TransformStream', label: 'is a'},
+  {from: 'api.TextEncoder', to: 'api.TextEncoderStream'},
+  {from: 'api.TextDecoder', to: 'api.TextDecoderStream'},
+  {from: 'api.ReadableStream', to: 'api.Response', label: 'response.body'},
+  {from: 'api.WritableStream', to: 'api.FileSystemWritableFileStream'},
 
   // Network
   {from: 'api.AbortController', to: 'api.fetch', label: 'abort signal'},
   {from: 'api.AbortController', to: 'api.WebSocket'},
   {from: 'api.AbortSignal.timeout_static', to: 'api.AbortController'},
+  {from: 'api.Headers', to: 'api.Request'},
+  {from: 'api.Headers', to: 'api.Response'},
+  {from: 'api.Request', to: 'api.fetch'},
+  {from: 'api.Response', to: 'api.fetch'},
+  {from: 'api.URL', to: 'api.URLSearchParams'},
+  {from: 'api.URL', to: 'api.URLPattern'},
+  {from: 'api.Navigator.sendBeacon', to: 'api.fetch', label: 'alternative'},
 
   // Workers ↔ Storage / Network
   {from: 'api.ServiceWorker', to: 'api.CacheStorage', label: 'offline'},
   {from: 'api.ServiceWorker', to: 'api.fetch', label: 'intercept'},
   {from: 'api.LockManager', to: 'api.IDBDatabase', label: 'coordinate writes'},
+  {from: 'api.MessageChannel', to: 'api.MessagePort'},
+  {from: 'api.MessagePort', to: 'api.Worker'},
+  {from: 'api.Worklet', to: 'api.AudioWorkletNode'},
+
+  // Components
+  {from: 'api.CustomElementRegistry', to: 'api.ShadowRoot'},
+  {from: 'api.CustomElementRegistry', to: 'api.ElementInternals'},
+  {from: 'api.ShadowRoot', to: 'api.HTMLSlotElement'},
+  {from: 'api.HTMLTemplateElement', to: 'api.HTMLSlotElement'},
+  {from: 'api.ElementInternals', to: 'api.HTMLElement.attachInternals'},
+
+  // Observation & Performance
+  {from: 'api.PerformanceMark', to: 'api.Performance'},
+  {from: 'api.PerformanceMeasure', to: 'api.Performance'},
+  {from: 'api.PerformanceNavigationTiming', to: 'api.Performance'},
+  {from: 'api.PerformanceObserver', to: 'api.Performance'},
+  {from: 'api.Window.requestIdleCallback', to: 'api.Scheduler', label: 'predecessor'},
 
   // Media chain
   {from: 'api.MediaDevices.getUserMedia', to: 'api.MediaRecorder', label: 'record stream'},
   {from: 'api.MediaDevices.getDisplayMedia', to: 'api.MediaRecorder'},
   {from: 'api.MediaDevices.getUserMedia', to: 'api.RTCPeerConnection', label: 'send stream'},
   {from: 'api.AudioContext', to: 'api.MediaDevices.getUserMedia', label: 'mic input'},
+  {from: 'api.AudioContext', to: 'api.AnalyserNode'},
+  {from: 'api.AudioContext', to: 'api.AudioWorkletNode'},
+  {from: 'api.HTMLMediaElement', to: 'api.HTMLVideoElement', label: 'extends'},
+  {from: 'api.HTMLMediaElement', to: 'api.MediaSession'},
+
+  // Animation
+  {from: 'api.Animation', to: 'api.KeyframeEffect'},
+  {from: 'api.Animation', to: 'api.ScrollTimeline'},
+  {from: 'api.Animation', to: 'api.ViewTimeline'},
 
   // Permissions gates many APIs
   {from: 'api.Permissions', to: 'api.Notification'},
@@ -42,15 +96,26 @@ export const RELATIONSHIPS: CatalogRelationship[] = [
   {from: 'api.Permissions', to: 'api.Clipboard'},
   {from: 'api.Permissions', to: 'api.MediaDevices.getUserMedia'},
 
+  // Sensors share a base interface
+  {from: 'api.Accelerometer', to: 'api.LinearAccelerationSensor'},
+  {from: 'api.Accelerometer', to: 'api.Gyroscope'},
+  {from: 'api.Accelerometer', to: 'api.Magnetometer'},
+  {from: 'api.RelativeOrientationSensor', to: 'api.Accelerometer'},
+
   // Identity
   {from: 'api.CredentialsContainer', to: 'api.PublicKeyCredential', label: 'navigator.credentials.create()'},
-  {from: 'api.Crypto', to: 'api.PublicKeyCredential', label: 'subtle ops'},
+  {from: 'api.CredentialsContainer', to: 'api.OTPCredential'},
+  {from: 'api.CredentialsContainer', to: 'api.IdentityCredential'},
+  {from: 'api.SubtleCrypto', to: 'api.Crypto', label: 'crypto.subtle'},
+  {from: 'api.SubtleCrypto', to: 'api.PublicKeyCredential', label: 'subtle ops'},
 
   // Graphics
   {from: 'api.CanvasRenderingContext2D', to: 'api.OffscreenCanvas'},
+  {from: 'api.CanvasRenderingContext2D', to: 'api.Path2D'},
   {from: 'api.WebGL2RenderingContext', to: 'api.WebGLRenderingContext', label: 'extends'},
   {from: 'api.OffscreenCanvas', to: 'api.Worker', label: 'render off-thread'},
 
   // Frontier
   {from: 'api.Document.startViewTransition', to: 'api.HTMLDialogElement', label: 'animate dialog'},
+  {from: 'api.Navigation', to: 'api.URLPattern', label: 'route matching'},
 ]
