@@ -7,7 +7,7 @@ import {detectAll} from '@/lib/detection'
 import {findUnknownGlobals, type UnknownGlobal} from '@/lib/introspect'
 import type {ApiEntry, CategoryId, RuntimeStatus} from '@/lib/types'
 
-export type SortMode = 'category' | 'baseline' | 'alphabetic'
+export type SortMode = 'category' | 'baseline' | 'alphabetic' | 'hierarchy'
 
 import catalogJson from '@/data/catalog.json'
 

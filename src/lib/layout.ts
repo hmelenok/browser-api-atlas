@@ -116,11 +116,55 @@ export async function layoutGraph(
 }
 
 /**
- * Group nodes for the layered ELK layout. Supports three sort modes:
+ * Find connected components in an undirected projection of the relationship
+ * graph. Used by the 'hierarchy' sort mode to give each natural API family
+ * (e.g. AudioContext + nodes, CredentialsContainer + credential types) its
+ * own sub-graph that ELK then lays out hierarchically.
+ */
+function connectedComponents(
+  nodes: LayoutInputNode[],
+  edges: LayoutInputEdge[]
+): LayoutInputNode[][] {
+  const byId = new Map(nodes.map((n) => [n.id, n]))
+  const adj = new Map<string, Set<string>>()
+  for (const n of nodes) adj.set(n.id, new Set())
+  for (const e of edges) {
+    adj.get(e.source)?.add(e.target)
+    adj.get(e.target)?.add(e.source)
+  }
+
+  const visited = new Set<string>()
+  const components: LayoutInputNode[][] = []
+  for (const n of nodes) {
+    if (visited.has(n.id)) continue
+    const comp: LayoutInputNode[] = []
+    const stack = [n.id]
+    while (stack.length) {
+      const id = stack.pop()!
+      if (visited.has(id)) continue
+      visited.add(id)
+      const node = byId.get(id)
+      if (node) comp.push(node)
+      for (const next of adj.get(id) ?? []) {
+        if (!visited.has(next)) stack.push(next)
+      }
+    }
+    components.push(comp)
+  }
+
+  // Sort: connected families first (largest first), then singletons
+  return components.sort((a, b) => b.length - a.length)
+}
+
+/**
+ * Group nodes for the ELK layout. Supports four sort modes:
  *  - 'category':   group by category (default visual cluster)
  *  - 'baseline':   group by Baseline status (Widely / Newly / Limited / Unknown)
  *                  with sub-sort by Baseline year within each group
  *  - 'alphabetic': group by leading letter for compact A-Z packing
+ *  - 'hierarchy':  group by connected components in the relationship graph
+ *                  (handled separately because each group then needs the
+ *                  layered algorithm internally, not rectpacking)
  */
 function makeGroups(nodes: LayoutInputNode[], mode: SortMode): Array<{id: string; nodes: LayoutInputNode[]}> {
   if (mode === 'baseline') {
@@ -185,33 +229,68 @@ export async function layoutWithGroups(
   width: number
   height: number
 }> {
-  const groupSpecs = makeGroups(nodes, sortMode)
+  // Hierarchy mode: connected components, each with internal `layered` layout
+  // so relationship edges actually drive positions.
+  const isHierarchy = sortMode === 'hierarchy'
+  const groupSpecs = isHierarchy
+    ? connectedComponents(nodes, edges).map((comp, i) => ({
+        id: `h:${i}`,
+        nodes: comp,
+      }))
+    : makeGroups(nodes, sortMode)
 
-  const children: ElkNode[] = groupSpecs.map((g) => ({
-    id: g.id,
-    layoutOptions: {
+  const children: ElkNode[] = groupSpecs.map((g): ElkNode => {
+    if (isHierarchy && g.nodes.length > 1) {
+      // Edges restricted to this component
+      const ids = new Set(g.nodes.map((n) => n.id))
+      const compEdges = edges
+        .filter((e) => ids.has(e.source) && ids.has(e.target))
+        .map((e) => ({id: e.id, sources: [e.source], targets: [e.target]}))
+      const layered: Record<string, string> = {
+        'elk.algorithm': 'layered',
+        'elk.direction': 'RIGHT',
+        'elk.layered.spacing.nodeNodeBetweenLayers': '60',
+        'elk.spacing.nodeNode': '20',
+        'elk.padding': '[top=12,left=12,bottom=12,right=12]',
+        'elk.layered.nodePlacement.strategy': 'NETWORK_SIMPLEX',
+        'elk.layered.crossingMinimization.strategy': 'LAYER_SWEEP',
+      }
+      return {
+        id: g.id,
+        layoutOptions: layered,
+        children: g.nodes.map((n) => ({id: n.id, width: NODE_WIDTH, height: NODE_HEIGHT})),
+        edges: compEdges,
+      }
+    }
+    const packed: Record<string, string> = {
       'elk.algorithm': 'rectpacking',
       'elk.padding': '[top=20,left=12,bottom=12,right=12]',
       'elk.spacing.nodeNode': '10',
       'elk.aspectRatio': '1.3',
-    },
-    children: g.nodes.map((n) => ({
-      id: n.id,
-      width: NODE_WIDTH,
-      height: NODE_HEIGHT,
-    })),
-  }))
+    }
+    return {
+      id: g.id,
+      layoutOptions: packed,
+      children: g.nodes.map((n) => ({
+        id: n.id,
+        width: NODE_WIDTH,
+        height: NODE_HEIGHT,
+      })),
+    }
+  })
 
   const graph: ElkNode = {
     id: 'root',
     layoutOptions: {
       'elk.algorithm': 'rectpacking',
-      'elk.spacing.nodeNode': '24',
+      'elk.spacing.nodeNode': isHierarchy ? '32' : '24',
       'elk.padding': '[top=20,left=20,bottom=20,right=20]',
       'elk.aspectRatio': String(typeof window !== 'undefined' ? Math.max(window.innerWidth / Math.max(window.innerHeight - 180, 400), 1) : 1.4),
     },
     children,
-    edges: edges.map((e) => ({id: e.id, sources: [e.source], targets: [e.target]})),
+    edges: isHierarchy
+      ? [] // edges already declared inside their components; root has none
+      : edges.map((e) => ({id: e.id, sources: [e.source], targets: [e.target]})),
   }
 
   const elk = await getElk()

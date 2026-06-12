@@ -1,4 +1,4 @@
-import {ArrowDownAZ, Layers, Search, Sparkle, X} from 'lucide-react'
+import {ArrowDownAZ, Layers, Search, Sparkle, Workflow, X} from 'lucide-react'
 import type {ComponentType, SVGProps} from 'react'
 
 import {CATEGORIES, CATEGORY_ORDER} from '@/data/categories'
@@ -28,6 +28,12 @@ const SORT_OPTIONS: Array<{
     label: 'A–Z',
     icon: ArrowDownAZ,
     hint: 'Group by leading letter for quick lookup by API name.',
+  },
+  {
+    id: 'hierarchy',
+    label: 'graph',
+    icon: Workflow,
+    hint: 'Group by connected component and let edges drive the layout. Each API family (Web Audio nodes around AudioContext, credentials around CredentialsContainer, …) becomes its own left-to-right flow. Isolated APIs pack at the side.',
   },
 ]
 
