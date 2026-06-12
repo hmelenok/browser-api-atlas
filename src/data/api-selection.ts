@@ -45,6 +45,7 @@ export const API_SELECTION: ApiSelection[] = [
   {bcdKey: 'api.FileSystemDirectoryHandle', category: 'files', runtimeKey: 'navigator.storage', title: 'Origin Private File System'},
   {bcdKey: 'api.FileSystemFileHandle', category: 'files', runtimeKey: 'window.FileSystemFileHandle'},
   {bcdKey: 'api.FileSystemWritableFileStream', category: 'files', runtimeKey: 'window.FileSystemWritableFileStream'},
+  {bcdKey: 'api.FileSystemSyncAccessHandle', category: 'files', runtimeKey: 'window.FileSystemSyncAccessHandle', title: 'OPFS Sync Access (in Workers)'},
   {bcdKey: 'api.File', category: 'files', runtimeKey: 'window.File', title: 'File'},
   {bcdKey: 'api.FileReader', category: 'files', runtimeKey: 'window.FileReader'},
   {bcdKey: 'api.Blob', category: 'files', runtimeKey: 'window.Blob', title: 'Blob'},
@@ -53,7 +54,9 @@ export const API_SELECTION: ApiSelection[] = [
 
   // ─── Streams ──────────────────────────────────────────────────────────────
   {bcdKey: 'api.ReadableStream', category: 'streams', runtimeKey: 'window.ReadableStream'},
+  {bcdKey: 'api.ReadableStreamDefaultReader', category: 'streams', runtimeKey: 'window.ReadableStreamDefaultReader'},
   {bcdKey: 'api.WritableStream', category: 'streams', runtimeKey: 'window.WritableStream'},
+  {bcdKey: 'api.WritableStreamDefaultWriter', category: 'streams', runtimeKey: 'window.WritableStreamDefaultWriter'},
   {bcdKey: 'api.TransformStream', category: 'streams', runtimeKey: 'window.TransformStream'},
   {bcdKey: 'api.TextEncoder', category: 'streams', runtimeKey: 'window.TextEncoder'},
   {bcdKey: 'api.TextDecoder', category: 'streams', runtimeKey: 'window.TextDecoder'},
@@ -76,6 +79,9 @@ export const API_SELECTION: ApiSelection[] = [
   {bcdKey: 'api.URL', category: 'network', runtimeKey: 'window.URL'},
   {bcdKey: 'api.URLSearchParams', category: 'network', runtimeKey: 'window.URLSearchParams'},
   {bcdKey: 'api.URLPattern', category: 'network', runtimeKey: 'window.URLPattern'},
+  {bcdKey: 'api.URL.canParse_static', category: 'network', runtimeKey: 'window.URL', title: 'URL.canParse()'},
+  {bcdKey: 'api.URL.createObjectURL_static', category: 'network', runtimeKey: 'window.URL', title: 'URL.createObjectURL()'},
+  {bcdKey: 'api.AbortSignal.any_static', category: 'network', runtimeKey: 'window.AbortSignal', title: 'AbortSignal.any()'},
   {bcdKey: 'api.Navigator.sendBeacon', category: 'network', runtimeKey: 'navigator.sendBeacon', title: 'sendBeacon'},
   {bcdKey: 'api.NetworkInformation', category: 'network', runtimeKey: 'navigator.connection', title: 'Network Information'},
 
@@ -104,15 +110,20 @@ export const API_SELECTION: ApiSelection[] = [
   {bcdKey: 'api.Window.cancelIdleCallback', category: 'observation', runtimeKey: 'window.cancelIdleCallback'},
   {bcdKey: 'api.Window.requestAnimationFrame', category: 'observation', runtimeKey: 'window.requestAnimationFrame', title: 'requestAnimationFrame'},
   {bcdKey: 'api.Window.cancelAnimationFrame', category: 'observation', runtimeKey: 'window.cancelAnimationFrame'},
+  {bcdKey: 'api.Performance.mark', category: 'observation', runtimeKey: 'window.performance', title: 'performance.mark()'},
+  {bcdKey: 'api.Performance.measure', category: 'observation', runtimeKey: 'window.performance', title: 'performance.measure()'},
+  {bcdKey: 'api.Performance.now', category: 'observation', runtimeKey: 'window.performance', title: 'performance.now()'},
 
   // ─── Platform UI ──────────────────────────────────────────────────────────
   {bcdKey: 'api.Notification', category: 'platform-ui', runtimeKey: 'window.Notification', title: 'Notifications'},
   {bcdKey: 'api.Navigator.share', category: 'platform-ui', runtimeKey: 'navigator.share', title: 'Web Share'},
+  {bcdKey: 'api.Navigator.canShare', category: 'platform-ui', runtimeKey: 'navigator.canShare', title: 'canShare()'},
   {bcdKey: 'api.WakeLock', category: 'platform-ui', runtimeKey: 'navigator.wakeLock', title: 'Screen Wake Lock'},
   {bcdKey: 'api.IdleDetector', category: 'platform-ui', runtimeKey: 'window.IdleDetector', title: 'Idle Detection'},
   {bcdKey: 'api.Clipboard', category: 'platform-ui', runtimeKey: 'navigator.clipboard', title: 'Clipboard'},
   {bcdKey: 'api.Navigator.vibrate', category: 'platform-ui', runtimeKey: 'navigator.vibrate', title: 'Vibration'},
   {bcdKey: 'api.Navigator.setAppBadge', category: 'platform-ui', runtimeKey: 'navigator.setAppBadge', title: 'App Badging'},
+  {bcdKey: 'api.Navigator.clearAppBadge', category: 'platform-ui', runtimeKey: 'navigator.clearAppBadge', title: 'clearAppBadge()'},
   {bcdKey: 'api.Selection', category: 'platform-ui', runtimeKey: 'window.getSelection'},
   {bcdKey: 'api.Range', category: 'platform-ui', runtimeKey: 'window.Range'},
   {bcdKey: 'api.Document.fullscreenEnabled', category: 'platform-ui', runtimeKey: 'document.fullscreenEnabled', title: 'Fullscreen API'},
@@ -125,7 +136,14 @@ export const API_SELECTION: ApiSelection[] = [
   {bcdKey: 'api.Element.scrollIntoView', category: 'platform-ui', runtimeKey: 'window.Element.prototype.scrollIntoView'},
   {bcdKey: 'api.Element.toggleAttribute', category: 'platform-ui', runtimeKey: 'window.Element.prototype.toggleAttribute'},
   {bcdKey: 'api.HTMLInputElement.showPicker', category: 'platform-ui', runtimeKey: 'window.HTMLInputElement', title: 'input.showPicker()'},
+  {bcdKey: 'api.HTMLInputElement.checkValidity', category: 'platform-ui', runtimeKey: 'window.HTMLInputElement', title: 'checkValidity()'},
+  {bcdKey: 'api.HTMLFormElement.requestSubmit', category: 'platform-ui', runtimeKey: 'window.HTMLFormElement', title: 'form.requestSubmit()'},
   {bcdKey: 'api.HTMLImageElement.decode', category: 'platform-ui', runtimeKey: 'window.HTMLImageElement', title: 'img.decode()'},
+  {bcdKey: 'api.HTMLImageElement.loading', category: 'platform-ui', runtimeKey: 'window.HTMLImageElement', title: 'img loading="lazy"'},
+  {bcdKey: 'api.HTMLDialogElement.showModal', category: 'platform-ui', runtimeKey: 'window.HTMLDialogElement', title: 'dialog.showModal()'},
+  {bcdKey: 'api.HTMLElement.dataset', category: 'platform-ui', runtimeKey: 'window.HTMLElement', title: 'element.dataset'},
+  {bcdKey: 'api.Document.elementsFromPoint', category: 'platform-ui', runtimeKey: 'document.elementsFromPoint'},
+  {bcdKey: 'api.Document.exitPictureInPicture', category: 'platform-ui', runtimeKey: 'document.exitPictureInPicture'},
   {bcdKey: 'api.HTMLElement.inert', category: 'platform-ui', runtimeKey: 'window.HTMLElement', title: 'inert attribute'},
   {bcdKey: 'api.MediaQueryList', category: 'platform-ui', runtimeKey: 'window.matchMedia', title: 'matchMedia'},
   {bcdKey: 'api.Navigator.getAutoplayPolicy', category: 'platform-ui', runtimeKey: 'navigator.getAutoplayPolicy', title: 'getAutoplayPolicy()'},
@@ -139,6 +157,12 @@ export const API_SELECTION: ApiSelection[] = [
   {bcdKey: 'api.PointerEvent', category: 'platform-ui', runtimeKey: 'window.PointerEvent'},
   {bcdKey: 'api.InputEvent', category: 'platform-ui', runtimeKey: 'window.InputEvent'},
   {bcdKey: 'api.SubmitEvent', category: 'platform-ui', runtimeKey: 'window.SubmitEvent'},
+  {bcdKey: 'api.HashChangeEvent', category: 'platform-ui', runtimeKey: 'window.HashChangeEvent'},
+  {bcdKey: 'api.PopStateEvent', category: 'platform-ui', runtimeKey: 'window.PopStateEvent'},
+  {bcdKey: 'api.StorageEvent', category: 'platform-ui', runtimeKey: 'window.StorageEvent'},
+  {bcdKey: 'api.PageTransitionEvent', category: 'platform-ui', runtimeKey: 'window.PageTransitionEvent'},
+  {bcdKey: 'api.BeforeUnloadEvent', category: 'platform-ui', runtimeKey: 'window.BeforeUnloadEvent'},
+  {bcdKey: 'api.PromiseRejectionEvent', category: 'platform-ui', runtimeKey: 'window.PromiseRejectionEvent'},
 
   // ─── Components (Web Components) ──────────────────────────────────────────
   {bcdKey: 'api.CustomElementRegistry', category: 'components', runtimeKey: 'window.customElements', title: 'Custom Elements'},
@@ -147,6 +171,7 @@ export const API_SELECTION: ApiSelection[] = [
   {bcdKey: 'api.HTMLSlotElement', category: 'components', runtimeKey: 'window.HTMLSlotElement', title: '<slot>'},
   {bcdKey: 'api.ElementInternals', category: 'components', runtimeKey: 'window.ElementInternals'},
   {bcdKey: 'api.CSSStyleSheet', category: 'components', runtimeKey: 'window.CSSStyleSheet', title: 'Constructable CSSStyleSheet'},
+  {bcdKey: 'api.Element.attachShadow', category: 'components', runtimeKey: 'window.Element.prototype.attachShadow', title: 'Element.attachShadow()'},
 
   // ─── Media Capture ────────────────────────────────────────────────────────
   {bcdKey: 'api.MediaDevices.getUserMedia', category: 'media-capture', runtimeKey: 'navigator.mediaDevices', title: 'getUserMedia'},
@@ -156,7 +181,10 @@ export const API_SELECTION: ApiSelection[] = [
   {bcdKey: 'api.MediaStream', category: 'media-capture', runtimeKey: 'window.MediaStream'},
   {bcdKey: 'api.MediaStreamTrack', category: 'media-capture', runtimeKey: 'window.MediaStreamTrack'},
   {bcdKey: 'api.HTMLMediaElement', category: 'media-capture', runtimeKey: 'window.HTMLMediaElement'},
+  {bcdKey: 'api.HTMLMediaElement.canPlayType', category: 'media-capture', runtimeKey: 'window.HTMLMediaElement', title: 'media.canPlayType()'},
   {bcdKey: 'api.MediaCapabilities', category: 'media-capture', runtimeKey: 'navigator.mediaCapabilities'},
+  {bcdKey: 'api.MediaSource', category: 'media-capture', runtimeKey: 'window.MediaSource'},
+  {bcdKey: 'api.SourceBuffer', category: 'media-capture', runtimeKey: 'window.SourceBuffer'},
 
   // ─── Audio & Video ────────────────────────────────────────────────────────
   {bcdKey: 'api.AudioContext', category: 'audio-video', runtimeKey: 'window.AudioContext', title: 'Web Audio'},
@@ -170,6 +198,7 @@ export const API_SELECTION: ApiSelection[] = [
   {bcdKey: 'api.DynamicsCompressorNode', category: 'audio-video', runtimeKey: 'window.DynamicsCompressorNode'},
   {bcdKey: 'api.MIDIAccess', category: 'audio-video', runtimeKey: 'navigator.requestMIDIAccess', title: 'Web MIDI'},
   {bcdKey: 'api.SpeechSynthesis', category: 'audio-video', runtimeKey: 'window.speechSynthesis', title: 'Speech Synthesis'},
+  {bcdKey: 'api.SpeechSynthesisUtterance', category: 'audio-video', runtimeKey: 'window.SpeechSynthesisUtterance'},
   {bcdKey: 'api.SpeechRecognition', category: 'audio-video', runtimeKey: 'window.SpeechRecognition', title: 'Speech Recognition'},
   {bcdKey: 'api.MediaSession', category: 'audio-video', runtimeKey: 'navigator.mediaSession'},
   {bcdKey: 'api.HTMLVideoElement', category: 'audio-video', runtimeKey: 'window.HTMLVideoElement'},
@@ -263,4 +292,6 @@ export const API_SELECTION: ApiSelection[] = [
   {bcdKey: 'api.XRSystem', category: 'frontier', runtimeKey: 'navigator.xr', title: 'WebXR'},
   {bcdKey: 'api.XRSession', category: 'frontier', runtimeKey: 'window.XRSession'},
   {bcdKey: 'api.reportError', category: 'frontier', runtimeKey: 'window.reportError', title: 'reportError()'},
+  {bcdKey: 'api.atob', category: 'frontier', runtimeKey: 'window.atob', title: 'atob() base64 decode'},
+  {bcdKey: 'api.btoa', category: 'frontier', runtimeKey: 'window.btoa', title: 'btoa() base64 encode'},
 ]
