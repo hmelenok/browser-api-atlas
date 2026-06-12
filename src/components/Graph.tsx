@@ -156,7 +156,30 @@ function GraphInner() {
           Laying out…
         </div>
       )}
+
+      {!layingOut && entries.length === 0 && <EmptyState />}
     </ReactFlow>
+  )
+}
+
+function EmptyState() {
+  const resetFilters = useStore((s) => s.resetFilters)
+  return (
+    <div className="pointer-events-auto absolute inset-0 flex items-center justify-center">
+      <div className="max-w-xs rounded-lg border border-dashed border-[var(--color-border)] bg-[var(--color-bg-soft)] px-6 py-5 text-center text-sm">
+        <p className="font-medium">No APIs match your filters</p>
+        <p className="mt-1 text-xs text-[var(--color-muted)]">
+          Toggle a category back on, clear the search, or relax the support filter.
+        </p>
+        <button
+          type="button"
+          onClick={resetFilters}
+          className="mt-3 inline-flex h-7 items-center rounded-md border border-[var(--color-accent)] bg-[var(--color-accent)]/10 px-2.5 text-xs font-medium text-[var(--color-accent)]"
+        >
+          Reset filters
+        </button>
+      </div>
+    </div>
   )
 }
 

@@ -41,6 +41,7 @@ interface State {
   select: (id: string | null) => void
   setSearch: (s: string) => void
   toggleCategory: (id: CategoryId) => void
+  setAllCategories: (visible: boolean) => void
   setOnlySupported: (v: boolean) => void
   setOnlyWithDemos: (v: boolean) => void
   resetFilters: () => void
@@ -77,6 +78,9 @@ export const useStore = create<State>((set, get) => ({
     if (next.has(id)) next.delete(id)
     else next.add(id)
     set({visibleCategories: next})
+  },
+  setAllCategories: (visible) => {
+    set({visibleCategories: visible ? new Set(allCategories) : new Set()})
   },
   setOnlySupported: (v) => set({onlySupported: v}),
   setOnlyWithDemos: (v) => set({onlyWithDemos: v}),

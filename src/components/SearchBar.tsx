@@ -12,6 +12,11 @@ export function SearchBar() {
   const setOnlyWithDemos = useStore((s) => s.setOnlyWithDemos)
   const visible = useStore((s) => s.visibleCategories)
   const toggle = useStore((s) => s.toggleCategory)
+  const setAll = useStore((s) => s.setAllCategories)
+
+  // Bulk toggle: if every category is on, the next click clears them all.
+  // Otherwise (any subset is off) the next click turns them all on.
+  const allOn = CATEGORY_ORDER.every((id) => visible.has(id))
 
   return (
     <div className="flex flex-wrap items-center gap-2">
@@ -51,7 +56,20 @@ export function SearchBar() {
 
       <div className="mx-2 hidden h-5 w-px bg-[var(--color-border)] md:block" />
 
-      <div className="flex flex-wrap gap-1">
+      <div className="flex flex-wrap items-center gap-1">
+        <button
+          type="button"
+          onClick={() => setAll(!allOn)}
+          className={cn(
+            'inline-flex h-[22px] items-center rounded-full border px-2 text-[11px] font-medium transition',
+            'border-[var(--color-border)] text-[var(--color-muted)] hover:text-[var(--color-fg)]'
+          )}
+          title={allOn ? 'Hide every category' : 'Show every category'}
+          aria-label={allOn ? 'Hide all categories' : 'Show all categories'}
+        >
+          {allOn ? 'none' : 'all'}
+        </button>
+        <span className="mx-0.5 h-3 w-px bg-[var(--color-border)]" aria-hidden />
         {CATEGORY_ORDER.map((id) => {
           const cat = CATEGORIES[id]
           const active = visible.has(id)
