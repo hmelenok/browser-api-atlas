@@ -47,10 +47,18 @@ export function SearchBar() {
         )}
       </label>
 
-      <Toggle pressed={onlySupported} onPressedChange={setOnlySupported}>
+      <Toggle
+        pressed={onlySupported}
+        onPressedChange={setOnlySupported}
+        title="Show only APIs that exist in your current browser. APIs missing from your browser will be hidden from the graph."
+      >
         Supported here
       </Toggle>
-      <Toggle pressed={onlyWithDemos} onPressedChange={setOnlyWithDemos}>
+      <Toggle
+        pressed={onlyWithDemos}
+        onPressedChange={setOnlyWithDemos}
+        title="Show only APIs that have an interactive demo registered in src/demos/. Drop in a new file there to add more."
+      >
         Has demo
       </Toggle>
 
@@ -101,16 +109,19 @@ function Toggle({
   pressed,
   onPressedChange,
   children,
+  title,
 }: {
   pressed: boolean
   onPressedChange: (v: boolean) => void
   children: React.ReactNode
+  title?: string
 }) {
   return (
     <button
       type="button"
       onClick={() => onPressedChange(!pressed)}
       aria-pressed={pressed}
+      title={title}
       className={cn(
         'inline-flex h-8 items-center rounded-md border px-2.5 text-xs transition',
         pressed

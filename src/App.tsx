@@ -69,7 +69,10 @@ function App() {
       {/* Footer */}
       <footer className="flex flex-wrap items-center gap-3 border-t border-[var(--color-border)] px-4 py-2 text-[10px] text-[var(--color-muted)]">
         <Legend />
-        <span className="ml-auto font-mono">
+        <span
+          className="ml-auto font-mono"
+          title={`This atlas is built from two upstream data packages. BCD = @mdn/browser-compat-data, the official MDN compatibility data (version ${bcdVersion}). web-features = the Baseline status data from the Web Platform DX team (version ${webFeaturesVersion}). A weekly GitHub Action bumps both and opens a PR if anything changed.`}
+        >
           data: BCD {bcdVersion} · web-features {webFeaturesVersion}
         </span>
       </footer>
