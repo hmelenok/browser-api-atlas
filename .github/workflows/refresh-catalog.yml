@@ -1,0 +1,61 @@
+name: Refresh API catalog
+
+on:
+  schedule:
+    - cron: '0 6 * * 1' # Mondays 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install
+        run: npm ci
+
+      - name: Bump @mdn/browser-compat-data
+        run: npm install @mdn/browser-compat-data@latest web-features@latest
+
+      - name: Rebuild catalog
+        run: npm run build:catalog
+
+      - name: Detect changes
+        id: diff
+        continue-on-error: true
+        run: |
+          set +e
+          OUTPUT=$(npm run --silent check:new-apis)
+          RC=$?
+          echo "summary<<EOF" >> "$GITHUB_OUTPUT"
+          echo "$OUTPUT" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+          echo "rc=$RC" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Open PR if changes
+        if: steps.diff.outputs.rc != '0'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: chore/refresh-catalog
+          commit-message: 'chore: refresh API catalog'
+          title: 'chore: refresh API catalog'
+          labels: catalog-refresh
+          body: |
+            Automated weekly refresh of the catalog from latest upstream data.
+
+            ${{ steps.diff.outputs.summary }}
+
+            ---
+            Newly added APIs may be missing interactive demos. Drop a `.tsx` file into
+            `src/demos/` matching the BCD key to add one — see
+            [docs/ADDING-AN-API.md](./docs/ADDING-AN-API.md).
