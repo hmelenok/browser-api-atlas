@@ -115,6 +115,46 @@ export const RELATIONSHIPS: CatalogRelationship[] = [
   {from: 'api.WebGL2RenderingContext', to: 'api.WebGLRenderingContext', label: 'extends'},
   {from: 'api.OffscreenCanvas', to: 'api.Worker', label: 'render off-thread'},
 
+  // Web Audio nodes
+  {from: 'api.OscillatorNode', to: 'api.AudioContext'},
+  {from: 'api.GainNode', to: 'api.AudioContext'},
+  {from: 'api.BiquadFilterNode', to: 'api.AudioContext'},
+  {from: 'api.ConvolverNode', to: 'api.AudioContext'},
+  {from: 'api.DelayNode', to: 'api.AudioContext'},
+  {from: 'api.DynamicsCompressorNode', to: 'api.AudioContext'},
+
+  // WebCodecs
+  {from: 'api.VideoDecoder', to: 'api.VideoFrame', label: 'decodes to'},
+  {from: 'api.VideoEncoder', to: 'api.VideoFrame', label: 'encodes from'},
+  {from: 'api.AudioDecoder', to: 'api.AudioData', label: 'decodes to'},
+  {from: 'api.AudioEncoder', to: 'api.AudioData', label: 'encodes from'},
+  {from: 'api.VideoFrame', to: 'api.MediaStreamTrack', label: 'from track'},
+  {from: 'api.AudioData', to: 'api.MediaStreamTrack'},
+  {from: 'api.ImageDecoder', to: 'api.ImageBitmap'},
+
+  // WebGPU primitives
+  {from: 'api.GPUDevice', to: 'api.GPU'},
+  {from: 'api.GPUBuffer', to: 'api.GPUDevice'},
+  {from: 'api.GPUTexture', to: 'api.GPUDevice'},
+  {from: 'api.GPUShaderModule', to: 'api.GPUDevice'},
+  {from: 'api.GPURenderPipeline', to: 'api.GPUDevice'},
+  {from: 'api.GPUCommandEncoder', to: 'api.GPUDevice'},
+
+  // DOM geometry
+  {from: 'api.DOMQuad', to: 'api.DOMRect'},
+  {from: 'api.DOMRect', to: 'api.Element.scrollIntoView'},
+
+  // DOM utilities
+  {from: 'api.DOMParser', to: 'api.XMLSerializer', label: 'inverse'},
+  {from: 'api.NodeIterator', to: 'api.TreeWalker'},
+  {from: 'api.Selection', to: 'api.Range', label: 'selection ranges'},
+  {from: 'api.Range', to: 'api.Highlight'},
+
+  // Modern CSS
+  {from: 'api.CSSContainerRule', to: 'api.CSSLayerBlockRule'},
+  {from: 'api.HighlightRegistry', to: 'api.Highlight'},
+  {from: 'api.Document.requestStorageAccessFor', to: 'api.Document.requestStorageAccess'},
+
   // Frontier
   {from: 'api.Document.startViewTransition', to: 'api.HTMLDialogElement', label: 'animate dialog'},
   {from: 'api.Navigation', to: 'api.URLPattern', label: 'route matching'},

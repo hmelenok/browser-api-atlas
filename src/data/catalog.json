@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T12:38:46.114Z",
+  "generatedAt": "2026-06-12T14:15:19.325Z",
   "bcdVersion": "8.0.2",
   "webFeaturesVersion": "3.30.0",
   "entries": [
@@ -1298,6 +1298,104 @@
       "hasDemo": false
     },
     {
+      "id": "api.DOMParser",
+      "title": "DOMParser",
+      "category": "platform-ui",
+      "description": "The DOMParser API parses XML or HTML source code from a string into a DOM Document.",
+      "runtimeKey": "window.DOMParser",
+      "baseline": "widely",
+      "baselineYear": 2018,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/DOMParser",
+      "specUrl": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization",
+      "webFeatureId": "domparser",
+      "hasDemo": false
+    },
+    {
+      "id": "api.XMLSerializer",
+      "title": "XMLSerializer",
+      "category": "platform-ui",
+      "description": "The XMLSerializer API provides the serializeToString() method to construct an XML string representing a DOM tree.",
+      "runtimeKey": "window.XMLSerializer",
+      "baseline": "widely",
+      "baselineYear": 2018,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/XMLSerializer",
+      "specUrl": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#xmlserializer",
+      "webFeatureId": "xml-serializer",
+      "hasDemo": false
+    },
+    {
+      "id": "api.NodeIterator",
+      "title": "NodeIterator",
+      "category": "platform-ui",
+      "description": "The DOM (Document Object Model) API represents HTML and XML documents as trees of nodes. You can use the API to inspect and modify the structure and content of a document.",
+      "runtimeKey": "window.NodeIterator",
+      "baseline": "widely",
+      "baselineYear": 2018,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/NodeIterator",
+      "specUrl": "https://dom.spec.whatwg.org/#interface-nodeiterator",
+      "webFeatureId": "dom",
+      "hasDemo": false
+    },
+    {
+      "id": "api.TreeWalker",
+      "title": "TreeWalker",
+      "category": "platform-ui",
+      "description": "The DOM (Document Object Model) API represents HTML and XML documents as trees of nodes. You can use the API to inspect and modify the structure and content of a document.",
+      "runtimeKey": "window.TreeWalker",
+      "baseline": "widely",
+      "baselineYear": 2018,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/TreeWalker",
+      "specUrl": "https://dom.spec.whatwg.org/#interface-treewalker",
+      "webFeatureId": "dom",
+      "hasDemo": false
+    },
+    {
+      "id": "api.PointerEvent",
+      "title": "PointerEvent",
+      "category": "platform-ui",
+      "description": "Pointer events, such as pointerdown, and the PointerEvent API, represent general pointing inputs, from a wide range of devices, such as a mouse, pen or stylus, or touch with one or more fingers. Not to be confused with the pointer-events CSS property.",
+      "runtimeKey": "window.PointerEvent",
+      "baseline": "widely",
+      "baselineYear": 2023,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/PointerEvent",
+      "specUrl": "https://w3c.github.io/pointerevents/#pointerevent-interface",
+      "webFeatureId": "pointer-events-api",
+      "hasDemo": false
+    },
+    {
+      "id": "api.InputEvent",
+      "title": "InputEvent",
+      "category": "platform-ui",
+      "description": "The input event fires when a form control changes or an element with the contenteditable attribute changes.",
+      "runtimeKey": "window.InputEvent",
+      "baseline": "widely",
+      "baselineYear": 2022,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/InputEvent",
+      "specUrl": "https://w3c.github.io/input-events/#interface-InputEvent",
+      "webFeatureId": "input-event",
+      "hasDemo": false
+    },
+    {
+      "id": "api.SubmitEvent",
+      "title": "SubmitEvent",
+      "category": "platform-ui",
+      "description": "The  element contains interactive controls for submitting information.",
+      "runtimeKey": "window.SubmitEvent",
+      "baseline": "widely",
+      "baselineYear": 2018,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/SubmitEvent",
+      "specUrl": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#the-submitevent-interface",
+      "webFeatureId": "form",
+      "hasDemo": false
+    },
+    {
       "id": "api.CustomElementRegistry",
       "title": "Custom Elements",
       "category": "components",
@@ -1534,6 +1632,90 @@
       "hasDemo": false
     },
     {
+      "id": "api.OscillatorNode",
+      "title": "OscillatorNode",
+      "category": "audio-video",
+      "description": "The Web Audio API creates graphs of audio nodes that handle sound inputs, synthesize sounds, apply effects, create visualizations, and output to audio devices.",
+      "runtimeKey": "window.OscillatorNode",
+      "baseline": "widely",
+      "baselineYear": 2023,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/OscillatorNode",
+      "specUrl": "https://webaudio.github.io/web-audio-api/#OscillatorNode",
+      "webFeatureId": "web-audio",
+      "hasDemo": false
+    },
+    {
+      "id": "api.GainNode",
+      "title": "GainNode",
+      "category": "audio-video",
+      "description": "The Web Audio API creates graphs of audio nodes that handle sound inputs, synthesize sounds, apply effects, create visualizations, and output to audio devices.",
+      "runtimeKey": "window.GainNode",
+      "baseline": "widely",
+      "baselineYear": 2023,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/GainNode",
+      "specUrl": "https://webaudio.github.io/web-audio-api/#GainNode",
+      "webFeatureId": "web-audio",
+      "hasDemo": false
+    },
+    {
+      "id": "api.BiquadFilterNode",
+      "title": "BiquadFilterNode",
+      "category": "audio-video",
+      "description": "The Web Audio API creates graphs of audio nodes that handle sound inputs, synthesize sounds, apply effects, create visualizations, and output to audio devices.",
+      "runtimeKey": "window.BiquadFilterNode",
+      "baseline": "widely",
+      "baselineYear": 2023,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/BiquadFilterNode",
+      "specUrl": "https://webaudio.github.io/web-audio-api/#BiquadFilterNode",
+      "webFeatureId": "web-audio",
+      "hasDemo": false
+    },
+    {
+      "id": "api.ConvolverNode",
+      "title": "ConvolverNode",
+      "category": "audio-video",
+      "description": "The Web Audio API creates graphs of audio nodes that handle sound inputs, synthesize sounds, apply effects, create visualizations, and output to audio devices.",
+      "runtimeKey": "window.ConvolverNode",
+      "baseline": "widely",
+      "baselineYear": 2023,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/ConvolverNode",
+      "specUrl": "https://webaudio.github.io/web-audio-api/#ConvolverNode",
+      "webFeatureId": "web-audio",
+      "hasDemo": false
+    },
+    {
+      "id": "api.DelayNode",
+      "title": "DelayNode",
+      "category": "audio-video",
+      "description": "The Web Audio API creates graphs of audio nodes that handle sound inputs, synthesize sounds, apply effects, create visualizations, and output to audio devices.",
+      "runtimeKey": "window.DelayNode",
+      "baseline": "widely",
+      "baselineYear": 2023,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/DelayNode",
+      "specUrl": "https://webaudio.github.io/web-audio-api/#DelayNode",
+      "webFeatureId": "web-audio",
+      "hasDemo": false
+    },
+    {
+      "id": "api.DynamicsCompressorNode",
+      "title": "DynamicsCompressorNode",
+      "category": "audio-video",
+      "description": "The Web Audio API creates graphs of audio nodes that handle sound inputs, synthesize sounds, apply effects, create visualizations, and output to audio devices.",
+      "runtimeKey": "window.DynamicsCompressorNode",
+      "baseline": "widely",
+      "baselineYear": 2023,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/DynamicsCompressorNode",
+      "specUrl": "https://webaudio.github.io/web-audio-api/#DynamicsCompressorNode",
+      "webFeatureId": "web-audio",
+      "hasDemo": false
+    },
+    {
       "id": "api.MIDIAccess",
       "title": "Web MIDI",
       "category": "audio-video",
@@ -1601,6 +1783,97 @@
       "hasDemo": false
     },
     {
+      "id": "api.VideoFrame",
+      "title": "WebCodecs: VideoFrame",
+      "category": "audio-video",
+      "description": "The WebCodecs API provides low-level access to individual video frames and chunks of audio samples, for full control over the way media is processed.",
+      "runtimeKey": "window.VideoFrame",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/VideoFrame",
+      "specUrl": "https://w3c.github.io/webcodecs/#videoframe-interface",
+      "webFeatureId": "webcodecs",
+      "hasDemo": false
+    },
+    {
+      "id": "api.VideoDecoder",
+      "title": "VideoDecoder",
+      "category": "audio-video",
+      "description": "The WebCodecs API provides low-level access to individual video frames and chunks of audio samples, for full control over the way media is processed.",
+      "runtimeKey": "window.VideoDecoder",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/VideoDecoder",
+      "specUrl": "https://w3c.github.io/webcodecs/#videodecoder-interface",
+      "webFeatureId": "webcodecs",
+      "hasDemo": false
+    },
+    {
+      "id": "api.VideoEncoder",
+      "title": "VideoEncoder",
+      "category": "audio-video",
+      "description": "The WebCodecs API provides low-level access to individual video frames and chunks of audio samples, for full control over the way media is processed.",
+      "runtimeKey": "window.VideoEncoder",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/VideoEncoder",
+      "specUrl": "https://w3c.github.io/webcodecs/#videoencoder-interface",
+      "webFeatureId": "webcodecs",
+      "hasDemo": false
+    },
+    {
+      "id": "api.AudioData",
+      "title": "WebCodecs: AudioData",
+      "category": "audio-video",
+      "description": "The WebCodecs API provides low-level access to individual video frames and chunks of audio samples, for full control over the way media is processed.",
+      "runtimeKey": "window.AudioData",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/AudioData",
+      "specUrl": "https://w3c.github.io/webcodecs/#audiodata-interface",
+      "webFeatureId": "webcodecs",
+      "hasDemo": false
+    },
+    {
+      "id": "api.AudioDecoder",
+      "title": "AudioDecoder",
+      "category": "audio-video",
+      "description": "The WebCodecs API provides low-level access to individual video frames and chunks of audio samples, for full control over the way media is processed.",
+      "runtimeKey": "window.AudioDecoder",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/AudioDecoder",
+      "specUrl": "https://w3c.github.io/webcodecs/#audiodecoder-interface",
+      "webFeatureId": "webcodecs",
+      "hasDemo": false
+    },
+    {
+      "id": "api.AudioEncoder",
+      "title": "AudioEncoder",
+      "category": "audio-video",
+      "description": "The WebCodecs API provides low-level access to individual video frames and chunks of audio samples, for full control over the way media is processed.",
+      "runtimeKey": "window.AudioEncoder",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/AudioEncoder",
+      "specUrl": "https://w3c.github.io/webcodecs/#audioencoder-interface",
+      "webFeatureId": "webcodecs",
+      "hasDemo": false
+    },
+    {
+      "id": "api.ImageDecoder",
+      "title": "WebCodecs: ImageDecoder",
+      "category": "audio-video",
+      "description": "The WebCodecs API provides low-level access to individual video frames and chunks of audio samples, for full control over the way media is processed.",
+      "runtimeKey": "window.ImageDecoder",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/ImageDecoder",
+      "specUrl": "https://w3c.github.io/webcodecs/#imagedecoder-interface",
+      "webFeatureId": "webcodecs",
+      "hasDemo": false
+    },
+    {
       "id": "api.CanvasRenderingContext2D",
       "title": "Canvas 2D",
       "category": "graphics",
@@ -1626,6 +1899,34 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/Path2D",
       "specUrl": "https://html.spec.whatwg.org/multipage/canvas.html#path2d-objects",
       "webFeatureId": "canvas-2d",
+      "hasDemo": false
+    },
+    {
+      "id": "api.ImageBitmap",
+      "title": "ImageBitmap",
+      "category": "graphics",
+      "description": "The createImageBitmap() global method creates an ImageBitmap object from a source such as an image, SVG, blob, or canvas. An ImageBitmap object represents pixel data that can be drawn to a canvas with lower latency than other types, such as ImageData.",
+      "runtimeKey": "window.createImageBitmap",
+      "baseline": "newly",
+      "baselineYear": 2023,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/ImageBitmap",
+      "specUrl": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmap",
+      "webFeatureId": "createimagebitmap",
+      "hasDemo": false
+    },
+    {
+      "id": "api.OffscreenCanvasRenderingContext2D",
+      "title": "OffscreenCanvasRenderingContext2D",
+      "category": "graphics",
+      "description": "The OffscreenCanvas API provides a canvas that can be drawn to off screen, with no dependencies on the DOM, which can be used to run heavy rendering operations inside a worker context.",
+      "runtimeKey": "window.OffscreenCanvasRenderingContext2D",
+      "baseline": "widely",
+      "baselineYear": 2025,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvasRenderingContext2D",
+      "specUrl": "https://html.spec.whatwg.org/multipage/canvas.html#the-offscreen-2d-rendering-context",
+      "webFeatureId": "offscreen-canvas",
       "hasDemo": false
     },
     {
@@ -1666,6 +1967,84 @@
       "status": "standard",
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/GPU",
       "specUrl": "https://gpuweb.github.io/gpuweb/#gpu-interface",
+      "webFeatureId": "webgpu",
+      "hasDemo": false
+    },
+    {
+      "id": "api.GPUDevice",
+      "title": "GPUDevice",
+      "category": "graphics",
+      "description": "The navigator.gpu API performs operations such as rendering and computation on dedicated graphics hardware (also known as a Graphics Processing Unit).",
+      "runtimeKey": "window.GPUDevice",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/GPUDevice",
+      "specUrl": "https://gpuweb.github.io/gpuweb/#gpudevice",
+      "webFeatureId": "webgpu",
+      "hasDemo": false
+    },
+    {
+      "id": "api.GPUBuffer",
+      "title": "GPUBuffer",
+      "category": "graphics",
+      "description": "The navigator.gpu API performs operations such as rendering and computation on dedicated graphics hardware (also known as a Graphics Processing Unit).",
+      "runtimeKey": "window.GPUBuffer",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/GPUBuffer",
+      "specUrl": "https://gpuweb.github.io/gpuweb/#gpubuffer",
+      "webFeatureId": "webgpu",
+      "hasDemo": false
+    },
+    {
+      "id": "api.GPUTexture",
+      "title": "GPUTexture",
+      "category": "graphics",
+      "description": "The navigator.gpu API performs operations such as rendering and computation on dedicated graphics hardware (also known as a Graphics Processing Unit).",
+      "runtimeKey": "window.GPUTexture",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/GPUTexture",
+      "specUrl": "https://gpuweb.github.io/gpuweb/#gputexture",
+      "webFeatureId": "webgpu",
+      "hasDemo": false
+    },
+    {
+      "id": "api.GPUShaderModule",
+      "title": "GPUShaderModule",
+      "category": "graphics",
+      "description": "The navigator.gpu API performs operations such as rendering and computation on dedicated graphics hardware (also known as a Graphics Processing Unit).",
+      "runtimeKey": "window.GPUShaderModule",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/GPUShaderModule",
+      "specUrl": "https://gpuweb.github.io/gpuweb/#gpushadermodule",
+      "webFeatureId": "webgpu",
+      "hasDemo": false
+    },
+    {
+      "id": "api.GPURenderPipeline",
+      "title": "GPURenderPipeline",
+      "category": "graphics",
+      "description": "The navigator.gpu API performs operations such as rendering and computation on dedicated graphics hardware (also known as a Graphics Processing Unit).",
+      "runtimeKey": "window.GPURenderPipeline",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/GPURenderPipeline",
+      "specUrl": "https://gpuweb.github.io/gpuweb/#gpurenderpipeline",
+      "webFeatureId": "webgpu",
+      "hasDemo": false
+    },
+    {
+      "id": "api.GPUCommandEncoder",
+      "title": "GPUCommandEncoder",
+      "category": "graphics",
+      "description": "The navigator.gpu API performs operations such as rendering and computation on dedicated graphics hardware (also known as a Graphics Processing Unit).",
+      "runtimeKey": "window.GPUCommandEncoder",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/GPUCommandEncoder",
+      "specUrl": "https://gpuweb.github.io/gpuweb/#gpucommandencoder",
       "webFeatureId": "webgpu",
       "hasDemo": false
     },
@@ -1735,6 +2114,62 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/ViewTimeline",
       "specUrl": "https://drafts.csswg.org/scroll-animations/#viewtimeline-interface",
       "webFeatureId": "scroll-driven-animations",
+      "hasDemo": false
+    },
+    {
+      "id": "api.DOMRect",
+      "title": "DOMRect",
+      "category": "graphics",
+      "description": "The DOMMatrix, DOMPoint, DOMQuad and DOMRect APIs represent points, rectangles, quadrilaterals and transformation matrices within JavaScript. They can be used in transformations in CSS, , and SVG.",
+      "runtimeKey": "window.DOMRect",
+      "baseline": "widely",
+      "baselineYear": 2022,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/DOMRect",
+      "specUrl": "https://drafts.csswg.org/geometry/#domrect",
+      "webFeatureId": "dom-geometry",
+      "hasDemo": false
+    },
+    {
+      "id": "api.DOMMatrix",
+      "title": "DOMMatrix",
+      "category": "graphics",
+      "description": "The DOMMatrix, DOMPoint, DOMQuad and DOMRect APIs represent points, rectangles, quadrilaterals and transformation matrices within JavaScript. They can be used in transformations in CSS, , and SVG.",
+      "runtimeKey": "window.DOMMatrix",
+      "baseline": "widely",
+      "baselineYear": 2022,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/DOMMatrix",
+      "specUrl": "https://drafts.csswg.org/geometry/#DOMMatrix",
+      "webFeatureId": "dom-geometry",
+      "hasDemo": false
+    },
+    {
+      "id": "api.DOMPoint",
+      "title": "DOMPoint",
+      "category": "graphics",
+      "description": "The DOMMatrix, DOMPoint, DOMQuad and DOMRect APIs represent points, rectangles, quadrilaterals and transformation matrices within JavaScript. They can be used in transformations in CSS, , and SVG.",
+      "runtimeKey": "window.DOMPoint",
+      "baseline": "widely",
+      "baselineYear": 2022,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/DOMPoint",
+      "specUrl": "https://drafts.csswg.org/geometry/#DOMPoint",
+      "webFeatureId": "dom-geometry",
+      "hasDemo": false
+    },
+    {
+      "id": "api.DOMQuad",
+      "title": "DOMQuad",
+      "category": "graphics",
+      "description": "The DOMMatrix, DOMPoint, DOMQuad and DOMRect APIs represent points, rectangles, quadrilaterals and transformation matrices within JavaScript. They can be used in transformations in CSS, , and SVG.",
+      "runtimeKey": "window.DOMQuad",
+      "baseline": "widely",
+      "baselineYear": 2022,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/DOMQuad",
+      "specUrl": "https://drafts.csswg.org/geometry/#domquad",
+      "webFeatureId": "dom-geometry",
       "hasDemo": false
     },
     {
@@ -2239,6 +2674,74 @@
       "hasDemo": false
     },
     {
+      "id": "api.CSSContainerRule",
+      "title": "CSS Container Queries",
+      "category": "frontier",
+      "description": "Container size queries with the @container at-rule apply styles to an element based on the dimensions of its container.",
+      "runtimeKey": "window.CSSContainerRule",
+      "baseline": "widely",
+      "baselineYear": 2025,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/CSSContainerRule",
+      "specUrl": "https://drafts.csswg.org/css-conditional-5/#the-csscontainerrule-interface",
+      "webFeatureId": "container-queries",
+      "hasDemo": false
+    },
+    {
+      "id": "api.CSSCounterStyleRule",
+      "title": "CSSCounterStyleRule",
+      "category": "frontier",
+      "description": "The @counter-style CSS at-rule sets custom counter styles for list items. For example, you can use a sequence of specific symbols instead of numbers for an ordered list.",
+      "runtimeKey": "window.CSSCounterStyleRule",
+      "baseline": "widely",
+      "baselineYear": 2026,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/CSSCounterStyleRule",
+      "specUrl": "https://drafts.csswg.org/css-counter-styles/#the-csscounterstylerule-interface",
+      "webFeatureId": "counter-style",
+      "hasDemo": false
+    },
+    {
+      "id": "api.Highlight",
+      "title": "CSS Custom Highlight",
+      "category": "frontier",
+      "description": "Custom highlights style arbitrary text ranges, without adding extra elements to the DOM.",
+      "runtimeKey": "window.Highlight",
+      "baseline": "newly",
+      "baselineYear": 2026,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/Highlight",
+      "specUrl": "https://drafts.csswg.org/css-highlight-api/#highlight",
+      "webFeatureId": "highlight",
+      "hasDemo": false
+    },
+    {
+      "id": "api.HighlightRegistry",
+      "title": "CSS.highlights",
+      "category": "frontier",
+      "description": "Custom highlights style arbitrary text ranges, without adding extra elements to the DOM.",
+      "runtimeKey": "window.CSS",
+      "baseline": "newly",
+      "baselineYear": 2026,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/HighlightRegistry",
+      "specUrl": "https://drafts.csswg.org/css-highlight-api/#highlightregistry",
+      "webFeatureId": "highlight",
+      "hasDemo": false
+    },
+    {
+      "id": "api.Document.requestStorageAccessFor",
+      "title": "requestStorageAccessFor()",
+      "category": "frontier",
+      "description": "Related website sets declares relationships between sites so the browser allows cookie and storage access between them through methods such as document.requestStorageAccessFor().",
+      "runtimeKey": "document.requestStorageAccessFor",
+      "baseline": "limited",
+      "status": "deprecated",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/Document/requestStorageAccessFor",
+      "webFeatureId": "related-website-sets",
+      "hasDemo": false
+    },
+    {
       "id": "api.crossOriginIsolated",
       "title": "crossOriginIsolated",
       "category": "frontier",
@@ -2666,6 +3169,125 @@
       "from": "api.OffscreenCanvas",
       "to": "api.Worker",
       "label": "render off-thread"
+    },
+    {
+      "from": "api.OscillatorNode",
+      "to": "api.AudioContext"
+    },
+    {
+      "from": "api.GainNode",
+      "to": "api.AudioContext"
+    },
+    {
+      "from": "api.BiquadFilterNode",
+      "to": "api.AudioContext"
+    },
+    {
+      "from": "api.ConvolverNode",
+      "to": "api.AudioContext"
+    },
+    {
+      "from": "api.DelayNode",
+      "to": "api.AudioContext"
+    },
+    {
+      "from": "api.DynamicsCompressorNode",
+      "to": "api.AudioContext"
+    },
+    {
+      "from": "api.VideoDecoder",
+      "to": "api.VideoFrame",
+      "label": "decodes to"
+    },
+    {
+      "from": "api.VideoEncoder",
+      "to": "api.VideoFrame",
+      "label": "encodes from"
+    },
+    {
+      "from": "api.AudioDecoder",
+      "to": "api.AudioData",
+      "label": "decodes to"
+    },
+    {
+      "from": "api.AudioEncoder",
+      "to": "api.AudioData",
+      "label": "encodes from"
+    },
+    {
+      "from": "api.VideoFrame",
+      "to": "api.MediaStreamTrack",
+      "label": "from track"
+    },
+    {
+      "from": "api.AudioData",
+      "to": "api.MediaStreamTrack"
+    },
+    {
+      "from": "api.ImageDecoder",
+      "to": "api.ImageBitmap"
+    },
+    {
+      "from": "api.GPUDevice",
+      "to": "api.GPU"
+    },
+    {
+      "from": "api.GPUBuffer",
+      "to": "api.GPUDevice"
+    },
+    {
+      "from": "api.GPUTexture",
+      "to": "api.GPUDevice"
+    },
+    {
+      "from": "api.GPUShaderModule",
+      "to": "api.GPUDevice"
+    },
+    {
+      "from": "api.GPURenderPipeline",
+      "to": "api.GPUDevice"
+    },
+    {
+      "from": "api.GPUCommandEncoder",
+      "to": "api.GPUDevice"
+    },
+    {
+      "from": "api.DOMQuad",
+      "to": "api.DOMRect"
+    },
+    {
+      "from": "api.DOMRect",
+      "to": "api.Element.scrollIntoView"
+    },
+    {
+      "from": "api.DOMParser",
+      "to": "api.XMLSerializer",
+      "label": "inverse"
+    },
+    {
+      "from": "api.NodeIterator",
+      "to": "api.TreeWalker"
+    },
+    {
+      "from": "api.Selection",
+      "to": "api.Range",
+      "label": "selection ranges"
+    },
+    {
+      "from": "api.Range",
+      "to": "api.Highlight"
+    },
+    {
+      "from": "api.CSSContainerRule",
+      "to": "api.CSSLayerBlockRule"
+    },
+    {
+      "from": "api.HighlightRegistry",
+      "to": "api.Highlight"
+    },
+    {
+      "from": "api.Document.requestStorageAccessFor",
+      "to": "api.Document.requestStorageAccess"
     },
     {
       "from": "api.Document.startViewTransition",
