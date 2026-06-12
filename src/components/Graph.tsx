@@ -1,4 +1,5 @@
 import {
+  applyNodeChanges,
   Background,
   BackgroundVariant,
   ControlButton,
@@ -8,10 +9,11 @@ import {
   useReactFlow,
   type Edge,
   type Node,
+  type NodeChange,
 } from '@xyflow/react'
 import {Maximize2} from 'lucide-react'
 import '@xyflow/react/dist/style.css'
-import {useEffect, useMemo, useState} from 'react'
+import {useCallback, useEffect, useMemo, useState} from 'react'
 
 import {ApiNode, type ApiNodeData} from './ApiNode'
 import {layoutWithGroups} from '@/lib/layout'
@@ -118,11 +120,20 @@ function GraphInner() {
     )
   }, [runtime, allEntries])
 
+  // React Flow is in controlled mode (we pass `nodes` instead of `defaultNodes`),
+  // so it cannot mutate positions on drag without our help. applyNodeChanges
+  // is the official helper that turns position/select/etc. changes into
+  // the new array shape we need to store.
+  const onNodesChange = useCallback((changes: NodeChange[]) => {
+    setLayoutNodes((nds) => applyNodeChanges(changes, nds))
+  }, [])
+
   return (
     <ReactFlow
       nodes={layoutNodes}
       edges={layoutEdges}
       nodeTypes={nodeTypes}
+      onNodesChange={onNodesChange}
       onNodeClick={(_, node) => select(node.id)}
       onPaneClick={() => select(null)}
       nodesConnectable={false}
