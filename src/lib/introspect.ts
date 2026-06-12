@@ -165,7 +165,35 @@ export function findUnknownGlobals(catalogRuntimeKeys: Set<string>): UnknownGlob
       const kind = typeof val === 'function' ? 'function' : classify(val)
       if (kind === 'other') continue
       // Skip primitive-ish well-known fields
-      if (['onLine', 'language', 'languages', 'userAgent', 'platform', 'cookieEnabled'].includes(name))
+      if (
+        [
+          'onLine',
+          'language',
+          'languages',
+          'userAgent',
+          'platform',
+          'cookieEnabled',
+          'doNotTrack',
+          'product',
+          'productSub',
+          'vendor',
+          'vendorSub',
+          'appCodeName',
+          'appName',
+          'appVersion',
+          'hardwareConcurrency',
+          'deviceMemory',
+          'maxTouchPoints',
+          'pdfViewerEnabled',
+          'webdriver',
+          'mimeTypes',
+          'plugins',
+          'oscpu',
+          'buildID',
+          'taintEnabled',
+          'javaEnabled',
+        ].includes(name)
+      )
         continue
       found.push({scope: 'navigator', name, path, kind})
     } catch {

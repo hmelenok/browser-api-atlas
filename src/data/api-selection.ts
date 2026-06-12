@@ -25,6 +25,8 @@ export interface ApiSelection {
 
 export const API_SELECTION: ApiSelection[] = [
   // ─── Storage ──────────────────────────────────────────────────────────────
+  {bcdKey: 'api.Document.requestStorageAccess', category: 'storage', runtimeKey: 'document.requestStorageAccess', title: 'Storage Access'},
+  {bcdKey: 'api.Document.hasStorageAccess', category: 'storage', runtimeKey: 'document.hasStorageAccess'},
   {bcdKey: 'api.Window.localStorage', category: 'storage', runtimeKey: 'window.localStorage', title: 'localStorage'},
   {bcdKey: 'api.Window.sessionStorage', category: 'storage', runtimeKey: 'window.sessionStorage', title: 'sessionStorage'},
   {bcdKey: 'api.IDBDatabase', category: 'storage', runtimeKey: 'window.indexedDB', title: 'IndexedDB'},
@@ -62,6 +64,7 @@ export const API_SELECTION: ApiSelection[] = [
 
   // ─── Network ──────────────────────────────────────────────────────────────
   {bcdKey: 'api.fetch', category: 'network', runtimeKey: 'window.fetch', title: 'Fetch'},
+  {bcdKey: 'api.NavigatorUAData', category: 'network', runtimeKey: 'navigator.userAgentData', title: 'UA Client Hints'},
   {bcdKey: 'api.Headers', category: 'network', runtimeKey: 'window.Headers'},
   {bcdKey: 'api.Request', category: 'network', runtimeKey: 'window.Request'},
   {bcdKey: 'api.Response', category: 'network', runtimeKey: 'window.Response'},
@@ -84,6 +87,7 @@ export const API_SELECTION: ApiSelection[] = [
   {bcdKey: 'api.MessageChannel', category: 'workers', runtimeKey: 'window.MessageChannel'},
   {bcdKey: 'api.MessagePort', category: 'workers', runtimeKey: 'window.MessagePort'},
   {bcdKey: 'api.Worklet', category: 'workers', runtimeKey: 'window.Worklet'},
+  {bcdKey: 'api.queueMicrotask', category: 'workers', runtimeKey: 'window.queueMicrotask', title: 'queueMicrotask()'},
 
   // ─── Observation & Performance ────────────────────────────────────────────
   {bcdKey: 'api.IntersectionObserver', category: 'observation', runtimeKey: 'window.IntersectionObserver'},
@@ -95,8 +99,11 @@ export const API_SELECTION: ApiSelection[] = [
   {bcdKey: 'api.PerformanceMark', category: 'observation', runtimeKey: 'window.PerformanceMark'},
   {bcdKey: 'api.PerformanceMeasure', category: 'observation', runtimeKey: 'window.PerformanceMeasure'},
   {bcdKey: 'api.PerformanceNavigationTiming', category: 'observation', runtimeKey: 'window.PerformanceNavigationTiming'},
+  {bcdKey: 'api.PerformancePaintTiming', category: 'observation', runtimeKey: 'window.PerformancePaintTiming'},
   {bcdKey: 'api.Window.requestIdleCallback', category: 'observation', runtimeKey: 'window.requestIdleCallback', title: 'requestIdleCallback'},
+  {bcdKey: 'api.Window.cancelIdleCallback', category: 'observation', runtimeKey: 'window.cancelIdleCallback'},
   {bcdKey: 'api.Window.requestAnimationFrame', category: 'observation', runtimeKey: 'window.requestAnimationFrame', title: 'requestAnimationFrame'},
+  {bcdKey: 'api.Window.cancelAnimationFrame', category: 'observation', runtimeKey: 'window.cancelAnimationFrame'},
 
   // ─── Platform UI ──────────────────────────────────────────────────────────
   {bcdKey: 'api.Notification', category: 'platform-ui', runtimeKey: 'window.Notification', title: 'Notifications'},
@@ -109,6 +116,19 @@ export const API_SELECTION: ApiSelection[] = [
   {bcdKey: 'api.Selection', category: 'platform-ui', runtimeKey: 'window.getSelection'},
   {bcdKey: 'api.Range', category: 'platform-ui', runtimeKey: 'window.Range'},
   {bcdKey: 'api.Document.fullscreenEnabled', category: 'platform-ui', runtimeKey: 'document.fullscreenEnabled', title: 'Fullscreen API'},
+  {bcdKey: 'api.Document.exitFullscreen', category: 'platform-ui', runtimeKey: 'document.exitFullscreen', title: 'exitFullscreen()'},
+  {bcdKey: 'api.Element.requestFullscreen', category: 'platform-ui', runtimeKey: 'window.Element.prototype.requestFullscreen', title: 'requestFullscreen()'},
+  {bcdKey: 'api.Document.exitPointerLock', category: 'platform-ui', runtimeKey: 'document.exitPointerLock', title: 'Pointer Lock'},
+  {bcdKey: 'api.Element.requestPointerLock', category: 'platform-ui', runtimeKey: 'window.Element.prototype.requestPointerLock', title: 'requestPointerLock()'},
+  {bcdKey: 'api.Document.adoptedStyleSheets', category: 'platform-ui', runtimeKey: 'document.adoptedStyleSheets', title: 'Constructable Stylesheets'},
+  {bcdKey: 'api.Document.elementFromPoint', category: 'platform-ui', runtimeKey: 'document.elementFromPoint'},
+  {bcdKey: 'api.Element.scrollIntoView', category: 'platform-ui', runtimeKey: 'window.Element.prototype.scrollIntoView'},
+  {bcdKey: 'api.Element.toggleAttribute', category: 'platform-ui', runtimeKey: 'window.Element.prototype.toggleAttribute'},
+  {bcdKey: 'api.HTMLInputElement.showPicker', category: 'platform-ui', runtimeKey: 'window.HTMLInputElement', title: 'input.showPicker()'},
+  {bcdKey: 'api.HTMLImageElement.decode', category: 'platform-ui', runtimeKey: 'window.HTMLImageElement', title: 'img.decode()'},
+  {bcdKey: 'api.HTMLElement.inert', category: 'platform-ui', runtimeKey: 'window.HTMLElement', title: 'inert attribute'},
+  {bcdKey: 'api.MediaQueryList', category: 'platform-ui', runtimeKey: 'window.matchMedia', title: 'matchMedia'},
+  {bcdKey: 'api.Navigator.getAutoplayPolicy', category: 'platform-ui', runtimeKey: 'navigator.getAutoplayPolicy', title: 'getAutoplayPolicy()'},
   {bcdKey: 'api.HTMLDetailsElement', category: 'platform-ui', runtimeKey: 'window.HTMLDetailsElement', title: '<details>'},
   {bcdKey: 'api.PaymentRequest', category: 'platform-ui', runtimeKey: 'window.PaymentRequest'},
 
@@ -118,12 +138,15 @@ export const API_SELECTION: ApiSelection[] = [
   {bcdKey: 'api.HTMLTemplateElement', category: 'components', runtimeKey: 'window.HTMLTemplateElement', title: '<template>'},
   {bcdKey: 'api.HTMLSlotElement', category: 'components', runtimeKey: 'window.HTMLSlotElement', title: '<slot>'},
   {bcdKey: 'api.ElementInternals', category: 'components', runtimeKey: 'window.ElementInternals'},
+  {bcdKey: 'api.CSSStyleSheet', category: 'components', runtimeKey: 'window.CSSStyleSheet', title: 'Constructable CSSStyleSheet'},
 
   // ─── Media Capture ────────────────────────────────────────────────────────
   {bcdKey: 'api.MediaDevices.getUserMedia', category: 'media-capture', runtimeKey: 'navigator.mediaDevices', title: 'getUserMedia'},
   {bcdKey: 'api.MediaDevices.getDisplayMedia', category: 'media-capture', runtimeKey: 'navigator.mediaDevices', title: 'Screen Capture'},
   {bcdKey: 'api.MediaRecorder', category: 'media-capture', runtimeKey: 'window.MediaRecorder'},
   {bcdKey: 'api.PictureInPictureWindow', category: 'media-capture', runtimeKey: 'document.pictureInPictureEnabled', title: 'Picture-in-Picture'},
+  {bcdKey: 'api.MediaStream', category: 'media-capture', runtimeKey: 'window.MediaStream'},
+  {bcdKey: 'api.MediaStreamTrack', category: 'media-capture', runtimeKey: 'window.MediaStreamTrack'},
   {bcdKey: 'api.HTMLMediaElement', category: 'media-capture', runtimeKey: 'window.HTMLMediaElement'},
   {bcdKey: 'api.MediaCapabilities', category: 'media-capture', runtimeKey: 'navigator.mediaCapabilities'},
 
@@ -175,6 +198,7 @@ export const API_SELECTION: ApiSelection[] = [
   {bcdKey: 'api.CredentialsContainer', category: 'identity', runtimeKey: 'navigator.credentials', title: 'Credential Management'},
   {bcdKey: 'api.Crypto', category: 'identity', runtimeKey: 'window.crypto', title: 'Web Crypto'},
   {bcdKey: 'api.SubtleCrypto', category: 'identity', runtimeKey: 'window.crypto.subtle', title: 'SubtleCrypto'},
+  {bcdKey: 'api.Crypto.randomUUID', category: 'identity', runtimeKey: 'window.crypto.randomUUID', title: 'crypto.randomUUID()'},
   {bcdKey: 'api.Permissions', category: 'identity', runtimeKey: 'navigator.permissions'},
   {bcdKey: 'api.OTPCredential', category: 'identity', runtimeKey: 'window.OTPCredential', title: 'WebOTP'},
   {bcdKey: 'api.IdentityCredential', category: 'identity', runtimeKey: 'window.IdentityCredential', title: 'FedCM'},
@@ -191,4 +215,11 @@ export const API_SELECTION: ApiSelection[] = [
   {bcdKey: 'api.CSS.registerProperty_static', category: 'frontier', runtimeKey: 'window.CSS', title: 'CSS.registerProperty()'},
   {bcdKey: 'api.HTMLElement.attachInternals', category: 'frontier', runtimeKey: 'window.HTMLElement', title: 'attachInternals()'},
   {bcdKey: 'api.Element.checkVisibility', category: 'frontier', runtimeKey: 'window.Element.prototype.checkVisibility', title: 'Element.checkVisibility()'},
+  {bcdKey: 'api.structuredClone', category: 'frontier', runtimeKey: 'window.structuredClone', title: 'structuredClone()'},
+  {bcdKey: 'api.crossOriginIsolated', category: 'frontier', runtimeKey: 'window.crossOriginIsolated', title: 'crossOriginIsolated'},
+  {bcdKey: 'api.CSS.escape_static', category: 'frontier', runtimeKey: 'window.CSS', title: 'CSS.escape()'},
+  {bcdKey: 'api.CSS.paintWorklet_static', category: 'frontier', runtimeKey: 'window.CSS', title: 'CSS Houdini Paint'},
+  {bcdKey: 'api.XRSystem', category: 'frontier', runtimeKey: 'navigator.xr', title: 'WebXR'},
+  {bcdKey: 'api.XRSession', category: 'frontier', runtimeKey: 'window.XRSession'},
+  {bcdKey: 'api.reportError', category: 'frontier', runtimeKey: 'window.reportError', title: 'reportError()'},
 ]
