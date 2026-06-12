@@ -5,12 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run build:catalog && tsc -b && vite build",
+    "build": "npm run build:catalog && npm run build:sitemap && tsc -b && vite build",
     "build:catalog": "tsx scripts/build-catalog.ts",
     "check:new-apis": "tsx scripts/check-new-apis.ts",
     "preview": "vite preview",
     "lint": "eslint .",
-    "typecheck": "tsc -b"
+    "typecheck": "tsc -b",
+    "build:sitemap": "tsx scripts/build-sitemap.ts"
   },
   "dependencies": {
     "@xyflow/react": "^12.11.0",

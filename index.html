@@ -26,9 +26,61 @@
       name="twitter:description"
       content="An interactive graph of every web platform API."
     />
+    <meta
+      property="og:image"
+      content="https://hmelenok.github.io/browser-api-atlas/atlas.svg"
+    />
+    <meta
+      name="twitter:image"
+      content="https://hmelenok.github.io/browser-api-atlas/atlas.svg"
+    />
+    <meta name="author" content="Mykyta Khmel" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="keywords" content="browser APIs, web platform, baseline, MDN, JavaScript, interactive, web standards" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Browser API Atlas",
+        "url": "https://hmelenok.github.io/browser-api-atlas/",
+        "description": "An interactive graph of every web platform API. See which APIs your browser supports, try live demos, and explore the modern web platform.",
+        "author": {
+          "@type": "Person",
+          "name": "Mykyta Khmel",
+          "url": "https://github.com/hmelenok"
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <main
+        style="max-width: 720px; margin: 4rem auto; padding: 0 1.5rem; font-family: system-ui, sans-serif; line-height: 1.6;"
+      >
+        <h1 style="font-size: 2rem;">Browser API Atlas</h1>
+        <p style="font-size: 1.125rem;">
+          An interactive graph-based explorer for every web platform API — the canonical
+          surface of the modern browser, mapped, colored by your browser&rsquo;s actual
+          support status, and paired with live demos.
+        </p>
+        <p>
+          This site is a single-page application and needs JavaScript to render its graph,
+          run feature detection, and execute the per-API demos. Please enable JavaScript or
+          browse the source data instead:
+        </p>
+        <ul>
+          <li><a href="https://github.com/hmelenok/browser-api-atlas">Source code on GitHub</a></li>
+          <li><a href="https://github.com/mdn/browser-compat-data">MDN browser-compat-data</a> &mdash; the canonical browser support data</li>
+          <li><a href="https://github.com/web-platform-dx/web-features">web-features</a> &mdash; the Baseline status data</li>
+          <li><a href="https://web.dev/baseline">web.dev/baseline</a> &mdash; what &ldquo;Baseline&rdquo; classifications mean</li>
+        </ul>
+        <p>
+          A machine-readable sitemap is available at
+          <a href="./sitemap.xml">/sitemap.xml</a> listing every API page.
+        </p>
+      </main>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

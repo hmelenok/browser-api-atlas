@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hmelenok.github.io/browser-api-atlas/sitemap.xml
