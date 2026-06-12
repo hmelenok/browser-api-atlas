@@ -16,6 +16,7 @@ export function ApiNode({data, selected}: NodeProps & {data: ApiNodeData}) {
   const {entry, runtime} = data
   const status = resolveStatus(entry, runtime)
   const cat = CATEGORIES[entry.category]
+  const CatIcon = cat.icon
 
   return (
     <div
@@ -50,6 +51,7 @@ export function ApiNode({data, selected}: NodeProps & {data: ApiNodeData}) {
       </div>
 
       <div className="mt-2 flex items-center gap-1.5 text-[11px] text-[var(--color-muted)]">
+        <CatIcon size={11} strokeWidth={2} style={{color: cat.color}} className="shrink-0" />
         <span>{cat.title}</span>
         <span className="opacity-30">·</span>
         <span style={{color: status.color}} className="font-medium">

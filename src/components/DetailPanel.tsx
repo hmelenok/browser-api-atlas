@@ -57,6 +57,7 @@ function PanelContents({
   const entry = useStore((s) => s.entries.find((e) => e.id === entryId))!
   const status = resolveStatus(entry, runtime)
   const cat = CATEGORIES[entry.category]
+  const CatIcon = cat.icon
   const demo = getDemo(entry.id)
 
   return (
@@ -71,7 +72,7 @@ function PanelContents({
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-2 text-[10px] uppercase tracking-wide text-[var(--color-muted)]">
             <span className="inline-flex items-center gap-1">
-              <span className="size-1.5 rounded-full" style={{background: cat.color}} />
+              <CatIcon size={11} strokeWidth={2} style={{color: cat.color}} />
               {cat.title}
             </span>
             <span className="opacity-40">·</span>

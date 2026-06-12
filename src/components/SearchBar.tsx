@@ -72,6 +72,7 @@ export function SearchBar() {
         <span className="mx-0.5 h-3 w-px bg-[var(--color-border)]" aria-hidden />
         {CATEGORY_ORDER.map((id) => {
           const cat = CATEGORIES[id]
+          const Icon = cat.icon
           const active = visible.has(id)
           return (
             <button
@@ -86,10 +87,7 @@ export function SearchBar() {
               )}
               aria-pressed={active}
             >
-              <span
-                className="inline-block size-2 rounded-full"
-                style={{background: cat.color}}
-              />
+              <Icon size={11} strokeWidth={2} className="shrink-0" style={{color: cat.color}} />
               {cat.title}
             </button>
           )

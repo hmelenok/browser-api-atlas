@@ -4,7 +4,7 @@
  * The catalog is built at build-time from @mdn/browser-compat-data + web-features
  * and slimmed down to just what the UI needs.
  */
-import type {ComponentType} from 'react'
+import type {ComponentType, SVGProps} from 'react'
 
 export type CategoryId =
   | 'storage'
@@ -64,6 +64,8 @@ export interface Category {
   blurb: string
   /** Tailwind/OKLCH color for the cluster accent. */
   color: string
+  /** Icon component (Lucide). */
+  icon: ComponentType<SVGProps<SVGSVGElement> & {size?: number}>
 }
 
 export interface CatalogRelationship {

@@ -3,7 +3,6 @@ import {
   BackgroundVariant,
   ControlButton,
   Controls,
-  MiniMap,
   ReactFlow,
   ReactFlowProvider,
   useReactFlow,
@@ -15,7 +14,6 @@ import '@xyflow/react/dist/style.css'
 import {useEffect, useMemo, useState} from 'react'
 
 import {ApiNode, type ApiNodeData} from './ApiNode'
-import {CATEGORIES} from '@/data/categories'
 import {layoutWithGroups} from '@/lib/layout'
 import {useFilteredEntries, useStore} from '@/store'
 
@@ -138,18 +136,6 @@ function GraphInner() {
           <Maximize2 size={12} />
         </ControlButton>
       </Controls>
-      <MiniMap
-        position="top-right"
-        zoomable
-        pannable
-        nodeStrokeWidth={0}
-        maskColor="oklch(0% 0 0 / 0.05)"
-        nodeColor={(node) => {
-          const data = node.data as unknown as ApiNodeData | undefined
-          if (!data?.entry) return 'var(--color-border)'
-          return CATEGORIES[data.entry.category].color
-        }}
-      />
 
       {layingOut && (
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center text-sm text-[var(--color-muted)]">
