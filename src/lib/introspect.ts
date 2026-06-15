@@ -51,6 +51,27 @@ const NOISE_PATTERNS = [
   /^ReadableStream/,
   /^WritableStream/,
   /^TransformStream/,
+  // Vendor-prefixed legacy (Firefox/Safari pre-standard versions)
+  /^moz[A-Z]/,
+  /^webkit[A-Z]/,
+  /^ms[A-Z]/,
+  /^Moz[A-Z]/,
+  /^WebKit[A-Z]/,
+  // Privacy Sandbox / Protected Audience / Topics / Attribution Reporting
+  // — these are intentionally not in the educational atlas. They're
+  // experimental, ad-industry-specific, and change frequently.
+  /AdAuction/,
+  /AdInterest/,
+  /^canLoadAd/,
+  /Fenced[A-Z]/,
+  /^Fenced/,
+  /^Topics/,
+  /Attribution/,
+  /^deprecated/i,
+  /^federated[A-Z]/,
+  // WebDriver / automation internals
+  /^webdriver/i,
+  /^automation/i,
 ]
 
 /** Specific names to ignore even though they look API-ish. */
@@ -157,6 +178,8 @@ export function findUnknownGlobals(catalogRuntimeKeys: Set<string>): UnknownGlob
   for (const name of allKeys(navigator)) {
     if (name.startsWith('_')) continue
     if (IGNORE_NAMES.has(name)) continue
+    // Apply the noise patterns to navigator properties too
+    if (NOISE_PATTERNS.some((re) => re.test(name))) continue
     const path = `navigator.${name}`
     if (catalogRuntimeKeys.has(path)) continue
     try {

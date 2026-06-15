@@ -1,6 +1,7 @@
 import {useEffect} from 'react'
 
 import {useStore} from '@/store'
+import {trackPageView} from './analytics'
 
 const DEFAULT_TITLE = 'Browser API Atlas — interactive web platform explorer'
 const DEFAULT_DESC =
@@ -76,6 +77,9 @@ export function useDocumentMeta() {
 
       // JSON-LD TechArticle so Google understands the page type and surfaces
       // it in rich results and Search Console as a distinct page.
+      // Virtual pageview for analytics so each API page shows up as its own entry
+      trackPageView(`/?api=${selected.id}`, title)
+
       setJsonLd({
         '@context': 'https://schema.org',
         '@type': 'TechArticle',

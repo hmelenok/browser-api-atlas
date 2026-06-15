@@ -100,6 +100,25 @@ The catalog selection lives in [`src/data/api-selection.ts`](./src/data/api-sele
 
 Adding an interactive demo is even smaller: drop a `.tsx` file in `src/demos/` exporting a `demo` constant whose `bcdKey` matches the catalog entry. See [docs/ADDING-AN-API.md](./docs/ADDING-AN-API.md) for the full guide.
 
+## Analytics & privacy
+
+Analytics is opt-in &mdash; the default `index.html` ships a placeholder GoatCounter script tag that you can either configure with your own code or replace with Plausible / Umami / nothing.
+
+The wrapper at [`src/lib/analytics.ts`](./src/lib/analytics.ts) auto-detects whichever provider you load. Out of the box it tracks:
+
+- Virtual pageviews when an API is selected (`/?api=api.Notification`)
+- `sort:change` events when the sort mode flips
+- `filter:toggle` events for the supported / has-demo toggles
+- Debounced `search` events when the user pauses typing
+
+Analytics is automatically:
+
+- **Disabled in `npm run dev`** (only fires when `location.hostname` is not `localhost`)
+- **Disabled if `navigator.doNotTrack` is on**
+- **Cookieless** (with GoatCounter / Plausible / Umami)
+
+To enable: sign up at [goatcounter.com](https://www.goatcounter.com) (free for personal use) and replace `YOURCODE` in `index.html`.
+
 ## Contributing
 
 PRs and issues welcome &mdash; especially demos for APIs that don't have one yet. See [CONTRIBUTING.md](./CONTRIBUTING.md).

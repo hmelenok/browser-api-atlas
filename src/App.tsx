@@ -7,6 +7,7 @@ import {Legend} from '@/components/Legend'
 import {NewApiBanner} from '@/components/NewApiBanner'
 import {SearchBar} from '@/components/SearchBar'
 import {useDocumentMeta} from '@/lib/document-meta'
+import {useTelemetry} from '@/lib/use-telemetry'
 import {useUrlSync} from '@/lib/url-sync'
 import {useStore} from '@/store'
 
@@ -22,6 +23,7 @@ function App() {
 
   useUrlSync()
   useDocumentMeta()
+  useTelemetry()
 
   return (
     <div className="flex h-full flex-col">

@@ -9,6 +9,21 @@ import type {ApiEntry, CategoryId, RuntimeStatus} from '@/lib/types'
 
 export type SortMode = 'category' | 'baseline' | 'alphabetic' | 'hierarchy'
 
+// Hydrate initial filter/sort/search state from the URL synchronously so we
+// don't flash defaults on reload.
+function urlInitial() {
+  if (typeof window === 'undefined') return null
+  const p = new URLSearchParams(window.location.search)
+  return {
+    selectedId: p.get('api') || null,
+    search: p.get('q') || '',
+    cat: p.get('cat'),
+    onlySupported: p.get('supported') === '1',
+    onlyWithDemos: p.get('demos') === '1',
+    sort: p.get('sort') as SortMode | null,
+  }
+}
+
 import catalogJson from '@/data/catalog.json'
 
 const catalog = catalogJson as {
@@ -52,21 +67,40 @@ interface State {
 }
 
 const allCategories = new Set<CategoryId>(catalog.entries.map((e) => e.category))
+const categoriesInCatalog = Array.from(allCategories)
+
+const _urlInit = urlInitial()
+const _initialCategories = _urlInit?.cat
+  ? new Set<CategoryId>(
+      _urlInit.cat
+        .split(',')
+        .map((s) => s.trim())
+        .filter((s): s is CategoryId => categoriesInCatalog.includes(s as CategoryId))
+    )
+  : allCategories
+const _validSortModes: ReadonlySet<SortMode> = new Set([
+  'category',
+  'baseline',
+  'alphabetic',
+  'hierarchy',
+])
+const _initialSort: SortMode =
+  _urlInit?.sort && _validSortModes.has(_urlInit.sort) ? _urlInit.sort : 'category'
 
 export const useStore = create<State>((set, get) => ({
   entries: catalog.entries,
   relationships: catalog.relationships,
   bcdVersion: catalog.bcdVersion,
   webFeaturesVersion: catalog.webFeaturesVersion,
-  selectedId: null,
+  selectedId: _urlInit?.selectedId ?? null,
   runtime: {},
   unknown: [],
   browser: null,
-  search: '',
-  visibleCategories: allCategories,
-  onlySupported: false,
-  onlyWithDemos: false,
-  sortMode: 'category',
+  search: _urlInit?.search ?? '',
+  visibleCategories: _initialCategories,
+  onlySupported: _urlInit?.onlySupported ?? false,
+  onlyWithDemos: _urlInit?.onlyWithDemos ?? false,
+  sortMode: _initialSort,
 
   initialize: async () => {
     const runtime = detectAll(catalog.entries)

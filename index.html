@@ -51,6 +51,37 @@
         }
       }
     </script>
+
+    <!--
+      ANALYTICS
+      Pick one (or none). The src/lib/analytics.ts wrapper auto-detects whichever
+      provider object lives on window. All options below are privacy-respecting,
+      cookieless, and don't require a consent banner under GDPR/CCPA.
+    -->
+
+    <!-- 1) GoatCounter — free for personal use, no cookies, ~1KB.
+         Sign up at https://www.goatcounter.com, then replace YOURCODE below. -->
+    <script
+      data-goatcounter="https://YOURCODE.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"
+    ></script>
+
+    <!-- 2) Plausible — paid hosted, free if self-hosted.
+    <script
+      defer
+      data-domain="hmelenok.github.io/browser-api-atlas"
+      src="https://plausible.io/js/script.js"
+    ></script>
+    -->
+
+    <!-- 3) Umami — fully self-hostable. https://umami.is/
+    <script
+      defer
+      src="https://YOUR-UMAMI-INSTANCE/script.js"
+      data-website-id="YOUR-WEBSITE-ID"
+    ></script>
+    -->
   </head>
   <body>
     <div id="root"></div>
