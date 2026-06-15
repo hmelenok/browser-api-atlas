@@ -294,4 +294,52 @@ export const API_SELECTION: ApiSelection[] = [
   {bcdKey: 'api.reportError', category: 'frontier', runtimeKey: 'window.reportError', title: 'reportError()'},
   {bcdKey: 'api.atob', category: 'frontier', runtimeKey: 'window.atob', title: 'atob() base64 decode'},
   {bcdKey: 'api.btoa', category: 'frontier', runtimeKey: 'window.btoa', title: 'btoa() base64 encode'},
+
+  // ─── T1 — on-device AI (Chrome built-in AI) ──────────────────────────
+  {bcdKey: 'api.LanguageModel', category: 'frontier', runtimeKey: 'window.LanguageModel', title: 'LanguageModel (Prompt API)'},
+  {bcdKey: 'api.LanguageDetector', category: 'frontier', runtimeKey: 'window.LanguageDetector'},
+  {bcdKey: 'api.Translator', category: 'frontier', runtimeKey: 'window.Translator'},
+  {bcdKey: 'api.Summarizer', category: 'frontier', runtimeKey: 'window.Summarizer'},
+
+  // ─── T1 — frontier UI / DOM primitives ────────────────────────────
+  {bcdKey: 'api.EyeDropper', category: 'frontier', runtimeKey: 'window.EyeDropper'},
+  {bcdKey: 'api.BarcodeDetector', category: 'frontier', runtimeKey: 'window.BarcodeDetector', title: 'Shape Detection: BarcodeDetector'},
+  {bcdKey: 'api.CloseWatcher', category: 'frontier', runtimeKey: 'window.CloseWatcher'},
+  {bcdKey: 'api.EditContext', category: 'frontier', runtimeKey: 'window.EditContext'},
+  {bcdKey: 'api.ViewTransition', category: 'frontier', runtimeKey: 'window.ViewTransition'},
+  {bcdKey: 'api.FontData', category: 'frontier', runtimeKey: 'window.FontData', title: 'Local Font Access'},
+
+  // ─── T1 — Scheduler companions + TC39 stage-3/4 globals ───────────────
+  {bcdKey: 'api.TaskController', category: 'frontier', runtimeKey: 'window.TaskController'},
+  {bcdKey: 'api.TaskSignal', category: 'frontier', runtimeKey: 'window.TaskSignal'},
+  {bcdKey: 'javascript.builtins.DisposableStack', category: 'frontier', runtimeKey: 'window.DisposableStack', title: 'Explicit Resource Management'},
+  {bcdKey: 'javascript.builtins.AsyncDisposableStack', category: 'frontier', runtimeKey: 'window.AsyncDisposableStack'},
+  {bcdKey: 'javascript.builtins.Temporal', category: 'frontier', runtimeKey: 'window.Temporal', title: 'Temporal (TC39)'},
+  {bcdKey: 'api.Observable', category: 'frontier', runtimeKey: 'window.Observable', title: 'Observable (TC39)'},
+
+  // ─── T1 — Document PiP (separate from media PiP) ───────────────────
+  {bcdKey: 'api.DocumentPictureInPicture', category: 'media-capture', runtimeKey: 'window.documentPictureInPicture', title: 'Document Picture-in-Picture'},
+
+  // ─── T1 — PWA + File Handling platform UI ────────────────────────
+  {bcdKey: 'api.LaunchQueue', category: 'platform-ui', runtimeKey: 'window.launchQueue', title: 'File Handling (LaunchQueue)'},
+  {bcdKey: 'api.LaunchParams', category: 'platform-ui', runtimeKey: 'window.LaunchParams'},
+  {bcdKey: 'api.WindowControlsOverlay', category: 'platform-ui', runtimeKey: 'navigator.windowControlsOverlay', title: 'Window Controls Overlay'},
+  {bcdKey: 'api.VirtualKeyboard', category: 'platform-ui', runtimeKey: 'navigator.virtualKeyboard'},
+  {bcdKey: 'api.Sanitizer', category: 'platform-ui', runtimeKey: 'window.Sanitizer', title: 'HTML Sanitizer'},
+
+  // ─── T1 — Identity & Security additions ───────────────────────────
+  {bcdKey: 'api.TrustedHTML', category: 'identity', runtimeKey: 'window.TrustedHTML', title: 'Trusted Types: TrustedHTML'},
+  {bcdKey: 'api.TrustedTypePolicy', category: 'identity', runtimeKey: 'window.TrustedTypePolicy'},
+  {bcdKey: 'api.TrustedTypePolicyFactory', category: 'identity', runtimeKey: 'window.trustedTypes', title: 'trustedTypes'},
+  {bcdKey: 'api.DigitalCredential', category: 'identity', runtimeKey: 'window.DigitalCredential', title: 'Digital Credentials'},
+
+  // ─── T1 — Observation: Web Vitals + Profiler ───────────────────────
+  {bcdKey: 'api.Profiler', category: 'observation', runtimeKey: 'window.Profiler', title: 'JS Self-Profiling'},
+  {bcdKey: 'api.LargestContentfulPaint', category: 'observation', runtimeKey: 'window.LargestContentfulPaint', title: 'LCP (Core Web Vital)'},
+  {bcdKey: 'api.LayoutShift', category: 'observation', runtimeKey: 'window.LayoutShift', title: 'CLS (Core Web Vital)'},
+
+  // ─── T1 — Files + Graphics frontier additions ───────────────────────
+  {bcdKey: 'api.FileSystemObserver', category: 'files', runtimeKey: 'window.FileSystemObserver'},
+  // TimelineTrigger intentionally skipped — not yet in @mdn/browser-compat-data.
+  // Re-add once the weekly catalog refresh PR surfaces it.
 ]
