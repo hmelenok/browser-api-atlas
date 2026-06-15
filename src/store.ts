@@ -45,6 +45,7 @@ interface State {
   selectedId: string | null
   runtime: Record<string, RuntimeStatus>
   unknown: UnknownGlobal[]
+  unknownPanelOpen: boolean
   browser: BrowserInfo | null
 
   // filters
@@ -57,6 +58,7 @@ interface State {
   // actions
   initialize: () => Promise<void>
   select: (id: string | null) => void
+  setUnknownPanelOpen: (v: boolean) => void
   setSearch: (s: string) => void
   toggleCategory: (id: CategoryId) => void
   setAllCategories: (visible: boolean) => void
@@ -95,6 +97,7 @@ export const useStore = create<State>((set, get) => ({
   selectedId: _urlInit?.selectedId ?? null,
   runtime: {},
   unknown: [],
+  unknownPanelOpen: false,
   browser: null,
   search: _urlInit?.search ?? '',
   visibleCategories: _initialCategories,
@@ -111,6 +114,7 @@ export const useStore = create<State>((set, get) => ({
   },
 
   select: (id) => set({selectedId: id}),
+  setUnknownPanelOpen: (v) => set({unknownPanelOpen: v}),
   setSearch: (s) => set({search: s}),
   toggleCategory: (id) => {
     const next = new Set(get().visibleCategories)

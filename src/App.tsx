@@ -6,6 +6,7 @@ import {Graph} from '@/components/Graph'
 import {Legend} from '@/components/Legend'
 import {NewApiBanner} from '@/components/NewApiBanner'
 import {SearchBar} from '@/components/SearchBar'
+import {UnknownApisPanel} from '@/components/UnknownApisPanel'
 import {useDocumentMeta} from '@/lib/document-meta'
 import {useTelemetry} from '@/lib/use-telemetry'
 import {useUrlSync} from '@/lib/url-sync'
@@ -66,6 +67,7 @@ function App() {
       <main className="relative flex-1 overflow-hidden">
         <Graph />
         <DetailPanel />
+        <UnknownApisPanel />
       </main>
 
       {/* Footer */}
