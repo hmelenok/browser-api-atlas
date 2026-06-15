@@ -23,7 +23,7 @@ export function NewApiBanner() {
           {unknown.length} {unknown.length === 1 ? 'API' : 'APIs'} detected in your browser that
           aren't in the atlas yet.
         </p>
-        <p className="mt-1 text-xs text-[var(--color-muted)]">
+        <p className="mt-1 hidden text-xs text-[var(--color-muted)] md:block">
           <span className="font-mono">{preview}</span>
           {unknown.length > 5 && <span> · +{unknown.length - 5} more</span>}
         </p>

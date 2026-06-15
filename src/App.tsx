@@ -36,7 +36,7 @@ function App() {
             <div>
               <h1 className="text-base font-semibold leading-none">Browser API Atlas</h1>
               <p className="mt-1 text-xs text-[var(--color-muted)]">
-                {entries.length} APIs · {entries.filter((e) => e.hasDemo).length} live demos
+                {entries.length} APIs <span className="hidden sm:inline">· {entries.filter((e) => e.hasDemo).length} live demos</span>
               </p>
             </div>
           </div>
@@ -70,8 +70,8 @@ function App() {
         <UnknownApisPanel />
       </main>
 
-      {/* Footer */}
-      <footer className="flex flex-wrap items-center gap-4 border-t border-[var(--color-border)] px-4 py-2.5 text-xs text-[var(--color-muted)]">
+      {/* Footer (hidden on mobile to give the graph more room) */}
+      <footer className="hidden flex-wrap items-center gap-4 border-t border-[var(--color-border)] px-4 py-2.5 text-xs text-[var(--color-muted)] md:flex">
         <Legend />
         <span
           className="ml-auto font-mono"

@@ -27,11 +27,11 @@ export function BrowserBadge() {
   return (
     <div
       className="flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-[var(--color-bg-soft)] px-3 py-1.5 text-sm"
-      title={`Your browser, as detected at runtime. ${browserDetectionMethod}`}
+      title={`Your browser, as detected at runtime. ${browserDetectionMethod}\n\n${browser.name}${browser.version ? ` ${browser.version}` : ''}${browser.os ? ` on ${browser.os}` : ''}`}
     >
       <Globe2 size={14} className="text-[var(--color-accent)]" aria-hidden />
       <span
-        className="font-medium"
+        className="hidden font-medium md:inline"
         title={
           browser.engine
             ? `${browser.name}${browser.version ? ` ${browser.version}` : ''} · ${browser.engine} engine`
@@ -45,7 +45,7 @@ export function BrowserBadge() {
       </span>
       {browser.os && (
         <span
-          className="text-[var(--color-muted)] before:mr-2 before:content-['·']"
+          className="hidden text-[var(--color-muted)] before:mr-2 before:content-['·'] md:inline"
           title={`Operating system: ${browser.os}`}
         >
           {browser.os}
