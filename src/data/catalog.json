@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T09:27:18.332Z",
+  "generatedAt": "2026-06-16T15:44:21.523Z",
   "bcdVersion": "8.0.2",
   "webFeaturesVersion": "3.30.0",
   "entries": [
@@ -3633,6 +3633,1245 @@
       "status": "non-standard",
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/FileSystemObserver",
       "hasDemo": false
+    },
+    {
+      "id": "api.RTCDataChannel",
+      "title": "RTCDataChannel",
+      "category": "network",
+      "description": "The WebRTC API establishes real-time communication channels directly between browsers. It is commonly used in video conferencing applications.",
+      "runtimeKey": "window.RTCDataChannel",
+      "baseline": "widely",
+      "baselineYear": 2022,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/RTCDataChannel",
+      "specUrl": "https://w3c.github.io/webrtc-pc/#rtcdatachannel",
+      "webFeatureId": "webrtc",
+      "hasDemo": false
+    },
+    {
+      "id": "api.RTCSessionDescription",
+      "title": "RTCSessionDescription",
+      "category": "network",
+      "description": "The WebRTC API establishes real-time communication channels directly between browsers. It is commonly used in video conferencing applications.",
+      "runtimeKey": "window.RTCSessionDescription",
+      "baseline": "widely",
+      "baselineYear": 2022,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/RTCSessionDescription",
+      "specUrl": "https://w3c.github.io/webrtc-pc/#rtcsessiondescription-class",
+      "webFeatureId": "webrtc",
+      "hasDemo": false
+    },
+    {
+      "id": "api.RTCIceCandidate",
+      "title": "RTCIceCandidate",
+      "category": "network",
+      "description": "The WebRTC API establishes real-time communication channels directly between browsers. It is commonly used in video conferencing applications.",
+      "runtimeKey": "window.RTCIceCandidate",
+      "baseline": "widely",
+      "baselineYear": 2022,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/RTCIceCandidate",
+      "specUrl": "https://w3c.github.io/webrtc-pc/#rtcicecandidate-interface",
+      "webFeatureId": "webrtc",
+      "hasDemo": false
+    },
+    {
+      "id": "api.RTCRtpReceiver",
+      "title": "RTCRtpReceiver",
+      "category": "network",
+      "description": "The WebRTC API establishes real-time communication channels directly between browsers. It is commonly used in video conferencing applications.",
+      "runtimeKey": "window.RTCRtpReceiver",
+      "baseline": "widely",
+      "baselineYear": 2022,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/RTCRtpReceiver",
+      "specUrl": "https://w3c.github.io/webrtc-pc/#rtcrtpreceiver-interface",
+      "webFeatureId": "webrtc",
+      "hasDemo": false
+    },
+    {
+      "id": "api.RTCRtpSender",
+      "title": "RTCRtpSender",
+      "category": "network",
+      "description": "The WebRTC API establishes real-time communication channels directly between browsers. It is commonly used in video conferencing applications.",
+      "runtimeKey": "window.RTCRtpSender",
+      "baseline": "widely",
+      "baselineYear": 2022,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/RTCRtpSender",
+      "specUrl": "https://w3c.github.io/webrtc-pc/#rtcrtpsender-interface",
+      "webFeatureId": "webrtc",
+      "hasDemo": false
+    },
+    {
+      "id": "api.RTCRtpTransceiver",
+      "title": "RTCRtpTransceiver",
+      "category": "network",
+      "description": "The WebRTC API establishes real-time communication channels directly between browsers. It is commonly used in video conferencing applications.",
+      "runtimeKey": "window.RTCRtpTransceiver",
+      "baseline": "widely",
+      "baselineYear": 2022,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/RTCRtpTransceiver",
+      "specUrl": "https://w3c.github.io/webrtc-pc/#rtcrtptransceiver-interface",
+      "webFeatureId": "webrtc",
+      "hasDemo": false
+    },
+    {
+      "id": "api.RTCStatsReport",
+      "title": "RTCStatsReport",
+      "category": "network",
+      "description": "The RTCPeerConnection.getStats(), RTCRtpSender.getStats(), and RTCRtpReceiver.getStats() methods return detailed information about the status, performance, network, and media for a given WebRTC connection.",
+      "runtimeKey": "window.RTCStatsReport",
+      "baseline": "widely",
+      "baselineYear": 2022,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/RTCStatsReport",
+      "specUrl": "https://w3c.github.io/webrtc-pc/#rtcstatsreport-object",
+      "webFeatureId": "webrtc-stats",
+      "hasDemo": false
+    },
+    {
+      "id": "api.RTCDtlsTransport",
+      "title": "RTCDtlsTransport",
+      "category": "network",
+      "description": "The WebRTC API establishes real-time communication channels directly between browsers. It is commonly used in video conferencing applications.",
+      "runtimeKey": "window.RTCDtlsTransport",
+      "baseline": "widely",
+      "baselineYear": 2022,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/RTCDtlsTransport",
+      "specUrl": "https://w3c.github.io/webrtc-pc/#dom-rtcdtlstransport",
+      "webFeatureId": "webrtc",
+      "hasDemo": false
+    },
+    {
+      "id": "api.RTCIceTransport",
+      "title": "RTCIceTransport",
+      "category": "network",
+      "description": "The WebRTC API establishes real-time communication channels directly between browsers. It is commonly used in video conferencing applications.",
+      "runtimeKey": "window.RTCIceTransport",
+      "baseline": "widely",
+      "baselineYear": 2022,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/RTCIceTransport",
+      "specUrl": "https://w3c.github.io/webrtc-pc/#dom-rtcicetransport",
+      "webFeatureId": "webrtc",
+      "hasDemo": false
+    },
+    {
+      "id": "api.RTCSctpTransport",
+      "title": "RTCSctpTransport",
+      "category": "network",
+      "description": "The sctp object on RTCPeerConnection represents the negotiated SCTP transport. SCTP (Stream Control Transmission Protocol) is the protocol that RTCDataChannel uses.",
+      "runtimeKey": "window.RTCSctpTransport",
+      "baseline": "widely",
+      "baselineYear": 2025,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/RTCSctpTransport",
+      "specUrl": "https://w3c.github.io/webrtc-pc/#rtcsctptransport-interface",
+      "webFeatureId": "webrtc-sctp",
+      "hasDemo": false
+    },
+    {
+      "id": "api.RTCEncodedAudioFrame",
+      "title": "RTCEncodedAudioFrame",
+      "category": "network",
+      "description": "The WebRTC encoded transform API allows you to modify audio and video streams in WebRTC connections. For example, it can be used for visual effects or custom codecs.",
+      "runtimeKey": "window.RTCEncodedAudioFrame",
+      "baseline": "newly",
+      "baselineYear": 2025,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/RTCEncodedAudioFrame",
+      "specUrl": "https://w3c.github.io/webrtc-encoded-transform/#rtcencodedaudioframe",
+      "webFeatureId": "webrtc-encoded-transform",
+      "hasDemo": false
+    },
+    {
+      "id": "api.RTCEncodedVideoFrame",
+      "title": "RTCEncodedVideoFrame",
+      "category": "network",
+      "description": "The WebRTC encoded transform API allows you to modify audio and video streams in WebRTC connections. For example, it can be used for visual effects or custom codecs.",
+      "runtimeKey": "window.RTCEncodedVideoFrame",
+      "baseline": "newly",
+      "baselineYear": 2025,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/RTCEncodedVideoFrame",
+      "specUrl": "https://w3c.github.io/webrtc-encoded-transform/#rtcencodedvideoframe",
+      "webFeatureId": "webrtc-encoded-transform",
+      "hasDemo": false
+    },
+    {
+      "id": "api.OfflineAudioContext",
+      "title": "OfflineAudioContext",
+      "category": "audio-video",
+      "description": "The OfflineAudioContext API represents an audio processing graph that writes to an AudioBuffer instead of an output device.",
+      "runtimeKey": "window.OfflineAudioContext",
+      "baseline": "widely",
+      "baselineYear": 2023,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/OfflineAudioContext",
+      "specUrl": "https://webaudio.github.io/web-audio-api/#OfflineAudioContext",
+      "webFeatureId": "offline-audio-context",
+      "hasDemo": false
+    },
+    {
+      "id": "api.MediaElementAudioSourceNode",
+      "title": "MediaElementAudioSourceNode",
+      "category": "audio-video",
+      "description": "The Web Audio API creates graphs of audio nodes that handle sound inputs, synthesize sounds, apply effects, create visualizations, and output to audio devices.",
+      "runtimeKey": "window.MediaElementAudioSourceNode",
+      "baseline": "widely",
+      "baselineYear": 2023,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/MediaElementAudioSourceNode",
+      "specUrl": "https://webaudio.github.io/web-audio-api/#MediaElementAudioSourceNode",
+      "webFeatureId": "web-audio",
+      "hasDemo": false
+    },
+    {
+      "id": "api.MediaStreamAudioSourceNode",
+      "title": "MediaStreamAudioSourceNode",
+      "category": "audio-video",
+      "description": "The Web Audio API creates graphs of audio nodes that handle sound inputs, synthesize sounds, apply effects, create visualizations, and output to audio devices.",
+      "runtimeKey": "window.MediaStreamAudioSourceNode",
+      "baseline": "widely",
+      "baselineYear": 2023,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/MediaStreamAudioSourceNode",
+      "specUrl": "https://webaudio.github.io/web-audio-api/#MediaStreamAudioSourceNode",
+      "webFeatureId": "web-audio",
+      "hasDemo": false
+    },
+    {
+      "id": "api.MediaStreamAudioDestinationNode",
+      "title": "MediaStreamAudioDestinationNode",
+      "category": "audio-video",
+      "description": "The Web Audio API creates graphs of audio nodes that handle sound inputs, synthesize sounds, apply effects, create visualizations, and output to audio devices.",
+      "runtimeKey": "window.MediaStreamAudioDestinationNode",
+      "baseline": "widely",
+      "baselineYear": 2023,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/MediaStreamAudioDestinationNode",
+      "specUrl": "https://webaudio.github.io/web-audio-api/#MediaStreamAudioDestinationNode",
+      "webFeatureId": "web-audio",
+      "hasDemo": false
+    },
+    {
+      "id": "api.PannerNode",
+      "title": "PannerNode",
+      "category": "audio-video",
+      "description": "The Web Audio API creates graphs of audio nodes that handle sound inputs, synthesize sounds, apply effects, create visualizations, and output to audio devices.",
+      "runtimeKey": "window.PannerNode",
+      "baseline": "widely",
+      "baselineYear": 2023,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/PannerNode",
+      "specUrl": "https://webaudio.github.io/web-audio-api/#PannerNode",
+      "webFeatureId": "web-audio",
+      "hasDemo": false
+    },
+    {
+      "id": "api.IIRFilterNode",
+      "title": "IIRFilterNode",
+      "category": "audio-video",
+      "description": "The Web Audio API creates graphs of audio nodes that handle sound inputs, synthesize sounds, apply effects, create visualizations, and output to audio devices.",
+      "runtimeKey": "window.IIRFilterNode",
+      "baseline": "widely",
+      "baselineYear": 2023,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/IIRFilterNode",
+      "specUrl": "https://webaudio.github.io/web-audio-api/#IIRFilterNode",
+      "webFeatureId": "web-audio",
+      "hasDemo": false
+    },
+    {
+      "id": "api.StereoPannerNode",
+      "title": "StereoPannerNode",
+      "category": "audio-video",
+      "description": "The Web Audio API creates graphs of audio nodes that handle sound inputs, synthesize sounds, apply effects, create visualizations, and output to audio devices.",
+      "runtimeKey": "window.StereoPannerNode",
+      "baseline": "widely",
+      "baselineYear": 2023,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/StereoPannerNode",
+      "specUrl": "https://webaudio.github.io/web-audio-api/#stereopannernode",
+      "webFeatureId": "web-audio",
+      "hasDemo": false
+    },
+    {
+      "id": "api.ConstantSourceNode",
+      "title": "ConstantSourceNode",
+      "category": "audio-video",
+      "description": "The Web Audio API creates graphs of audio nodes that handle sound inputs, synthesize sounds, apply effects, create visualizations, and output to audio devices.",
+      "runtimeKey": "window.ConstantSourceNode",
+      "baseline": "widely",
+      "baselineYear": 2023,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/ConstantSourceNode",
+      "specUrl": "https://webaudio.github.io/web-audio-api/#ConstantSourceNode",
+      "webFeatureId": "web-audio",
+      "hasDemo": false
+    },
+    {
+      "id": "api.ChannelMergerNode",
+      "title": "ChannelMergerNode",
+      "category": "audio-video",
+      "description": "The Web Audio API creates graphs of audio nodes that handle sound inputs, synthesize sounds, apply effects, create visualizations, and output to audio devices.",
+      "runtimeKey": "window.ChannelMergerNode",
+      "baseline": "widely",
+      "baselineYear": 2023,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/ChannelMergerNode",
+      "specUrl": "https://webaudio.github.io/web-audio-api/#ChannelMergerNode",
+      "webFeatureId": "web-audio",
+      "hasDemo": false
+    },
+    {
+      "id": "api.ChannelSplitterNode",
+      "title": "ChannelSplitterNode",
+      "category": "audio-video",
+      "description": "The Web Audio API creates graphs of audio nodes that handle sound inputs, synthesize sounds, apply effects, create visualizations, and output to audio devices.",
+      "runtimeKey": "window.ChannelSplitterNode",
+      "baseline": "widely",
+      "baselineYear": 2023,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/ChannelSplitterNode",
+      "specUrl": "https://webaudio.github.io/web-audio-api/#ChannelSplitterNode",
+      "webFeatureId": "web-audio",
+      "hasDemo": false
+    },
+    {
+      "id": "api.WaveShaperNode",
+      "title": "WaveShaperNode",
+      "category": "audio-video",
+      "description": "The Web Audio API creates graphs of audio nodes that handle sound inputs, synthesize sounds, apply effects, create visualizations, and output to audio devices.",
+      "runtimeKey": "window.WaveShaperNode",
+      "baseline": "widely",
+      "baselineYear": 2023,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/WaveShaperNode",
+      "specUrl": "https://webaudio.github.io/web-audio-api/#WaveShaperNode",
+      "webFeatureId": "web-audio",
+      "hasDemo": false
+    },
+    {
+      "id": "api.PeriodicWave",
+      "title": "PeriodicWave",
+      "category": "audio-video",
+      "description": "The Web Audio API creates graphs of audio nodes that handle sound inputs, synthesize sounds, apply effects, create visualizations, and output to audio devices.",
+      "runtimeKey": "window.PeriodicWave",
+      "baseline": "widely",
+      "baselineYear": 2023,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/PeriodicWave",
+      "specUrl": "https://webaudio.github.io/web-audio-api/#PeriodicWave",
+      "webFeatureId": "web-audio",
+      "hasDemo": false
+    },
+    {
+      "id": "api.XRReferenceSpace",
+      "title": "XRReferenceSpace",
+      "category": "frontier",
+      "description": "The navigator.xr API represents the browser's virtual reality or augmented reality system. You can use to request a WebXR session.",
+      "runtimeKey": "window.XRReferenceSpace",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/XRReferenceSpace",
+      "specUrl": "https://immersive-web.github.io/webxr/#xrreferencespace-interface",
+      "webFeatureId": "webxr-device",
+      "hasDemo": false
+    },
+    {
+      "id": "api.XRFrame",
+      "title": "XRFrame",
+      "category": "frontier",
+      "description": "The navigator.xr API represents the browser's virtual reality or augmented reality system. You can use to request a WebXR session.",
+      "runtimeKey": "window.XRFrame",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/XRFrame",
+      "specUrl": "https://immersive-web.github.io/webxr/#xrframe-interface",
+      "webFeatureId": "webxr-device",
+      "hasDemo": false
+    },
+    {
+      "id": "api.XRInputSource",
+      "title": "XRInputSource",
+      "category": "frontier",
+      "description": "The navigator.xr API represents the browser's virtual reality or augmented reality system. You can use to request a WebXR session.",
+      "runtimeKey": "window.XRInputSource",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/XRInputSource",
+      "specUrl": "https://immersive-web.github.io/webxr/#xrinputsource-interface",
+      "webFeatureId": "webxr-device",
+      "hasDemo": false
+    },
+    {
+      "id": "api.XRRigidTransform",
+      "title": "XRRigidTransform",
+      "category": "frontier",
+      "description": "The navigator.xr API represents the browser's virtual reality or augmented reality system. You can use to request a WebXR session.",
+      "runtimeKey": "window.XRRigidTransform",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/XRRigidTransform",
+      "specUrl": "https://immersive-web.github.io/webxr/#xrrigidtransform-interface",
+      "webFeatureId": "webxr-device",
+      "hasDemo": false
+    },
+    {
+      "id": "api.XRHitTestSource",
+      "title": "XRHitTestSource",
+      "category": "frontier",
+      "description": "The getHitTestResults() method of an XRFrame object helps place objects in an augmented reality session by finding where cast rays intersect with real-world geometry.",
+      "runtimeKey": "window.XRHitTestSource",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/XRHitTestSource",
+      "specUrl": "https://immersive-web.github.io/hit-test/#hit-test-source-interface",
+      "webFeatureId": "webxr-hit-test",
+      "hasDemo": false
+    },
+    {
+      "id": "api.XRWebGLLayer",
+      "title": "XRWebGLLayer",
+      "category": "frontier",
+      "description": "The navigator.xr API represents the browser's virtual reality or augmented reality system. You can use to request a WebXR session.",
+      "runtimeKey": "window.XRWebGLLayer",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/XRWebGLLayer",
+      "specUrl": "https://immersive-web.github.io/webxr/#xrwebgllayer-interface",
+      "webFeatureId": "webxr-device",
+      "hasDemo": false
+    },
+    {
+      "id": "api.XRAnchor",
+      "title": "XRAnchor",
+      "category": "frontier",
+      "description": "An XRAnchor object keeps track of a pose that is fixed relative to the real world. Anchors build an illusion that the placed objects are really present in the user's environment.",
+      "runtimeKey": "window.XRAnchor",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/XRAnchor",
+      "specUrl": "https://immersive-web.github.io/anchors/#xr-anchor",
+      "webFeatureId": "webxr-anchors",
+      "hasDemo": false
+    },
+    {
+      "id": "api.XRLightProbe",
+      "title": "XRLightProbe",
+      "category": "frontier",
+      "description": "The XRLightProbe and XRLightEstimate objects represent real-world environmental lighting conditions during a WebXR session.",
+      "runtimeKey": "window.XRLightProbe",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/XRLightProbe",
+      "specUrl": "https://immersive-web.github.io/lighting-estimation/#xrlightprobe-interface",
+      "webFeatureId": "webxr-lighting-estimation",
+      "hasDemo": false
+    },
+    {
+      "id": "api.XRRay",
+      "title": "XRRay",
+      "category": "frontier",
+      "description": "The getHitTestResults() method of an XRFrame object helps place objects in an augmented reality session by finding where cast rays intersect with real-world geometry.",
+      "runtimeKey": "window.XRRay",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/XRRay",
+      "specUrl": "https://immersive-web.github.io/hit-test/#xrray-interface",
+      "webFeatureId": "webxr-hit-test",
+      "hasDemo": false
+    },
+    {
+      "id": "api.XRPose",
+      "title": "XRPose",
+      "category": "frontier",
+      "description": "The navigator.xr API represents the browser's virtual reality or augmented reality system. You can use to request a WebXR session.",
+      "runtimeKey": "window.XRPose",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/XRPose",
+      "specUrl": "https://immersive-web.github.io/webxr/#xrpose-interface",
+      "webFeatureId": "webxr-device",
+      "hasDemo": false
+    },
+    {
+      "id": "api.Credential",
+      "title": "Credential",
+      "category": "identity",
+      "description": "The navigator.credentials API provides generic storage for authentication credentials. Other credential APIs represent specific kinds of credentials, such as password or public key credentials, that the credential management API stores.",
+      "runtimeKey": "window.Credential",
+      "baseline": "widely",
+      "baselineYear": 2022,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/Credential",
+      "specUrl": "https://w3c.github.io/webappsec-credential-management/#the-credential-interface",
+      "webFeatureId": "credential-management",
+      "hasDemo": false
+    },
+    {
+      "id": "api.AuthenticatorAssertionResponse",
+      "title": "AuthenticatorAssertionResponse",
+      "category": "identity",
+      "description": "The web authentication API allows you to create public key-based credentials and use them for authentication, such as when signing in. Also known as WebAuthn.",
+      "runtimeKey": "window.AuthenticatorAssertionResponse",
+      "baseline": "widely",
+      "baselineYear": 2024,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/AuthenticatorAssertionResponse",
+      "specUrl": "https://w3c.github.io/webauthn/#iface-authenticatorassertionresponse",
+      "webFeatureId": "webauthn",
+      "hasDemo": false
+    },
+    {
+      "id": "api.AuthenticatorAttestationResponse",
+      "title": "AuthenticatorAttestationResponse",
+      "category": "identity",
+      "description": "The web authentication API allows you to create public key-based credentials and use them for authentication, such as when signing in. Also known as WebAuthn.",
+      "runtimeKey": "window.AuthenticatorAttestationResponse",
+      "baseline": "widely",
+      "baselineYear": 2024,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/AuthenticatorAttestationResponse",
+      "specUrl": "https://w3c.github.io/webauthn/#authenticatorattestationresponse",
+      "webFeatureId": "webauthn",
+      "hasDemo": false
+    },
+    {
+      "id": "api.AuthenticatorResponse",
+      "title": "AuthenticatorResponse",
+      "category": "identity",
+      "description": "The web authentication API allows you to create public key-based credentials and use them for authentication, such as when signing in. Also known as WebAuthn.",
+      "runtimeKey": "window.AuthenticatorResponse",
+      "baseline": "widely",
+      "baselineYear": 2024,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/AuthenticatorResponse",
+      "specUrl": "https://w3c.github.io/webauthn/#authenticatorresponse",
+      "webFeatureId": "webauthn",
+      "hasDemo": false
+    },
+    {
+      "id": "api.PasswordCredential",
+      "title": "PasswordCredential",
+      "category": "identity",
+      "description": "The PasswordCredential API represents a username and password.",
+      "runtimeKey": "window.PasswordCredential",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/PasswordCredential",
+      "specUrl": "https://w3c.github.io/webappsec-credential-management/#passwordcredential-interface",
+      "webFeatureId": "password-credentials",
+      "hasDemo": false
+    },
+    {
+      "id": "api.FederatedCredential",
+      "title": "FederatedCredential",
+      "category": "identity",
+      "description": "The FederatedCredential API represents the details required to authenticate a user using a third-party identity provider. Not to be confused with federated credential management (FedCM).",
+      "runtimeKey": "window.FederatedCredential",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/FederatedCredential",
+      "specUrl": "https://w3c.github.io/webappsec-credential-management/#federated",
+      "webFeatureId": "federated-credentials",
+      "hasDemo": false
+    },
+    {
+      "id": "api.IdentityProvider",
+      "title": "FedCM IdentityProvider",
+      "category": "identity",
+      "description": "",
+      "runtimeKey": "window.IdentityProvider",
+      "baseline": "unknown",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/IdentityProvider",
+      "specUrl": "https://w3c-fedid.github.io/FedCM/#browser-api-identity-provider-interface",
+      "hasDemo": false
+    },
+    {
+      "id": "api.BluetoothDevice",
+      "title": "BluetoothDevice",
+      "category": "hardware",
+      "description": "The Web Bluetooth API enables selecting and communicating with nearby Bluetooth devices.",
+      "runtimeKey": "window.BluetoothDevice",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/BluetoothDevice",
+      "specUrl": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothdevice-interface",
+      "webFeatureId": "web-bluetooth",
+      "hasDemo": false
+    },
+    {
+      "id": "api.BluetoothRemoteGATTServer",
+      "title": "BluetoothRemoteGATTServer",
+      "category": "hardware",
+      "description": "The Web Bluetooth API enables selecting and communicating with nearby Bluetooth devices.",
+      "runtimeKey": "window.BluetoothRemoteGATTServer",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTServer",
+      "specUrl": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothgattremoteserver-interface",
+      "webFeatureId": "web-bluetooth",
+      "hasDemo": false
+    },
+    {
+      "id": "api.BluetoothRemoteGATTService",
+      "title": "BluetoothRemoteGATTService",
+      "category": "hardware",
+      "description": "The Web Bluetooth API enables selecting and communicating with nearby Bluetooth devices.",
+      "runtimeKey": "window.BluetoothRemoteGATTService",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTService",
+      "specUrl": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothgattservice-interface",
+      "webFeatureId": "web-bluetooth",
+      "hasDemo": false
+    },
+    {
+      "id": "api.BluetoothRemoteGATTCharacteristic",
+      "title": "BluetoothRemoteGATTCharacteristic",
+      "category": "hardware",
+      "description": "The Web Bluetooth API enables selecting and communicating with nearby Bluetooth devices.",
+      "runtimeKey": "window.BluetoothRemoteGATTCharacteristic",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/BluetoothRemoteGATTCharacteristic",
+      "specUrl": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothgattcharacteristic-interface",
+      "webFeatureId": "web-bluetooth",
+      "hasDemo": false
+    },
+    {
+      "id": "api.BluetoothUUID",
+      "title": "BluetoothUUID",
+      "category": "hardware",
+      "description": "The Web Bluetooth API enables selecting and communicating with nearby Bluetooth devices.",
+      "runtimeKey": "window.BluetoothUUID",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/BluetoothUUID",
+      "specUrl": "https://webbluetoothcg.github.io/web-bluetooth/#bluetoothuuid",
+      "webFeatureId": "web-bluetooth",
+      "hasDemo": false
+    },
+    {
+      "id": "api.USBDevice",
+      "title": "USBDevice",
+      "category": "hardware",
+      "description": "The WebUSB API exposes USB compatible devices to web pages.",
+      "runtimeKey": "window.USBDevice",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/USBDevice",
+      "specUrl": "https://wicg.github.io/webusb/#device-usage",
+      "webFeatureId": "webusb",
+      "hasDemo": false
+    },
+    {
+      "id": "api.USBConfiguration",
+      "title": "USBConfiguration",
+      "category": "hardware",
+      "description": "The WebUSB API exposes USB compatible devices to web pages.",
+      "runtimeKey": "window.USBConfiguration",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/USBConfiguration",
+      "specUrl": "https://wicg.github.io/webusb/#usbconfiguration-interface",
+      "webFeatureId": "webusb",
+      "hasDemo": false
+    },
+    {
+      "id": "api.USBInterface",
+      "title": "USBInterface",
+      "category": "hardware",
+      "description": "The WebUSB API exposes USB compatible devices to web pages.",
+      "runtimeKey": "window.USBInterface",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/USBInterface",
+      "specUrl": "https://wicg.github.io/webusb/#usbinterface",
+      "webFeatureId": "webusb",
+      "hasDemo": false
+    },
+    {
+      "id": "api.MIDIInput",
+      "title": "MIDIInput",
+      "category": "audio-video",
+      "description": "The Web MIDI API enables selecting MIDI input and output devices and sending and receiving MIDI messages.",
+      "runtimeKey": "window.MIDIInput",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/MIDIInput",
+      "specUrl": "https://webaudio.github.io/web-midi-api/#midiinput-interface",
+      "webFeatureId": "web-midi",
+      "hasDemo": false
+    },
+    {
+      "id": "api.MIDIOutput",
+      "title": "MIDIOutput",
+      "category": "audio-video",
+      "description": "The Web MIDI API enables selecting MIDI input and output devices and sending and receiving MIDI messages.",
+      "runtimeKey": "window.MIDIOutput",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/MIDIOutput",
+      "specUrl": "https://webaudio.github.io/web-midi-api/#MIDIOutput",
+      "webFeatureId": "web-midi",
+      "hasDemo": false
+    },
+    {
+      "id": "api.MIDIInputMap",
+      "title": "MIDIInputMap",
+      "category": "audio-video",
+      "description": "The Web MIDI API enables selecting MIDI input and output devices and sending and receiving MIDI messages.",
+      "runtimeKey": "window.MIDIInputMap",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/MIDIInputMap",
+      "specUrl": "https://webaudio.github.io/web-midi-api/#dom-midiinputmap",
+      "webFeatureId": "web-midi",
+      "hasDemo": false
+    },
+    {
+      "id": "api.MIDIOutputMap",
+      "title": "MIDIOutputMap",
+      "category": "audio-video",
+      "description": "The Web MIDI API enables selecting MIDI input and output devices and sending and receiving MIDI messages.",
+      "runtimeKey": "window.MIDIOutputMap",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/MIDIOutputMap",
+      "specUrl": "https://webaudio.github.io/web-midi-api/#dom-midioutputmap",
+      "webFeatureId": "web-midi",
+      "hasDemo": false
+    },
+    {
+      "id": "api.IDBCursor",
+      "title": "IDBCursor",
+      "category": "storage",
+      "description": "The IndexedDB API is a local storage transactional object database.",
+      "runtimeKey": "window.IDBCursor",
+      "baseline": "widely",
+      "baselineYear": 2024,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/IDBCursor",
+      "specUrl": "https://w3c.github.io/IndexedDB/#cursor-interface",
+      "webFeatureId": "indexeddb",
+      "hasDemo": false
+    },
+    {
+      "id": "api.IDBCursorWithValue",
+      "title": "IDBCursorWithValue",
+      "category": "storage",
+      "description": "The IndexedDB API is a local storage transactional object database.",
+      "runtimeKey": "window.IDBCursorWithValue",
+      "baseline": "widely",
+      "baselineYear": 2024,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/IDBCursorWithValue",
+      "specUrl": "https://w3c.github.io/IndexedDB/#idbcursorwithvalue",
+      "webFeatureId": "indexeddb",
+      "hasDemo": false
+    },
+    {
+      "id": "api.IDBFactory",
+      "title": "IDBFactory",
+      "category": "storage",
+      "description": "The IndexedDB API is a local storage transactional object database.",
+      "runtimeKey": "window.IDBFactory",
+      "baseline": "widely",
+      "baselineYear": 2024,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/IDBFactory",
+      "specUrl": "https://w3c.github.io/IndexedDB/#factory-interface",
+      "webFeatureId": "indexeddb",
+      "hasDemo": false
+    },
+    {
+      "id": "api.IDBRequest",
+      "title": "IDBRequest",
+      "category": "storage",
+      "description": "The IndexedDB API is a local storage transactional object database.",
+      "runtimeKey": "window.IDBRequest",
+      "baseline": "widely",
+      "baselineYear": 2024,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/IDBRequest",
+      "specUrl": "https://w3c.github.io/IndexedDB/#request-api",
+      "webFeatureId": "indexeddb",
+      "hasDemo": false
+    },
+    {
+      "id": "api.IDBOpenDBRequest",
+      "title": "IDBOpenDBRequest",
+      "category": "storage",
+      "description": "The IndexedDB API is a local storage transactional object database.",
+      "runtimeKey": "window.IDBOpenDBRequest",
+      "baseline": "widely",
+      "baselineYear": 2024,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/IDBOpenDBRequest",
+      "specUrl": "https://w3c.github.io/IndexedDB/#idbopendbrequest",
+      "webFeatureId": "indexeddb",
+      "hasDemo": false
+    },
+    {
+      "id": "api.MediaKeys",
+      "title": "Encrypted Media (EME)",
+      "category": "media-capture",
+      "description": "The mediaKeys property of HTMLMediaElement and the navigator.requestMediaKeySystemAccess() method control the playback of content subject to digital rights management. Also known as EME.",
+      "runtimeKey": "window.MediaKeys",
+      "baseline": "widely",
+      "baselineYear": 2021,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/MediaKeys",
+      "specUrl": "https://w3c.github.io/encrypted-media/#mediakeys-interface",
+      "webFeatureId": "encrypted-media-extensions",
+      "hasDemo": false
+    },
+    {
+      "id": "api.MediaKeySession",
+      "title": "MediaKeySession",
+      "category": "media-capture",
+      "description": "The mediaKeys property of HTMLMediaElement and the navigator.requestMediaKeySystemAccess() method control the playback of content subject to digital rights management. Also known as EME.",
+      "runtimeKey": "window.MediaKeySession",
+      "baseline": "widely",
+      "baselineYear": 2021,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/MediaKeySession",
+      "specUrl": "https://w3c.github.io/encrypted-media/#mediakeysession-interface",
+      "webFeatureId": "encrypted-media-extensions",
+      "hasDemo": false
+    },
+    {
+      "id": "api.MediaKeySystemAccess",
+      "title": "MediaKeySystemAccess",
+      "category": "media-capture",
+      "description": "The mediaKeys property of HTMLMediaElement and the navigator.requestMediaKeySystemAccess() method control the playback of content subject to digital rights management. Also known as EME.",
+      "runtimeKey": "window.MediaKeySystemAccess",
+      "baseline": "widely",
+      "baselineYear": 2021,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/MediaKeySystemAccess",
+      "specUrl": "https://w3c.github.io/encrypted-media/#mediakeysystemaccess-interface",
+      "webFeatureId": "encrypted-media-extensions",
+      "hasDemo": false
+    },
+    {
+      "id": "api.MediaKeyStatusMap",
+      "title": "MediaKeyStatusMap",
+      "category": "media-capture",
+      "description": "The mediaKeys property of HTMLMediaElement and the navigator.requestMediaKeySystemAccess() method control the playback of content subject to digital rights management. Also known as EME.",
+      "runtimeKey": "window.MediaKeyStatusMap",
+      "baseline": "widely",
+      "baselineYear": 2021,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/MediaKeyStatusMap",
+      "specUrl": "https://w3c.github.io/encrypted-media/#dom-mediakeystatusmap",
+      "webFeatureId": "encrypted-media-extensions",
+      "hasDemo": false
+    },
+    {
+      "id": "api.Navigator.requestMediaKeySystemAccess",
+      "title": "requestMediaKeySystemAccess()",
+      "category": "media-capture",
+      "description": "The mediaKeys property of HTMLMediaElement and the navigator.requestMediaKeySystemAccess() method control the playback of content subject to digital rights management. Also known as EME.",
+      "runtimeKey": "navigator.requestMediaKeySystemAccess",
+      "baseline": "widely",
+      "baselineYear": 2021,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/Navigator/requestMediaKeySystemAccess",
+      "specUrl": "https://w3c.github.io/encrypted-media/#navigator-extension-requestmediakeysystemaccess",
+      "webFeatureId": "encrypted-media-extensions",
+      "hasDemo": false
+    },
+    {
+      "id": "api.MediaStreamTrackProcessor",
+      "title": "MediaStreamTrackProcessor",
+      "category": "media-capture",
+      "description": "The MediaStreamTrackProcessor and MediaStreamTrackGenerator APIs modify the contents of a media track for merging streams, applying real-time effects like funny hats, and content overlays.",
+      "runtimeKey": "window.MediaStreamTrackProcessor",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/MediaStreamTrackProcessor",
+      "specUrl": "https://w3c.github.io/mediacapture-transform/#mediastreamtrackprocessor",
+      "webFeatureId": "insertable-streams",
+      "hasDemo": false
+    },
+    {
+      "id": "api.MediaStreamTrackGenerator",
+      "title": "MediaStreamTrackGenerator",
+      "category": "media-capture",
+      "description": "",
+      "runtimeKey": "window.MediaStreamTrackGenerator",
+      "baseline": "unknown",
+      "status": "non-standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/MediaStreamTrackGenerator",
+      "hasDemo": false
+    },
+    {
+      "id": "api.CaptureController",
+      "title": "CaptureController",
+      "category": "media-capture",
+      "description": "The navigator.mediaDevices.getDisplayMedia() method asks the user to choose a screen or portion of a screen (such as a window) to capture as a media stream.",
+      "runtimeKey": "window.CaptureController",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/CaptureController",
+      "specUrl": "https://w3c.github.io/mediacapture-screen-share/#dom-capturecontroller",
+      "webFeatureId": "screen-capture",
+      "hasDemo": false
+    },
+    {
+      "id": "api.Presentation",
+      "title": "Presentation API",
+      "category": "hardware",
+      "description": "The Presentation API shows or controls content on another display, such as a network-connected TV or projector.",
+      "runtimeKey": "navigator.presentation",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/Presentation",
+      "specUrl": "https://w3c.github.io/presentation-api/#interface-presentation",
+      "webFeatureId": "presentation-api",
+      "hasDemo": false
+    },
+    {
+      "id": "api.PresentationAvailability",
+      "title": "PresentationAvailability",
+      "category": "hardware",
+      "description": "The Presentation API shows or controls content on another display, such as a network-connected TV or projector.",
+      "runtimeKey": "window.PresentationAvailability",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/PresentationAvailability",
+      "specUrl": "https://w3c.github.io/presentation-api/#interface-presentationavailability",
+      "webFeatureId": "presentation-api",
+      "hasDemo": false
+    },
+    {
+      "id": "api.PresentationConnection",
+      "title": "PresentationConnection",
+      "category": "hardware",
+      "description": "The Presentation API shows or controls content on another display, such as a network-connected TV or projector.",
+      "runtimeKey": "window.PresentationConnection",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/PresentationConnection",
+      "specUrl": "https://w3c.github.io/presentation-api/#interface-presentationconnection",
+      "webFeatureId": "presentation-api",
+      "hasDemo": false
+    },
+    {
+      "id": "api.PresentationConnectionList",
+      "title": "PresentationConnectionList",
+      "category": "hardware",
+      "description": "The Presentation API shows or controls content on another display, such as a network-connected TV or projector.",
+      "runtimeKey": "window.PresentationConnectionList",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/PresentationConnectionList",
+      "specUrl": "https://w3c.github.io/presentation-api/#interface-presentationconnectionlist",
+      "webFeatureId": "presentation-api",
+      "hasDemo": false
+    },
+    {
+      "id": "api.PresentationReceiver",
+      "title": "PresentationReceiver",
+      "category": "hardware",
+      "description": "The Presentation API shows or controls content on another display, such as a network-connected TV or projector.",
+      "runtimeKey": "window.PresentationReceiver",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/PresentationReceiver",
+      "specUrl": "https://w3c.github.io/presentation-api/#interface-presentationreceiver",
+      "webFeatureId": "presentation-api",
+      "hasDemo": false
+    },
+    {
+      "id": "api.RemotePlayback",
+      "title": "RemotePlayback",
+      "category": "hardware",
+      "description": "The Remote Playback API initiates and controls playback of media on connected remote devices, such as smart TVs with AirPlay or Chromecast capabilities.",
+      "runtimeKey": "window.RemotePlayback",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/RemotePlayback",
+      "specUrl": "https://w3c.github.io/remote-playback/#remoteplayback-interface",
+      "webFeatureId": "remote-playback",
+      "hasDemo": false
+    },
+    {
+      "id": "api.PushManager",
+      "title": "PushManager",
+      "category": "workers",
+      "description": "The Push API subscribes to and receives server-initiated messages. Subscribers receive pushed messages in the background, even after periods inactive or offline.",
+      "runtimeKey": "window.PushManager",
+      "baseline": "widely",
+      "baselineYear": 2025,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/PushManager",
+      "specUrl": "https://w3c.github.io/push-api/#pushmanager-interface",
+      "webFeatureId": "push",
+      "hasDemo": false
+    },
+    {
+      "id": "api.PushSubscription",
+      "title": "PushSubscription",
+      "category": "workers",
+      "description": "The Push API subscribes to and receives server-initiated messages. Subscribers receive pushed messages in the background, even after periods inactive or offline.",
+      "runtimeKey": "window.PushSubscription",
+      "baseline": "widely",
+      "baselineYear": 2025,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/PushSubscription",
+      "specUrl": "https://w3c.github.io/push-api/#pushsubscription-interface",
+      "webFeatureId": "push",
+      "hasDemo": false
+    },
+    {
+      "id": "api.PushSubscriptionOptions",
+      "title": "PushSubscriptionOptions",
+      "category": "workers",
+      "description": "The Push API subscribes to and receives server-initiated messages. Subscribers receive pushed messages in the background, even after periods inactive or offline.",
+      "runtimeKey": "window.PushSubscriptionOptions",
+      "baseline": "widely",
+      "baselineYear": 2025,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/PushSubscriptionOptions",
+      "specUrl": "https://w3c.github.io/push-api/#dom-pushsubscriptionoptions",
+      "webFeatureId": "push",
+      "hasDemo": false
+    },
+    {
+      "id": "api.BackgroundFetchManager",
+      "title": "BackgroundFetchManager",
+      "category": "workers",
+      "description": "Background fetch downloads data in the background even when the web page is closed.",
+      "runtimeKey": "window.BackgroundFetchManager",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/BackgroundFetchManager",
+      "specUrl": "https://wicg.github.io/background-fetch/#background-fetch-manager",
+      "webFeatureId": "background-fetch",
+      "hasDemo": false
+    },
+    {
+      "id": "api.BackgroundFetchRegistration",
+      "title": "BackgroundFetchRegistration",
+      "category": "workers",
+      "description": "Background fetch downloads data in the background even when the web page is closed.",
+      "runtimeKey": "window.BackgroundFetchRegistration",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/BackgroundFetchRegistration",
+      "specUrl": "https://wicg.github.io/background-fetch/#background-fetch-registration",
+      "webFeatureId": "background-fetch",
+      "hasDemo": false
+    },
+    {
+      "id": "api.BackgroundFetchRecord",
+      "title": "BackgroundFetchRecord",
+      "category": "workers",
+      "description": "Background fetch downloads data in the background even when the web page is closed.",
+      "runtimeKey": "window.BackgroundFetchRecord",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/BackgroundFetchRecord",
+      "specUrl": "https://wicg.github.io/background-fetch/#background-fetch-record-interface",
+      "webFeatureId": "background-fetch",
+      "hasDemo": false
+    },
+    {
+      "id": "api.PeriodicSyncManager",
+      "title": "PeriodicSyncManager",
+      "category": "workers",
+      "description": "The periodic background synchronization API fires a recurring periodicsync event in a service worker. You can use this to update data in the background at regular intervals.",
+      "runtimeKey": "window.PeriodicSyncManager",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/PeriodicSyncManager",
+      "specUrl": "https://wicg.github.io/periodic-background-sync/#periodicsyncmanager-interface",
+      "webFeatureId": "periodic-background-sync",
+      "hasDemo": false
+    },
+    {
+      "id": "api.SyncManager",
+      "title": "Background Sync",
+      "category": "workers",
+      "description": "The background synchronization API registers a service worker callback to run only when the device is no longer offline. You can use this to let users continue using your app while offline and synchronize with a server after reconnecting.",
+      "runtimeKey": "window.SyncManager",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/SyncManager",
+      "specUrl": "https://wicg.github.io/background-sync/spec/#sync-manager-interface",
+      "webFeatureId": "background-sync",
+      "hasDemo": false
+    },
+    {
+      "id": "api.NavigationHistoryEntry",
+      "title": "NavigationHistoryEntry",
+      "category": "frontier",
+      "description": "The navigation API initiates, intercepts, or modifies browser navigation actions. Not to be confused with the navigator API.",
+      "runtimeKey": "window.NavigationHistoryEntry",
+      "baseline": "newly",
+      "baselineYear": 2026,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/NavigationHistoryEntry",
+      "specUrl": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationhistoryentry-interface",
+      "webFeatureId": "navigation",
+      "hasDemo": false
+    },
+    {
+      "id": "api.NavigationActivation",
+      "title": "NavigationActivation",
+      "category": "frontier",
+      "description": "The navigation API initiates, intercepts, or modifies browser navigation actions. Not to be confused with the navigator API.",
+      "runtimeKey": "window.NavigationActivation",
+      "baseline": "newly",
+      "baselineYear": 2026,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/NavigationActivation",
+      "specUrl": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigationactivation",
+      "webFeatureId": "navigation",
+      "hasDemo": false
+    },
+    {
+      "id": "api.NavigationDestination",
+      "title": "NavigationDestination",
+      "category": "frontier",
+      "description": "The navigation API initiates, intercepts, or modifies browser navigation actions. Not to be confused with the navigator API.",
+      "runtimeKey": "window.NavigationDestination",
+      "baseline": "newly",
+      "baselineYear": 2026,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/NavigationDestination",
+      "specUrl": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface",
+      "webFeatureId": "navigation",
+      "hasDemo": false
+    },
+    {
+      "id": "api.NavigationTransition",
+      "title": "NavigationTransition",
+      "category": "frontier",
+      "description": "The navigation API initiates, intercepts, or modifies browser navigation actions. Not to be confused with the navigator API.",
+      "runtimeKey": "window.NavigationTransition",
+      "baseline": "newly",
+      "baselineYear": 2026,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/NavigationTransition",
+      "specUrl": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigationtransition",
+      "webFeatureId": "navigation",
+      "hasDemo": false
+    },
+    {
+      "id": "api.NavigationPreloadManager",
+      "title": "NavigationPreloadManager",
+      "category": "frontier",
+      "description": "The service worker of a website is a script that runs in its own thread and which acts as local proxy that intercepts network requests from the website. Use a service worker to implement advanced caching strategies, offline support, background tasks, or push notification support on your website.",
+      "runtimeKey": "window.NavigationPreloadManager",
+      "baseline": "widely",
+      "baselineYear": 2020,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/NavigationPreloadManager",
+      "specUrl": "https://w3c.github.io/ServiceWorker/#navigation-preload-manager",
+      "webFeatureId": "service-workers",
+      "hasDemo": false
+    },
+    {
+      "id": "api.StylePropertyMap",
+      "title": "CSS Typed OM",
+      "category": "frontier",
+      "description": "The CSSStyleValue and its subclasses represent CSS values as distinct types instead of only strings. Also known as typed OM.",
+      "runtimeKey": "window.StylePropertyMap",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/StylePropertyMap",
+      "specUrl": "https://drafts.css-houdini.org/css-typed-om/#the-stylepropertymap",
+      "webFeatureId": "css-typed-om",
+      "hasDemo": false
+    },
+    {
+      "id": "api.StylePropertyMapReadOnly",
+      "title": "StylePropertyMapReadOnly",
+      "category": "frontier",
+      "description": "The CSSStyleValue and its subclasses represent CSS values as distinct types instead of only strings. Also known as typed OM.",
+      "runtimeKey": "window.StylePropertyMapReadOnly",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/StylePropertyMapReadOnly",
+      "specUrl": "https://drafts.css-houdini.org/css-typed-om/#stylepropertymapreadonly",
+      "webFeatureId": "css-typed-om",
+      "hasDemo": false
+    },
+    {
+      "id": "api.AbsoluteOrientationSensor",
+      "title": "AbsoluteOrientationSensor",
+      "category": "sensors",
+      "description": "The AbsoluteOrientationSensor and RelativeOrientationSensor APIs describe the physical orientation of a device in three-dimensional space, either in relation to the Earth's coordinate system or in relation to the device's own orientation, respectively.",
+      "runtimeKey": "window.AbsoluteOrientationSensor",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/AbsoluteOrientationSensor",
+      "specUrl": "https://w3c.github.io/orientation-sensor/#absoluteorientationsensor-interface",
+      "webFeatureId": "orientation-sensor",
+      "hasDemo": false
+    },
+    {
+      "id": "api.GravitySensor",
+      "title": "GravitySensor",
+      "category": "sensors",
+      "description": "The Accelerometer, LinearAccelerationSensor and GravitySensor APIs read the acceleration applied to a device in three dimensions, either including the effect of gravity, without its effect, or only its effect, respectively.",
+      "runtimeKey": "window.GravitySensor",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/GravitySensor",
+      "specUrl": "https://w3c.github.io/accelerometer/#gravitysensor-interface",
+      "webFeatureId": "accelerometer",
+      "hasDemo": false
+    },
+    {
+      "id": "api.DevicePosture",
+      "title": "Device Posture",
+      "category": "sensors",
+      "description": "The device posture API and the device-posture CSS media feature reflect the physical posture of a device, such as whether a foldable device is folded or unfolded.",
+      "runtimeKey": "navigator.devicePosture",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/DevicePosture",
+      "specUrl": "https://w3c.github.io/device-posture/#dom-deviceposture",
+      "webFeatureId": "device-posture",
+      "hasDemo": false
+    },
+    {
+      "id": "api.PressureRecord",
+      "title": "PressureRecord",
+      "category": "sensors",
+      "description": "The PressureObserver API monitors CPU load, allowing you to adjust workloads in response to available computing resources. Also known as the Compute Pressure API.",
+      "runtimeKey": "window.PressureRecord",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/PressureRecord",
+      "specUrl": "https://w3c.github.io/compute-pressure/#the-pressurerecord-interface",
+      "webFeatureId": "compute-pressure",
+      "hasDemo": false
+    },
+    {
+      "id": "api.CookieStoreManager",
+      "title": "CookieStoreManager",
+      "category": "storage",
+      "description": "The CookieStore API is an asynchronous and promise-based API for managing cookies. It does not rely on document and so is available to service workers as well.",
+      "runtimeKey": "window.CookieStoreManager",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/CookieStoreManager",
+      "specUrl": "https://cookiestore.spec.whatwg.org/#cookiestoremanager",
+      "webFeatureId": "cookie-store",
+      "hasDemo": false
     }
   ],
   "relationships": [
@@ -4104,6 +5343,362 @@
     {
       "from": "api.Document.requestStorageAccessFor",
       "to": "api.Document.requestStorageAccess"
+    },
+    {
+      "from": "api.RTCDataChannel",
+      "to": "api.RTCPeerConnection"
+    },
+    {
+      "from": "api.RTCSessionDescription",
+      "to": "api.RTCPeerConnection"
+    },
+    {
+      "from": "api.RTCIceCandidate",
+      "to": "api.RTCPeerConnection"
+    },
+    {
+      "from": "api.RTCRtpReceiver",
+      "to": "api.RTCRtpTransceiver"
+    },
+    {
+      "from": "api.RTCRtpSender",
+      "to": "api.RTCRtpTransceiver"
+    },
+    {
+      "from": "api.RTCRtpTransceiver",
+      "to": "api.RTCPeerConnection"
+    },
+    {
+      "from": "api.RTCStatsReport",
+      "to": "api.RTCPeerConnection"
+    },
+    {
+      "from": "api.RTCDtlsTransport",
+      "to": "api.RTCPeerConnection"
+    },
+    {
+      "from": "api.RTCIceTransport",
+      "to": "api.RTCPeerConnection"
+    },
+    {
+      "from": "api.RTCSctpTransport",
+      "to": "api.RTCPeerConnection"
+    },
+    {
+      "from": "api.RTCEncodedAudioFrame",
+      "to": "api.RTCRtpSender"
+    },
+    {
+      "from": "api.RTCEncodedVideoFrame",
+      "to": "api.RTCRtpSender"
+    },
+    {
+      "from": "api.OfflineAudioContext",
+      "to": "api.AudioContext"
+    },
+    {
+      "from": "api.MediaElementAudioSourceNode",
+      "to": "api.AudioContext"
+    },
+    {
+      "from": "api.MediaStreamAudioSourceNode",
+      "to": "api.AudioContext"
+    },
+    {
+      "from": "api.MediaStreamAudioDestinationNode",
+      "to": "api.AudioContext"
+    },
+    {
+      "from": "api.PannerNode",
+      "to": "api.AudioContext"
+    },
+    {
+      "from": "api.IIRFilterNode",
+      "to": "api.AudioContext"
+    },
+    {
+      "from": "api.StereoPannerNode",
+      "to": "api.AudioContext"
+    },
+    {
+      "from": "api.ConstantSourceNode",
+      "to": "api.AudioContext"
+    },
+    {
+      "from": "api.ChannelMergerNode",
+      "to": "api.AudioContext"
+    },
+    {
+      "from": "api.ChannelSplitterNode",
+      "to": "api.AudioContext"
+    },
+    {
+      "from": "api.WaveShaperNode",
+      "to": "api.AudioContext"
+    },
+    {
+      "from": "api.PeriodicWave",
+      "to": "api.OscillatorNode"
+    },
+    {
+      "from": "api.XRReferenceSpace",
+      "to": "api.XRSession"
+    },
+    {
+      "from": "api.XRFrame",
+      "to": "api.XRSession"
+    },
+    {
+      "from": "api.XRInputSource",
+      "to": "api.XRSession"
+    },
+    {
+      "from": "api.XRRigidTransform",
+      "to": "api.XRReferenceSpace"
+    },
+    {
+      "from": "api.XRPose",
+      "to": "api.XRFrame"
+    },
+    {
+      "from": "api.XRHitTestSource",
+      "to": "api.XRFrame"
+    },
+    {
+      "from": "api.XRLightProbe",
+      "to": "api.XRFrame"
+    },
+    {
+      "from": "api.XRAnchor",
+      "to": "api.XRFrame"
+    },
+    {
+      "from": "api.XRRay",
+      "to": "api.XRHitTestSource"
+    },
+    {
+      "from": "api.XRWebGLLayer",
+      "to": "api.XRSession"
+    },
+    {
+      "from": "api.AuthenticatorAssertionResponse",
+      "to": "api.PublicKeyCredential"
+    },
+    {
+      "from": "api.AuthenticatorAttestationResponse",
+      "to": "api.PublicKeyCredential"
+    },
+    {
+      "from": "api.AuthenticatorResponse",
+      "to": "api.PublicKeyCredential"
+    },
+    {
+      "from": "api.PasswordCredential",
+      "to": "api.Credential"
+    },
+    {
+      "from": "api.FederatedCredential",
+      "to": "api.Credential"
+    },
+    {
+      "from": "api.Credential",
+      "to": "api.CredentialsContainer"
+    },
+    {
+      "from": "api.IdentityProvider",
+      "to": "api.IdentityCredential"
+    },
+    {
+      "from": "api.BluetoothDevice",
+      "to": "api.Bluetooth"
+    },
+    {
+      "from": "api.BluetoothRemoteGATTServer",
+      "to": "api.BluetoothDevice"
+    },
+    {
+      "from": "api.BluetoothRemoteGATTService",
+      "to": "api.BluetoothRemoteGATTServer"
+    },
+    {
+      "from": "api.BluetoothRemoteGATTCharacteristic",
+      "to": "api.BluetoothRemoteGATTService"
+    },
+    {
+      "from": "api.BluetoothUUID",
+      "to": "api.Bluetooth"
+    },
+    {
+      "from": "api.USBDevice",
+      "to": "api.USB"
+    },
+    {
+      "from": "api.USBConfiguration",
+      "to": "api.USBDevice"
+    },
+    {
+      "from": "api.USBInterface",
+      "to": "api.USBConfiguration"
+    },
+    {
+      "from": "api.MIDIInput",
+      "to": "api.MIDIAccess"
+    },
+    {
+      "from": "api.MIDIOutput",
+      "to": "api.MIDIAccess"
+    },
+    {
+      "from": "api.MIDIInputMap",
+      "to": "api.MIDIAccess"
+    },
+    {
+      "from": "api.MIDIOutputMap",
+      "to": "api.MIDIAccess"
+    },
+    {
+      "from": "api.IDBCursor",
+      "to": "api.IDBObjectStore"
+    },
+    {
+      "from": "api.IDBCursorWithValue",
+      "to": "api.IDBCursor"
+    },
+    {
+      "from": "api.IDBFactory",
+      "to": "api.IDBDatabase"
+    },
+    {
+      "from": "api.IDBOpenDBRequest",
+      "to": "api.IDBRequest"
+    },
+    {
+      "from": "api.IDBRequest",
+      "to": "api.IDBDatabase"
+    },
+    {
+      "from": "api.MediaKeySession",
+      "to": "api.MediaKeys"
+    },
+    {
+      "from": "api.MediaKeySystemAccess",
+      "to": "api.MediaKeys"
+    },
+    {
+      "from": "api.MediaKeyStatusMap",
+      "to": "api.MediaKeySession"
+    },
+    {
+      "from": "api.Navigator.requestMediaKeySystemAccess",
+      "to": "api.MediaKeySystemAccess"
+    },
+    {
+      "from": "api.MediaStreamTrackProcessor",
+      "to": "api.MediaStreamTrack"
+    },
+    {
+      "from": "api.MediaStreamTrackGenerator",
+      "to": "api.MediaStreamTrack"
+    },
+    {
+      "from": "api.CaptureController",
+      "to": "api.MediaDevices.getDisplayMedia"
+    },
+    {
+      "from": "api.PresentationAvailability",
+      "to": "api.Presentation"
+    },
+    {
+      "from": "api.PresentationConnection",
+      "to": "api.Presentation"
+    },
+    {
+      "from": "api.PresentationConnectionList",
+      "to": "api.PresentationReceiver"
+    },
+    {
+      "from": "api.PresentationReceiver",
+      "to": "api.Presentation"
+    },
+    {
+      "from": "api.RemotePlayback",
+      "to": "api.HTMLMediaElement"
+    },
+    {
+      "from": "api.PushSubscription",
+      "to": "api.PushManager"
+    },
+    {
+      "from": "api.PushSubscriptionOptions",
+      "to": "api.PushSubscription"
+    },
+    {
+      "from": "api.PushManager",
+      "to": "api.ServiceWorker"
+    },
+    {
+      "from": "api.BackgroundFetchRegistration",
+      "to": "api.BackgroundFetchManager"
+    },
+    {
+      "from": "api.BackgroundFetchRecord",
+      "to": "api.BackgroundFetchRegistration"
+    },
+    {
+      "from": "api.BackgroundFetchManager",
+      "to": "api.ServiceWorker"
+    },
+    {
+      "from": "api.PeriodicSyncManager",
+      "to": "api.ServiceWorker"
+    },
+    {
+      "from": "api.SyncManager",
+      "to": "api.ServiceWorker"
+    },
+    {
+      "from": "api.NavigationHistoryEntry",
+      "to": "api.Navigation"
+    },
+    {
+      "from": "api.NavigationActivation",
+      "to": "api.Navigation"
+    },
+    {
+      "from": "api.NavigationDestination",
+      "to": "api.Navigation"
+    },
+    {
+      "from": "api.NavigationTransition",
+      "to": "api.Navigation"
+    },
+    {
+      "from": "api.NavigationPreloadManager",
+      "to": "api.ServiceWorker"
+    },
+    {
+      "from": "api.StylePropertyMap",
+      "to": "api.StylePropertyMapReadOnly"
+    },
+    {
+      "from": "api.StylePropertyMapReadOnly",
+      "to": "api.CSSStyleSheet"
+    },
+    {
+      "from": "api.AbsoluteOrientationSensor",
+      "to": "api.Accelerometer"
+    },
+    {
+      "from": "api.GravitySensor",
+      "to": "api.Accelerometer"
+    },
+    {
+      "from": "api.PressureRecord",
+      "to": "api.PressureObserver"
+    },
+    {
+      "from": "api.CookieStoreManager",
+      "to": "api.CookieStore"
     },
     {
       "from": "api.Document.startViewTransition",

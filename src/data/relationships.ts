@@ -155,6 +155,129 @@ export const RELATIONSHIPS: CatalogRelationship[] = [
   {from: 'api.HighlightRegistry', to: 'api.Highlight'},
   {from: 'api.Document.requestStorageAccessFor', to: 'api.Document.requestStorageAccess'},
 
+  // WebRTC family
+  {from: 'api.RTCDataChannel', to: 'api.RTCPeerConnection'},
+  {from: 'api.RTCSessionDescription', to: 'api.RTCPeerConnection'},
+  {from: 'api.RTCIceCandidate', to: 'api.RTCPeerConnection'},
+  {from: 'api.RTCRtpReceiver', to: 'api.RTCRtpTransceiver'},
+  {from: 'api.RTCRtpSender', to: 'api.RTCRtpTransceiver'},
+  {from: 'api.RTCRtpTransceiver', to: 'api.RTCPeerConnection'},
+  {from: 'api.RTCStatsReport', to: 'api.RTCPeerConnection'},
+  {from: 'api.RTCDtlsTransport', to: 'api.RTCPeerConnection'},
+  {from: 'api.RTCIceTransport', to: 'api.RTCPeerConnection'},
+  {from: 'api.RTCSctpTransport', to: 'api.RTCPeerConnection'},
+  {from: 'api.RTCEncodedAudioFrame', to: 'api.RTCRtpSender'},
+  {from: 'api.RTCEncodedVideoFrame', to: 'api.RTCRtpSender'},
+
+  // Web Audio nodes connected to context
+  {from: 'api.OfflineAudioContext', to: 'api.AudioContext'},
+  {from: 'api.MediaElementAudioSourceNode', to: 'api.AudioContext'},
+  {from: 'api.MediaStreamAudioSourceNode', to: 'api.AudioContext'},
+  {from: 'api.MediaStreamAudioDestinationNode', to: 'api.AudioContext'},
+  {from: 'api.PannerNode', to: 'api.AudioContext'},
+  {from: 'api.IIRFilterNode', to: 'api.AudioContext'},
+  {from: 'api.StereoPannerNode', to: 'api.AudioContext'},
+  {from: 'api.ConstantSourceNode', to: 'api.AudioContext'},
+  {from: 'api.ChannelMergerNode', to: 'api.AudioContext'},
+  {from: 'api.ChannelSplitterNode', to: 'api.AudioContext'},
+  {from: 'api.WaveShaperNode', to: 'api.AudioContext'},
+  {from: 'api.PeriodicWave', to: 'api.OscillatorNode'},
+
+  // WebXR chain
+  {from: 'api.XRReferenceSpace', to: 'api.XRSession'},
+  {from: 'api.XRFrame', to: 'api.XRSession'},
+  {from: 'api.XRInputSource', to: 'api.XRSession'},
+  {from: 'api.XRRigidTransform', to: 'api.XRReferenceSpace'},
+  {from: 'api.XRPose', to: 'api.XRFrame'},
+  {from: 'api.XRHitTestSource', to: 'api.XRFrame'},
+  {from: 'api.XRLightProbe', to: 'api.XRFrame'},
+  {from: 'api.XRAnchor', to: 'api.XRFrame'},
+  {from: 'api.XRRay', to: 'api.XRHitTestSource'},
+  {from: 'api.XRWebGLLayer', to: 'api.XRSession'},
+
+  // WebAuthn + credentials
+  {from: 'api.AuthenticatorAssertionResponse', to: 'api.PublicKeyCredential'},
+  {from: 'api.AuthenticatorAttestationResponse', to: 'api.PublicKeyCredential'},
+  {from: 'api.AuthenticatorResponse', to: 'api.PublicKeyCredential'},
+  {from: 'api.PasswordCredential', to: 'api.Credential'},
+  {from: 'api.FederatedCredential', to: 'api.Credential'},
+  {from: 'api.Credential', to: 'api.CredentialsContainer'},
+  {from: 'api.IdentityProvider', to: 'api.IdentityCredential'},
+
+  // Bluetooth GATT chain
+  {from: 'api.BluetoothDevice', to: 'api.Bluetooth'},
+  {from: 'api.BluetoothRemoteGATTServer', to: 'api.BluetoothDevice'},
+  {from: 'api.BluetoothRemoteGATTService', to: 'api.BluetoothRemoteGATTServer'},
+  {from: 'api.BluetoothRemoteGATTCharacteristic', to: 'api.BluetoothRemoteGATTService'},
+  {from: 'api.BluetoothUUID', to: 'api.Bluetooth'},
+
+  // USB chain
+  {from: 'api.USBDevice', to: 'api.USB'},
+  {from: 'api.USBConfiguration', to: 'api.USBDevice'},
+  {from: 'api.USBInterface', to: 'api.USBConfiguration'},
+
+  // MIDI
+  {from: 'api.MIDIInput', to: 'api.MIDIAccess'},
+  {from: 'api.MIDIOutput', to: 'api.MIDIAccess'},
+  {from: 'api.MIDIInputMap', to: 'api.MIDIAccess'},
+  {from: 'api.MIDIOutputMap', to: 'api.MIDIAccess'},
+
+  // IndexedDB
+  {from: 'api.IDBCursor', to: 'api.IDBObjectStore'},
+  {from: 'api.IDBCursorWithValue', to: 'api.IDBCursor'},
+  {from: 'api.IDBFactory', to: 'api.IDBDatabase'},
+  {from: 'api.IDBOpenDBRequest', to: 'api.IDBRequest'},
+  {from: 'api.IDBRequest', to: 'api.IDBDatabase'},
+
+  // EME (DRM)
+  {from: 'api.MediaKeySession', to: 'api.MediaKeys'},
+  {from: 'api.MediaKeySystemAccess', to: 'api.MediaKeys'},
+  {from: 'api.MediaKeyStatusMap', to: 'api.MediaKeySession'},
+  {from: 'api.Navigator.requestMediaKeySystemAccess', to: 'api.MediaKeySystemAccess'},
+
+  // Media stream processing
+  {from: 'api.MediaStreamTrackProcessor', to: 'api.MediaStreamTrack'},
+  {from: 'api.MediaStreamTrackGenerator', to: 'api.MediaStreamTrack'},
+  {from: 'api.CaptureController', to: 'api.MediaDevices.getDisplayMedia'},
+
+  // Presentation / Cast
+  {from: 'api.PresentationAvailability', to: 'api.Presentation'},
+  {from: 'api.PresentationConnection', to: 'api.Presentation'},
+  {from: 'api.PresentationConnectionList', to: 'api.PresentationReceiver'},
+  {from: 'api.PresentationReceiver', to: 'api.Presentation'},
+  {from: 'api.RemotePlayback', to: 'api.HTMLMediaElement'},
+
+  // Push notification chain
+  {from: 'api.PushSubscription', to: 'api.PushManager'},
+  {from: 'api.PushSubscriptionOptions', to: 'api.PushSubscription'},
+  {from: 'api.PushManager', to: 'api.ServiceWorker'},
+
+  // Background fetch / sync
+  {from: 'api.BackgroundFetchRegistration', to: 'api.BackgroundFetchManager'},
+  {from: 'api.BackgroundFetchRecord', to: 'api.BackgroundFetchRegistration'},
+  {from: 'api.BackgroundFetchManager', to: 'api.ServiceWorker'},
+  {from: 'api.PeriodicSyncManager', to: 'api.ServiceWorker'},
+  {from: 'api.SyncManager', to: 'api.ServiceWorker'},
+
+  // Navigation API chain
+  {from: 'api.NavigationHistoryEntry', to: 'api.Navigation'},
+  {from: 'api.NavigationActivation', to: 'api.Navigation'},
+  {from: 'api.NavigationDestination', to: 'api.Navigation'},
+  {from: 'api.NavigationTransition', to: 'api.Navigation'},
+  {from: 'api.NavigationPreloadManager', to: 'api.ServiceWorker'},
+
+  // CSS Typed OM
+  {from: 'api.StylePropertyMap', to: 'api.StylePropertyMapReadOnly'},
+  {from: 'api.StylePropertyMapReadOnly', to: 'api.CSSStyleSheet'},
+
+  // Sensors
+  {from: 'api.AbsoluteOrientationSensor', to: 'api.Accelerometer'},
+  {from: 'api.GravitySensor', to: 'api.Accelerometer'},
+  {from: 'api.PressureRecord', to: 'api.PressureObserver'},
+
+  // Cookie Store
+  {from: 'api.CookieStoreManager', to: 'api.CookieStore'},
+
   // Frontier
   {from: 'api.Document.startViewTransition', to: 'api.HTMLDialogElement', label: 'animate dialog'},
   {from: 'api.Navigation', to: 'api.URLPattern', label: 'route matching'},

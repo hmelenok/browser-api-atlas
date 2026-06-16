@@ -342,4 +342,130 @@ export const API_SELECTION: ApiSelection[] = [
   {bcdKey: 'api.FileSystemObserver', category: 'files', runtimeKey: 'window.FileSystemObserver'},
   // TimelineTrigger intentionally skipped — not yet in @mdn/browser-compat-data.
   // Re-add once the weekly catalog refresh PR surfaces it.
+
+  // ─── T2 — WebRTC primitives ──────────────────────────────────
+  {bcdKey: 'api.RTCDataChannel', category: 'network', runtimeKey: 'window.RTCDataChannel'},
+  {bcdKey: 'api.RTCSessionDescription', category: 'network', runtimeKey: 'window.RTCSessionDescription'},
+  {bcdKey: 'api.RTCIceCandidate', category: 'network', runtimeKey: 'window.RTCIceCandidate'},
+  {bcdKey: 'api.RTCRtpReceiver', category: 'network', runtimeKey: 'window.RTCRtpReceiver'},
+  {bcdKey: 'api.RTCRtpSender', category: 'network', runtimeKey: 'window.RTCRtpSender'},
+  {bcdKey: 'api.RTCRtpTransceiver', category: 'network', runtimeKey: 'window.RTCRtpTransceiver'},
+  {bcdKey: 'api.RTCStatsReport', category: 'network', runtimeKey: 'window.RTCStatsReport'},
+  {bcdKey: 'api.RTCDtlsTransport', category: 'network', runtimeKey: 'window.RTCDtlsTransport'},
+  {bcdKey: 'api.RTCIceTransport', category: 'network', runtimeKey: 'window.RTCIceTransport'},
+  {bcdKey: 'api.RTCSctpTransport', category: 'network', runtimeKey: 'window.RTCSctpTransport'},
+  {bcdKey: 'api.RTCEncodedAudioFrame', category: 'network', runtimeKey: 'window.RTCEncodedAudioFrame'},
+  {bcdKey: 'api.RTCEncodedVideoFrame', category: 'network', runtimeKey: 'window.RTCEncodedVideoFrame'},
+
+  // ─── T2 — Web Audio nodes (more) ──────────────────────────────
+  {bcdKey: 'api.OfflineAudioContext', category: 'audio-video', runtimeKey: 'window.OfflineAudioContext'},
+  {bcdKey: 'api.MediaElementAudioSourceNode', category: 'audio-video', runtimeKey: 'window.MediaElementAudioSourceNode'},
+  {bcdKey: 'api.MediaStreamAudioSourceNode', category: 'audio-video', runtimeKey: 'window.MediaStreamAudioSourceNode'},
+  {bcdKey: 'api.MediaStreamAudioDestinationNode', category: 'audio-video', runtimeKey: 'window.MediaStreamAudioDestinationNode'},
+  {bcdKey: 'api.PannerNode', category: 'audio-video', runtimeKey: 'window.PannerNode'},
+  {bcdKey: 'api.IIRFilterNode', category: 'audio-video', runtimeKey: 'window.IIRFilterNode'},
+  {bcdKey: 'api.StereoPannerNode', category: 'audio-video', runtimeKey: 'window.StereoPannerNode'},
+  {bcdKey: 'api.ConstantSourceNode', category: 'audio-video', runtimeKey: 'window.ConstantSourceNode'},
+  {bcdKey: 'api.ChannelMergerNode', category: 'audio-video', runtimeKey: 'window.ChannelMergerNode'},
+  {bcdKey: 'api.ChannelSplitterNode', category: 'audio-video', runtimeKey: 'window.ChannelSplitterNode'},
+  {bcdKey: 'api.WaveShaperNode', category: 'audio-video', runtimeKey: 'window.WaveShaperNode'},
+  {bcdKey: 'api.PeriodicWave', category: 'audio-video', runtimeKey: 'window.PeriodicWave'},
+
+  // ─── T2 — WebXR (deep dive) ──────────────────────────────────
+  {bcdKey: 'api.XRReferenceSpace', category: 'frontier', runtimeKey: 'window.XRReferenceSpace'},
+  {bcdKey: 'api.XRFrame', category: 'frontier', runtimeKey: 'window.XRFrame'},
+  {bcdKey: 'api.XRInputSource', category: 'frontier', runtimeKey: 'window.XRInputSource'},
+  {bcdKey: 'api.XRRigidTransform', category: 'frontier', runtimeKey: 'window.XRRigidTransform'},
+  {bcdKey: 'api.XRHitTestSource', category: 'frontier', runtimeKey: 'window.XRHitTestSource'},
+  {bcdKey: 'api.XRWebGLLayer', category: 'frontier', runtimeKey: 'window.XRWebGLLayer'},
+  {bcdKey: 'api.XRAnchor', category: 'frontier', runtimeKey: 'window.XRAnchor'},
+  {bcdKey: 'api.XRLightProbe', category: 'frontier', runtimeKey: 'window.XRLightProbe'},
+  {bcdKey: 'api.XRRay', category: 'frontier', runtimeKey: 'window.XRRay'},
+  {bcdKey: 'api.XRPose', category: 'frontier', runtimeKey: 'window.XRPose'},
+
+  // ─── T2 — WebAuthn + Credentials family ───────────────────────
+  {bcdKey: 'api.Credential', category: 'identity', runtimeKey: 'window.Credential'},
+  {bcdKey: 'api.AuthenticatorAssertionResponse', category: 'identity', runtimeKey: 'window.AuthenticatorAssertionResponse'},
+  {bcdKey: 'api.AuthenticatorAttestationResponse', category: 'identity', runtimeKey: 'window.AuthenticatorAttestationResponse'},
+  {bcdKey: 'api.AuthenticatorResponse', category: 'identity', runtimeKey: 'window.AuthenticatorResponse'},
+  {bcdKey: 'api.PasswordCredential', category: 'identity', runtimeKey: 'window.PasswordCredential'},
+  {bcdKey: 'api.FederatedCredential', category: 'identity', runtimeKey: 'window.FederatedCredential'},
+  {bcdKey: 'api.IdentityProvider', category: 'identity', runtimeKey: 'window.IdentityProvider', title: 'FedCM IdentityProvider'},
+
+  // ─── T2 — Bluetooth GATT chain ───────────────────────────────
+  {bcdKey: 'api.BluetoothDevice', category: 'hardware', runtimeKey: 'window.BluetoothDevice'},
+  {bcdKey: 'api.BluetoothRemoteGATTServer', category: 'hardware', runtimeKey: 'window.BluetoothRemoteGATTServer'},
+  {bcdKey: 'api.BluetoothRemoteGATTService', category: 'hardware', runtimeKey: 'window.BluetoothRemoteGATTService'},
+  {bcdKey: 'api.BluetoothRemoteGATTCharacteristic', category: 'hardware', runtimeKey: 'window.BluetoothRemoteGATTCharacteristic'},
+  {bcdKey: 'api.BluetoothUUID', category: 'hardware', runtimeKey: 'window.BluetoothUUID'},
+
+  // ─── T2 — USB device family ──────────────────────────────────
+  {bcdKey: 'api.USBDevice', category: 'hardware', runtimeKey: 'window.USBDevice'},
+  {bcdKey: 'api.USBConfiguration', category: 'hardware', runtimeKey: 'window.USBConfiguration'},
+  {bcdKey: 'api.USBInterface', category: 'hardware', runtimeKey: 'window.USBInterface'},
+
+  // ─── T2 — MIDI ports + maps ──────────────────────────────────
+  {bcdKey: 'api.MIDIInput', category: 'audio-video', runtimeKey: 'window.MIDIInput'},
+  {bcdKey: 'api.MIDIOutput', category: 'audio-video', runtimeKey: 'window.MIDIOutput'},
+  {bcdKey: 'api.MIDIInputMap', category: 'audio-video', runtimeKey: 'window.MIDIInputMap'},
+  {bcdKey: 'api.MIDIOutputMap', category: 'audio-video', runtimeKey: 'window.MIDIOutputMap'},
+
+  // ─── T2 — IndexedDB cursor + factory ───────────────────────────
+  {bcdKey: 'api.IDBCursor', category: 'storage', runtimeKey: 'window.IDBCursor'},
+  {bcdKey: 'api.IDBCursorWithValue', category: 'storage', runtimeKey: 'window.IDBCursorWithValue'},
+  {bcdKey: 'api.IDBFactory', category: 'storage', runtimeKey: 'window.IDBFactory'},
+  {bcdKey: 'api.IDBRequest', category: 'storage', runtimeKey: 'window.IDBRequest'},
+  {bcdKey: 'api.IDBOpenDBRequest', category: 'storage', runtimeKey: 'window.IDBOpenDBRequest'},
+
+  // ─── T2 — EME / DRM ──────────────────────────────────────
+  {bcdKey: 'api.MediaKeys', category: 'media-capture', runtimeKey: 'window.MediaKeys', title: 'Encrypted Media (EME)'},
+  {bcdKey: 'api.MediaKeySession', category: 'media-capture', runtimeKey: 'window.MediaKeySession'},
+  {bcdKey: 'api.MediaKeySystemAccess', category: 'media-capture', runtimeKey: 'window.MediaKeySystemAccess'},
+  {bcdKey: 'api.MediaKeyStatusMap', category: 'media-capture', runtimeKey: 'window.MediaKeyStatusMap'},
+  {bcdKey: 'api.Navigator.requestMediaKeySystemAccess', category: 'media-capture', runtimeKey: 'navigator.requestMediaKeySystemAccess', title: 'requestMediaKeySystemAccess()'},
+
+  // ─── T2 — Media Stream processing ────────────────────────────
+  {bcdKey: 'api.MediaStreamTrackProcessor', category: 'media-capture', runtimeKey: 'window.MediaStreamTrackProcessor'},
+  {bcdKey: 'api.MediaStreamTrackGenerator', category: 'media-capture', runtimeKey: 'window.MediaStreamTrackGenerator'},
+  {bcdKey: 'api.CaptureController', category: 'media-capture', runtimeKey: 'window.CaptureController'},
+
+  // ─── T2 — Presentation API (Cast) ─────────────────────────────
+  {bcdKey: 'api.Presentation', category: 'hardware', runtimeKey: 'navigator.presentation', title: 'Presentation API'},
+  {bcdKey: 'api.PresentationAvailability', category: 'hardware', runtimeKey: 'window.PresentationAvailability'},
+  {bcdKey: 'api.PresentationConnection', category: 'hardware', runtimeKey: 'window.PresentationConnection'},
+  {bcdKey: 'api.PresentationConnectionList', category: 'hardware', runtimeKey: 'window.PresentationConnectionList'},
+  {bcdKey: 'api.PresentationReceiver', category: 'hardware', runtimeKey: 'window.PresentationReceiver'},
+  {bcdKey: 'api.RemotePlayback', category: 'hardware', runtimeKey: 'window.RemotePlayback'},
+
+  // ─── T2 — Push / Notifications backend ──────────────────────────
+  {bcdKey: 'api.PushManager', category: 'workers', runtimeKey: 'window.PushManager'},
+  {bcdKey: 'api.PushSubscription', category: 'workers', runtimeKey: 'window.PushSubscription'},
+  {bcdKey: 'api.PushSubscriptionOptions', category: 'workers', runtimeKey: 'window.PushSubscriptionOptions'},
+
+  // ─── T2 — Background Fetch / Sync ────────────────────────────
+  {bcdKey: 'api.BackgroundFetchManager', category: 'workers', runtimeKey: 'window.BackgroundFetchManager'},
+  {bcdKey: 'api.BackgroundFetchRegistration', category: 'workers', runtimeKey: 'window.BackgroundFetchRegistration'},
+  {bcdKey: 'api.BackgroundFetchRecord', category: 'workers', runtimeKey: 'window.BackgroundFetchRecord'},
+  {bcdKey: 'api.PeriodicSyncManager', category: 'workers', runtimeKey: 'window.PeriodicSyncManager'},
+  {bcdKey: 'api.SyncManager', category: 'workers', runtimeKey: 'window.SyncManager', title: 'Background Sync'},
+
+  // ─── T2 — Navigation API extras ────────────────────────────────
+  {bcdKey: 'api.NavigationHistoryEntry', category: 'frontier', runtimeKey: 'window.NavigationHistoryEntry'},
+  {bcdKey: 'api.NavigationActivation', category: 'frontier', runtimeKey: 'window.NavigationActivation'},
+  {bcdKey: 'api.NavigationDestination', category: 'frontier', runtimeKey: 'window.NavigationDestination'},
+  {bcdKey: 'api.NavigationTransition', category: 'frontier', runtimeKey: 'window.NavigationTransition'},
+  {bcdKey: 'api.NavigationPreloadManager', category: 'frontier', runtimeKey: 'window.NavigationPreloadManager'},
+
+  // ─── T2 — CSSOM Typed Object Model ──────────────────────────────
+  {bcdKey: 'api.StylePropertyMap', category: 'frontier', runtimeKey: 'window.StylePropertyMap', title: 'CSS Typed OM'},
+  {bcdKey: 'api.StylePropertyMapReadOnly', category: 'frontier', runtimeKey: 'window.StylePropertyMapReadOnly'},
+
+  // ─── T2 — More Sensors ────────────────────────────────────
+  {bcdKey: 'api.AbsoluteOrientationSensor', category: 'sensors', runtimeKey: 'window.AbsoluteOrientationSensor'},
+  {bcdKey: 'api.GravitySensor', category: 'sensors', runtimeKey: 'window.GravitySensor'},
+  {bcdKey: 'api.DevicePosture', category: 'sensors', runtimeKey: 'navigator.devicePosture', title: 'Device Posture'},
+  {bcdKey: 'api.PressureRecord', category: 'sensors', runtimeKey: 'window.PressureRecord'},
+
+  // ─── T2 — Cookie Store manager ───────────────────────────────
+  {bcdKey: 'api.CookieStoreManager', category: 'storage', runtimeKey: 'window.CookieStoreManager'},
 ]

@@ -215,6 +215,8 @@ export function findUnknownGlobals(catalogRuntimeKeys: Set<string>): UnknownGlob
           'buildID',
           'taintEnabled',
           'javaEnabled',
+          // The following used to be filtered but are now in the catalog;
+          // listing them here is harmless (catalog covers them).
         ].includes(name)
       )
         continue
