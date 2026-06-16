@@ -340,8 +340,9 @@ export const API_SELECTION: ApiSelection[] = [
 
   // ─── T1 — Files + Graphics frontier additions ───────────────────────
   {bcdKey: 'api.FileSystemObserver', category: 'files', runtimeKey: 'window.FileSystemObserver'},
-  // TimelineTrigger intentionally skipped — not yet in @mdn/browser-compat-data.
-  // Re-add once the weekly catalog refresh PR surfaces it.
+  // Spec rename: was 'TimelineTrigger', now 'AnimationTrigger' (CSS Animation Trigger).
+  // Chrome 149 still exposes it under the old name; this entry follows the BCD/spec.
+  {bcdKey: 'api.AnimationTrigger', category: 'graphics', runtimeKey: 'window.AnimationTrigger', title: 'Animation Trigger (scroll-driven)'},
 
   // ─── T2 — WebRTC primitives ──────────────────────────────────
   {bcdKey: 'api.RTCDataChannel', category: 'network', runtimeKey: 'window.RTCDataChannel'},
