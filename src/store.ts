@@ -108,6 +108,17 @@ export const useStore = create<State>((set, get) => ({
   initialize: async () => {
     const runtime = detectAll(catalog.entries)
     const runtimeKeys = new Set(catalog.entries.map((e) => e.runtimeKey))
+    // Many catalog entries use the instance accessor as their runtime key
+    // (`navigator.gpu`, `window.indexedDB`, `navigator.bluetooth`, …) but
+    // browsers also expose the *constructor* on `window` under the BCD
+    // identifier name (`window.GPU`, `window.IDBDatabase`, `window.Bluetooth`).
+    // Register both as known so the introspector doesn't double-count.
+    for (const e of catalog.entries) {
+      const last = e.id.split('.').pop()
+      if (last && /^[A-Z]/.test(last) && !last.endsWith('_static')) {
+        runtimeKeys.add(`window.${last}`)
+      }
+    }
     const unknown = findUnknownGlobals(runtimeKeys)
     const browser = await detectBrowser()
     set({runtime, unknown, browser})

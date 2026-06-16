@@ -60,15 +60,48 @@ const NOISE_PATTERNS = [
   // Privacy Sandbox / Protected Audience / Topics / Attribution Reporting
   // — these are intentionally not in the educational atlas. They're
   // experimental, ad-industry-specific, and change frequently.
-  /AdAuction/,
-  /AdInterest/,
-  /^canLoadAd/,
+  /adAuction/i,
+  /AdInterest/i,
+  /^canLoadAd/i,
   /Fenced[A-Z]/,
-  /^Fenced/,
-  /^Topics/,
-  /Attribution/,
+  /^Fenced$/,
+  /^Topics$/,
+  /Attribution/i,
   /^deprecated/i,
   /^federated[A-Z]/,
+  /^Shared[A-Z]/,
+  /^SharedStorage/i,
+  /protectedAudience/i,
+  /^Protected[A-Z]/,
+  /^NavigatorLogin$/,
+  /^NavigatorManagedData$/,
+  /^NavigationPrecommit/,
+  /^CreateMonitor$/,
+  /^Subscriber$/,
+  /^Origin$/,
+  /^Viewport$/,
+  /^FetchLater/,
+
+  // WebXR sub-types — top-level XRSystem, XRSession, XRFrame, XRReferenceSpace,
+  // XRInputSource, XRRigidTransform, XRHitTestSource, XRWebGLLayer, XRAnchor,
+  // XRLightProbe, XRRay, XRPose stay catalogued. Everything else is internals.
+  /^XR(Anchor(Set)?|Bounded[A-Z]|Camera|Composition[A-Z]|CPUDepth|Cube[A-Z]|Cylinder[A-Z]|Depth[A-Z]|DOMOverlay|Equirect[A-Z]|Hand$|HitTest(Result)?|InputSourceArray|Joint[A-Z]|Layer$|Light(Estimate|Probe)|Plane(Set)?|Projection[A-Z]|Quad[A-Z]|Render[A-Z]|Space$|SubImage|TransientInput[A-Z]|View(erPose|port)?$|WebGL(Binding|Depth|Sub)[A-Z])/,
+
+  // GPU detail constructors (top-level GPU + GPUDevice / GPUBuffer / GPUTexture
+  // / GPUShaderModule / GPURenderPipeline / GPUCommandEncoder are catalogued).
+  /^GPU(Adapter(Info)?|Bind[A-Z]|CanvasContext|Color[A-Z]|Command(Buffer)?|Compilation[A-Z]|Compute[A-Z]|DeviceLost|External[A-Z]|Map[A-Z]|Pipeline[A-Z]|QuerySet|Queue|RenderBundle[A-Za-z]*|RenderPass[A-Z]|Sampler|Shader(Stage)?|Supported[A-Z]|Texture(Usage|View)|WGSL)/,
+
+  // USB transfer + endpoint sub-types
+  /^USB(Alt|Endpoint|In|Isochronous|Out)[A-Za-z]*$/,
+
+  // Misc legacy / internals
+  /^IDB.*Request$/,
+  /^IDBRecord$/,
+  /^MimeType(Array)?$/,
+  /^Plugin(Array)?$/,
+  /^FeaturePolicy$/,
+  /^BarProp$/,
+  /^NotRestoredReasons?(Details)?$/,
   // WebDriver / automation internals
   /^webdriver/i,
   /^automation/i,
@@ -217,6 +250,20 @@ export function findUnknownGlobals(catalogRuntimeKeys: Set<string>): UnknownGlob
           'javaEnabled',
           // The following used to be filtered but are now in the catalog;
           // listing them here is harmless (catalog covers them).
+          // Genuinely-noise navigator getters (legacy / experimental):
+          'getUserMedia',
+          'registerProtocolHandler',
+          'unregisterProtocolHandler',
+          'getInstalledRelatedApps',
+          'login',
+          'managed',
+          'protectedAudience',
+          'createAuctionNonce',
+          'adAuctionComponents',
+          'scheduling',
+          'ink',
+          'keyboard',
+          'userActivation',
         ].includes(name)
       )
         continue
