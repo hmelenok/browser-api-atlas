@@ -2,6 +2,8 @@
 
 Thanks for considering a contribution! The atlas is intentionally easy to extend &mdash; the goal is for community contributors to add demos and new APIs without needing to understand the whole stack.
 
+**Issues vs Discussions.** Use [Issues](https://github.com/hmelenok/browser-api-atlas/issues) for bugs, "demo wanted" intents, and "add this API" requests &mdash; anything actionable. Use [Discussions](https://github.com/hmelenok/browser-api-atlas/discussions) for open-ended questions, ideas you want feedback on first, and show-and-tell.
+
 ## Three ways to help
 
 ### 1. Add a demo

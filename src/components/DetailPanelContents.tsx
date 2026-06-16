@@ -218,7 +218,7 @@ export default function DetailPanelContents({
 
         <section className="px-5 pb-6">
           <a
-            href={`https://github.com/hmelenok/browser-api-atlas/discussions/new?category=apis&title=${encodeURIComponent(`Discuss: ${entry.title}`)}`}
+            href={`https://github.com/hmelenok/browser-api-atlas/discussions/new?category=q-a&title=${encodeURIComponent(`${entry.title}: ...`)}`}
             target="_blank"
             rel="noreferrer noopener"
             className="inline-flex items-center gap-1.5 text-xs text-[var(--color-muted)] hover:text-[var(--color-fg)]"

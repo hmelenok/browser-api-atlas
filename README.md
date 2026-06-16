@@ -123,6 +123,8 @@ To enable: sign up at [goatcounter.com](https://www.goatcounter.com) (free for p
 
 PRs and issues welcome &mdash; especially demos for APIs that don't have one yet. See [CONTRIBUTING.md](./CONTRIBUTING.md).
 
+Ask questions, vote on what gets demoed next, or share how you use the atlas in [GitHub Discussions](https://github.com/hmelenok/browser-api-atlas/discussions). For bugs and specific contribution intent, use [Issues](https://github.com/hmelenok/browser-api-atlas/issues).
+
 ## License
 
 [MIT](./LICENSE) &copy; Mykyta Khmel
