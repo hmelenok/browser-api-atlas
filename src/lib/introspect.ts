@@ -191,6 +191,20 @@ const NOISE_PATTERNS = [
   // Privacy Sandbox / Ink (experimental, niche)
   /^(Fence|Ink|DelegatedInkTrailPresenter)$/,
 
+  // Legacy File and Directory Entries API (Firefox / Chrome legacy, replaced
+  // by File System Access API which IS catalogued as FileSystemHandle &
+  // family). The names without "Handle" suffix are the old surface.
+  /^Directory$/,
+  /^FileSystem(|Entry|FileEntry|DirectoryEntry|DirectoryReader)$/,
+
+  // Firefox-specific extensions
+  /^GamepadPose$/, // Firefox Gamepad VR extension
+  /^GetParams$/, // Firefox internal helper
+  /^PaintRequest(List)?$/, // Firefox paint timing
+
+  // WebVTT region (sub-type of TextTrack family, already filtered)
+  /^VTTRegion$/,
+
   // Stream readable byte controller (internal, passed to constructors)
   /^ReadableByteStreamController$/,
 

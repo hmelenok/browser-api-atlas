@@ -363,6 +363,7 @@ export const API_SELECTION: ApiSelection[] = [
   {bcdKey: 'api.MediaElementAudioSourceNode', category: 'audio-video', runtimeKey: 'window.MediaElementAudioSourceNode'},
   {bcdKey: 'api.MediaStreamAudioSourceNode', category: 'audio-video', runtimeKey: 'window.MediaStreamAudioSourceNode'},
   {bcdKey: 'api.MediaStreamAudioDestinationNode', category: 'audio-video', runtimeKey: 'window.MediaStreamAudioDestinationNode'},
+  {bcdKey: 'api.MediaStreamTrackAudioSourceNode', category: 'audio-video', runtimeKey: 'window.MediaStreamTrackAudioSourceNode'},
   {bcdKey: 'api.PannerNode', category: 'audio-video', runtimeKey: 'window.PannerNode'},
   {bcdKey: 'api.IIRFilterNode', category: 'audio-video', runtimeKey: 'window.IIRFilterNode'},
   {bcdKey: 'api.StereoPannerNode', category: 'audio-video', runtimeKey: 'window.StereoPannerNode'},

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T09:37:11.551Z",
+  "generatedAt": "2026-06-17T10:56:51.451Z",
   "bcdVersion": "8.0.2",
   "webFeaturesVersion": "3.30.0",
   "entries": [
@@ -3866,6 +3866,20 @@
       "status": "standard",
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/MediaStreamAudioDestinationNode",
       "specUrl": "https://webaudio.github.io/web-audio-api/#MediaStreamAudioDestinationNode",
+      "webFeatureId": "web-audio",
+      "hasDemo": false
+    },
+    {
+      "id": "api.MediaStreamTrackAudioSourceNode",
+      "title": "MediaStreamTrackAudioSourceNode",
+      "category": "audio-video",
+      "description": "The Web Audio API creates graphs of audio nodes that handle sound inputs, synthesize sounds, apply effects, create visualizations, and output to audio devices.",
+      "runtimeKey": "window.MediaStreamTrackAudioSourceNode",
+      "baseline": "widely",
+      "baselineYear": 2023,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/MediaStreamTrackAudioSourceNode",
+      "specUrl": "https://webaudio.github.io/web-audio-api/#MediaStreamTrackAudioSourceNode",
       "webFeatureId": "web-audio",
       "hasDemo": false
     },
