@@ -130,6 +130,7 @@ function GraphInner() {
   }, [])
 
   return (
+    <div className="relative h-full w-full">
     <ReactFlow
       nodes={layoutNodes}
       edges={layoutEdges}
@@ -162,9 +163,16 @@ function GraphInner() {
           Laying out…
         </div>
       )}
-
-      {!layingOut && entries.length === 0 && <EmptyState />}
     </ReactFlow>
+
+    {/* Empty state lives outside ReactFlow so its buttons are clickable
+         — ReactFlow's pane otherwise captures pointer events on children. */}
+    {!layingOut && entries.length === 0 && (
+      <div className="pointer-events-auto absolute inset-0 z-10 overflow-y-auto bg-[var(--color-bg)]/60 backdrop-blur-sm">
+        <EmptyState />
+      </div>
+    )}
+    </div>
   )
 }
 
