@@ -183,6 +183,34 @@ const NOISE_PATTERNS = [
   // CSS rule sub-types (CSS.* APIs cover the surface)
   /^CSS(Style)?Rule$/,
   /^MediaQueryListEvent$/,
+
+  // Window-singleton constructors (Window, Document, Navigator, Location,
+  // History, Screen, EventTarget) — not APIs you call.
+  /^(Window|Document|Navigator|Location|History|Screen|EventTarget|Option)$/,
+
+  // Privacy Sandbox / Ink (experimental, niche)
+  /^(Fence|Ink|DelegatedInkTrailPresenter)$/,
+
+  // Stream readable byte controller (internal, passed to constructors)
+  /^ReadableByteStreamController$/,
+
+  // GPU bit-flag objects + WGSL feature object
+  /^(GPUBufferUsage|GPUColorWrite|GPUMapMode|GPUShaderStage|GPUTextureUsage|WGSLLanguageFeatures)$/,
+
+  // Sub-types of catalogued APIs
+  /^HIDDevice$/,
+  /^Lock$/,
+  /^Payment(Address|Manager|Response)$/,
+  /^RTC(Certificate|DTMFSender|RtpScriptTransform)$/,
+  /^SerialPort$/,
+  /^ServiceWorker(Container|Registration)$/,
+  /^ScriptProcessorNode$/, // deprecated Web Audio
+  /^XRWebGLBinding$/,
+  /^VisualViewport$/,
+
+  // TimelineTrigger family — spec renamed to AnimationTrigger (catalogued)
+  /^TimelineTrigger(Range|RangeList)?$/,
+
   // WebDriver / automation internals
   /^webdriver/i,
   /^automation/i,
