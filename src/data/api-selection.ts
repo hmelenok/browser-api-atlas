@@ -469,4 +469,29 @@ export const API_SELECTION: ApiSelection[] = [
 
   // ─── T2 — Cookie Store manager ───────────────────────────────
   {bcdKey: 'api.CookieStoreManager', category: 'storage', runtimeKey: 'window.CookieStoreManager'},
+
+  // ─── T3 — Companion APIs (return / result types you'll actually use) ───────
+  {bcdKey: 'api.ClipboardItem', category: 'platform-ui', runtimeKey: 'window.ClipboardItem', title: 'ClipboardItem'},
+  {bcdKey: 'api.PermissionStatus', category: 'identity', runtimeKey: 'window.PermissionStatus'},
+  {bcdKey: 'api.WakeLockSentinel', category: 'platform-ui', runtimeKey: 'window.WakeLockSentinel'},
+  {bcdKey: 'api.IdleDeadline', category: 'observation', runtimeKey: 'window.IdleDeadline', title: 'IdleDeadline (rIC callback)'},
+  {bcdKey: 'api.ImageBitmap', category: 'graphics', runtimeKey: 'window.ImageBitmap', title: 'ImageBitmap (constructor)'},
+
+  // ─── T3 — Standalone real APIs ───────────────────────────────────
+  {bcdKey: 'api.ScreenOrientation', category: 'platform-ui', runtimeKey: 'window.screen.orientation', title: 'Screen Orientation'},
+  {bcdKey: 'api.MediaError', category: 'media-capture', runtimeKey: 'window.MediaError'},
+  {bcdKey: 'api.AudioSession', category: 'audio-video', runtimeKey: 'navigator.audioSession', title: 'Audio Session'},
+  {bcdKey: 'api.Keyboard', category: 'platform-ui', runtimeKey: 'navigator.keyboard', title: 'Keyboard API'},
+  {bcdKey: 'api.Scheduling', category: 'observation', runtimeKey: 'navigator.scheduling', title: 'Scheduling API (legacy)'},
+
+  // ─── T3 — Common Events (the constructors developers listen for) ──────────
+  {bcdKey: 'api.NavigateEvent', category: 'frontier', runtimeKey: 'window.NavigateEvent', title: 'Navigation API: NavigateEvent'},
+  {bcdKey: 'api.NavigationCurrentEntryChangeEvent', category: 'frontier', runtimeKey: 'window.NavigationCurrentEntryChangeEvent'},
+  {bcdKey: 'api.PageRevealEvent', category: 'frontier', runtimeKey: 'window.PageRevealEvent', title: 'Cross-document View Transitions: pagereveal'},
+  {bcdKey: 'api.PageSwapEvent', category: 'frontier', runtimeKey: 'window.PageSwapEvent', title: 'Cross-document View Transitions: pageswap'},
+  {bcdKey: 'api.ClipboardEvent', category: 'platform-ui', runtimeKey: 'window.ClipboardEvent'},
+  {bcdKey: 'api.CookieChangeEvent', category: 'storage', runtimeKey: 'window.CookieChangeEvent'},
+  {bcdKey: 'api.BlobEvent', category: 'media-capture', runtimeKey: 'window.BlobEvent', title: 'BlobEvent (MediaRecorder data)'},
+  {bcdKey: 'api.FormDataEvent', category: 'platform-ui', runtimeKey: 'window.FormDataEvent'},
+  {bcdKey: 'api.MessageEvent', category: 'workers', runtimeKey: 'window.MessageEvent'},
 ]

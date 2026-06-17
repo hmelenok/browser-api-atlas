@@ -277,6 +277,23 @@ export const RELATIONSHIPS: CatalogRelationship[] = [
 
   // Cookie Store
   {from: 'api.CookieStoreManager', to: 'api.CookieStore'},
+  {from: 'api.CookieChangeEvent', to: 'api.CookieStore'},
+
+  // T3 companion APIs
+  {from: 'api.ClipboardItem', to: 'api.Clipboard'},
+  {from: 'api.ClipboardEvent', to: 'api.Clipboard'},
+  {from: 'api.PermissionStatus', to: 'api.Permissions'},
+  {from: 'api.WakeLockSentinel', to: 'api.WakeLock'},
+  {from: 'api.IdleDeadline', to: 'api.Window.requestIdleCallback'},
+  {from: 'api.ImageBitmap', to: 'api.CanvasRenderingContext2D'},
+  {from: 'api.MediaError', to: 'api.HTMLMediaElement'},
+  {from: 'api.BlobEvent', to: 'api.MediaRecorder'},
+  {from: 'api.FormDataEvent', to: 'api.FormData'},
+  {from: 'api.NavigateEvent', to: 'api.Navigation'},
+  {from: 'api.NavigationCurrentEntryChangeEvent', to: 'api.Navigation'},
+  {from: 'api.PageRevealEvent', to: 'api.Document.startViewTransition'},
+  {from: 'api.PageSwapEvent', to: 'api.Document.startViewTransition'},
+  {from: 'api.MessageEvent', to: 'api.MessagePort'},
 
   // Frontier
   {from: 'api.Document.startViewTransition', to: 'api.HTMLDialogElement', label: 'animate dialog'},

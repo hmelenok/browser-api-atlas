@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T15:47:08.103Z",
+  "generatedAt": "2026-06-17T09:37:11.551Z",
   "bcdVersion": "8.0.2",
   "webFeaturesVersion": "3.30.0",
   "entries": [
@@ -4883,6 +4883,267 @@
       "specUrl": "https://cookiestore.spec.whatwg.org/#cookiestoremanager",
       "webFeatureId": "cookie-store",
       "hasDemo": false
+    },
+    {
+      "id": "api.ClipboardItem",
+      "title": "ClipboardItem",
+      "category": "platform-ui",
+      "description": "The navigator.clipboard API asynchronously reads and writes to the system clipboard.",
+      "runtimeKey": "window.ClipboardItem",
+      "baseline": "newly",
+      "baselineYear": 2024,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/ClipboardItem",
+      "specUrl": "https://w3c.github.io/clipboard-apis/#clipboarditem",
+      "webFeatureId": "async-clipboard",
+      "hasDemo": false
+    },
+    {
+      "id": "api.PermissionStatus",
+      "title": "PermissionStatus",
+      "category": "identity",
+      "description": "The navigator.permissions API checks whether a permission, such as access to geolocation data, has been granted.",
+      "runtimeKey": "window.PermissionStatus",
+      "baseline": "widely",
+      "baselineYear": 2025,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/PermissionStatus",
+      "specUrl": "https://w3c.github.io/permissions/#permissionstatus-interface",
+      "webFeatureId": "permissions",
+      "hasDemo": false
+    },
+    {
+      "id": "api.WakeLockSentinel",
+      "title": "WakeLockSentinel",
+      "category": "platform-ui",
+      "description": "The navigator.wakeLock.request(\"screen\") API prevents the device's screen from dimming or being turned off.",
+      "runtimeKey": "window.WakeLockSentinel",
+      "baseline": "newly",
+      "baselineYear": 2025,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/WakeLockSentinel",
+      "specUrl": "https://w3c.github.io/screen-wake-lock/#the-wakelocksentinel-interface",
+      "webFeatureId": "screen-wake-lock",
+      "hasDemo": false
+    },
+    {
+      "id": "api.IdleDeadline",
+      "title": "IdleDeadline (rIC callback)",
+      "category": "observation",
+      "description": "The requestIdleCallback() API queues a function that runs in idle browser time, either at the end of a frame or when the user is inactive. Also known as the background tasks API.",
+      "runtimeKey": "window.IdleDeadline",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/IdleDeadline",
+      "specUrl": "https://w3c.github.io/requestidlecallback/#the-idledeadline-interface",
+      "webFeatureId": "requestidlecallback",
+      "hasDemo": false
+    },
+    {
+      "id": "api.ImageBitmap",
+      "title": "ImageBitmap (constructor)",
+      "category": "graphics",
+      "description": "The createImageBitmap() global method creates an ImageBitmap object from a source such as an image, SVG, blob, or canvas. An ImageBitmap object represents pixel data that can be drawn to a canvas with lower latency than other types, such as ImageData.",
+      "runtimeKey": "window.ImageBitmap",
+      "baseline": "newly",
+      "baselineYear": 2023,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/ImageBitmap",
+      "specUrl": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmap",
+      "webFeatureId": "createimagebitmap",
+      "hasDemo": false
+    },
+    {
+      "id": "api.ScreenOrientation",
+      "title": "Screen Orientation",
+      "category": "platform-ui",
+      "description": "The screen.orientation API gets information about the orientation of the viewport, such as landscape or portrait. With this API, you can adapt an application's layout or behavior in response to changes in orientation.",
+      "runtimeKey": "window.screen.orientation",
+      "baseline": "widely",
+      "baselineYear": 2025,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/ScreenOrientation",
+      "specUrl": "https://w3c.github.io/screen-orientation/#screenorientation-interface",
+      "webFeatureId": "screen-orientation",
+      "hasDemo": false
+    },
+    {
+      "id": "api.MediaError",
+      "title": "MediaError",
+      "category": "media-capture",
+      "description": "The  element plays videos or movies, optionally with controls provided by the browser.",
+      "runtimeKey": "window.MediaError",
+      "baseline": "widely",
+      "baselineYear": 2018,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/MediaError",
+      "specUrl": "https://html.spec.whatwg.org/multipage/media.html#error-codes",
+      "webFeatureId": "video",
+      "hasDemo": false
+    },
+    {
+      "id": "api.AudioSession",
+      "title": "Audio Session",
+      "category": "audio-video",
+      "description": "The navigator.audioSession API controls how audio playback interacts with other applications. For example, playing music can pause audio from other applications, while ambient audio can play at the same time.",
+      "runtimeKey": "navigator.audioSession",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/AudioSession",
+      "specUrl": "https://w3c.github.io/audio-session/#audiosession",
+      "webFeatureId": "audio-session",
+      "hasDemo": false
+    },
+    {
+      "id": "api.Keyboard",
+      "title": "Keyboard API",
+      "category": "platform-ui",
+      "description": "The navigator.keyboard.lock() API allows you to capture keys that are normally reserved by the operating system. It can be used to provide an immersive fullscreen experience such as games.",
+      "runtimeKey": "navigator.keyboard",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/Keyboard",
+      "specUrl": "https://wicg.github.io/keyboard-map/#keyboard-interface",
+      "webFeatureId": "keyboard-lock",
+      "hasDemo": false
+    },
+    {
+      "id": "api.Scheduling",
+      "title": "Scheduling API (legacy)",
+      "category": "observation",
+      "description": "The navigator.scheduling.isInputPending() method checks if there are pending input events, such as touch or mouse events. This allows you to yield from long-running scripts that might be blocking user interaction.",
+      "runtimeKey": "navigator.scheduling",
+      "baseline": "limited",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/Scheduling",
+      "specUrl": "https://wicg.github.io/is-input-pending/#the-scheduling-interface",
+      "webFeatureId": "is-input-pending",
+      "hasDemo": false
+    },
+    {
+      "id": "api.NavigateEvent",
+      "title": "Navigation API: NavigateEvent",
+      "category": "frontier",
+      "description": "The navigation API initiates, intercepts, or modifies browser navigation actions. Not to be confused with the navigator API.",
+      "runtimeKey": "window.NavigateEvent",
+      "baseline": "newly",
+      "baselineYear": 2026,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/NavigateEvent",
+      "specUrl": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigateevent-interface",
+      "webFeatureId": "navigation",
+      "hasDemo": false
+    },
+    {
+      "id": "api.NavigationCurrentEntryChangeEvent",
+      "title": "NavigationCurrentEntryChangeEvent",
+      "category": "frontier",
+      "description": "The navigation API initiates, intercepts, or modifies browser navigation actions. Not to be confused with the navigator API.",
+      "runtimeKey": "window.NavigationCurrentEntryChangeEvent",
+      "baseline": "newly",
+      "baselineYear": 2026,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/NavigationCurrentEntryChangeEvent",
+      "specUrl": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationcurrententrychangeevent-interface",
+      "webFeatureId": "navigation",
+      "hasDemo": false
+    },
+    {
+      "id": "api.PageRevealEvent",
+      "title": "Cross-document View Transitions: pagereveal",
+      "category": "frontier",
+      "description": "View transitions allow you to create animated visual transitions between different states of a document.",
+      "runtimeKey": "window.PageRevealEvent",
+      "baseline": "newly",
+      "baselineYear": 2025,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/PageRevealEvent",
+      "specUrl": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-pagerevealevent-interface",
+      "webFeatureId": "view-transitions",
+      "hasDemo": false
+    },
+    {
+      "id": "api.PageSwapEvent",
+      "title": "Cross-document View Transitions: pageswap",
+      "category": "frontier",
+      "description": "View transitions allow you to create animated visual transitions between different states of a document.",
+      "runtimeKey": "window.PageSwapEvent",
+      "baseline": "newly",
+      "baselineYear": 2025,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/PageSwapEvent",
+      "specUrl": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-pageswapevent-interface",
+      "webFeatureId": "view-transitions",
+      "hasDemo": false
+    },
+    {
+      "id": "api.ClipboardEvent",
+      "title": "ClipboardEvent",
+      "category": "platform-ui",
+      "description": "The \"copy\", \"cut\", and \"paste\" events fire on elements when the user starts an action with the clipboard.",
+      "runtimeKey": "window.ClipboardEvent",
+      "baseline": "widely",
+      "baselineYear": 2019,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/ClipboardEvent",
+      "specUrl": "https://w3c.github.io/clipboard-apis/#clipboard-event-interfaces",
+      "webFeatureId": "clipboard-events",
+      "hasDemo": false
+    },
+    {
+      "id": "api.CookieChangeEvent",
+      "title": "CookieChangeEvent",
+      "category": "storage",
+      "description": "The CookieStore API is an asynchronous and promise-based API for managing cookies. It does not rely on document and so is available to service workers as well.",
+      "runtimeKey": "window.CookieChangeEvent",
+      "baseline": "limited",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/CookieChangeEvent",
+      "specUrl": "https://cookiestore.spec.whatwg.org/#CookieChangeEvent",
+      "webFeatureId": "cookie-store",
+      "hasDemo": false
+    },
+    {
+      "id": "api.BlobEvent",
+      "title": "BlobEvent (MediaRecorder data)",
+      "category": "media-capture",
+      "description": "The MediaRecorder API captures data generated by MediaStream or HTMLMediaElement objects for analysis, processing, or saving to disk. Also known as the Media Recording API.",
+      "runtimeKey": "window.BlobEvent",
+      "baseline": "widely",
+      "baselineYear": 2023,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/BlobEvent",
+      "specUrl": "https://w3c.github.io/mediacapture-record/#blobevent-section",
+      "webFeatureId": "mediastream-recording",
+      "hasDemo": false
+    },
+    {
+      "id": "api.FormDataEvent",
+      "title": "FormDataEvent",
+      "category": "platform-ui",
+      "description": "The  element contains interactive controls for submitting information.",
+      "runtimeKey": "window.FormDataEvent",
+      "baseline": "widely",
+      "baselineYear": 2018,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/FormDataEvent",
+      "specUrl": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#the-formdataevent-interface",
+      "webFeatureId": "form",
+      "hasDemo": false
+    },
+    {
+      "id": "api.MessageEvent",
+      "title": "MessageEvent",
+      "category": "workers",
+      "description": "The postMessage() global method sends cross-origin messages to windows and workers, including popups and iframes. Also known as cross-document messaging.",
+      "runtimeKey": "window.MessageEvent",
+      "baseline": "widely",
+      "baselineYear": 2018,
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/MessageEvent",
+      "specUrl": "https://html.spec.whatwg.org/multipage/comms.html#the-messageevent-interface",
+      "webFeatureId": "postmessage",
+      "hasDemo": false
     }
   ],
   "relationships": [
@@ -5710,6 +5971,66 @@
     {
       "from": "api.CookieStoreManager",
       "to": "api.CookieStore"
+    },
+    {
+      "from": "api.CookieChangeEvent",
+      "to": "api.CookieStore"
+    },
+    {
+      "from": "api.ClipboardItem",
+      "to": "api.Clipboard"
+    },
+    {
+      "from": "api.ClipboardEvent",
+      "to": "api.Clipboard"
+    },
+    {
+      "from": "api.PermissionStatus",
+      "to": "api.Permissions"
+    },
+    {
+      "from": "api.WakeLockSentinel",
+      "to": "api.WakeLock"
+    },
+    {
+      "from": "api.IdleDeadline",
+      "to": "api.Window.requestIdleCallback"
+    },
+    {
+      "from": "api.ImageBitmap",
+      "to": "api.CanvasRenderingContext2D"
+    },
+    {
+      "from": "api.MediaError",
+      "to": "api.HTMLMediaElement"
+    },
+    {
+      "from": "api.BlobEvent",
+      "to": "api.MediaRecorder"
+    },
+    {
+      "from": "api.FormDataEvent",
+      "to": "api.FormData"
+    },
+    {
+      "from": "api.NavigateEvent",
+      "to": "api.Navigation"
+    },
+    {
+      "from": "api.NavigationCurrentEntryChangeEvent",
+      "to": "api.Navigation"
+    },
+    {
+      "from": "api.PageRevealEvent",
+      "to": "api.Document.startViewTransition"
+    },
+    {
+      "from": "api.PageSwapEvent",
+      "to": "api.Document.startViewTransition"
+    },
+    {
+      "from": "api.MessageEvent",
+      "to": "api.MessagePort"
     },
     {
       "from": "api.Document.startViewTransition",
