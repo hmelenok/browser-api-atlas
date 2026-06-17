@@ -101,7 +101,88 @@ const NOISE_PATTERNS = [
   /^Plugin(Array)?$/,
   /^FeaturePolicy$/,
   /^BarProp$/,
+  /^External$/,
   /^NotRestoredReasons?(Details)?$/,
+
+  // DOM node sub-types (Node, Element, Document are the real APIs; the rest
+  // are types you receive from DOM walks)
+  /^(Attr|Text|Comment|CDATASection|CharacterData|DocumentFragment|DocumentType|ProcessingInstruction)$/,
+
+  // DOM collection / iterator types (not APIs you call directly)
+  /^(NodeList|NodeFilter|NamedNodeMap|RadioNodeList|HTMLCollection)$/,
+
+  // Web Audio abstract bases and helper types
+  /^(BaseAudioContext|AudioNode|AudioParam(Map)?|AudioListener|AudioBuffer|AudioBufferSourceNode|AudioDestinationNode|AudioScheduledSourceNode|AudioWorklet|AudioProcessingEvent|AudioSinkInfo)$/,
+
+  // Sensor abstract bases
+  /^(Sensor|OrientationSensor)$/,
+
+  // Observer payload / entry types (the observer itself is catalogued)
+  /^(MutationRecord|IntersectionObserverEntry|ResizeObserverEntry|ResizeObserverSize|PerformancePaintTiming|LayoutShiftAttribution|VisibilityStateEntry|EventCounts|IdleDeadline|FileList|InputDeviceCapabilities|InputDeviceInfo|PermissionStatus|WakeLockSentinel|ValidityState|StaticRange|AbstractRange|GeolocationCoordinates|GeolocationPosition(Error)?|GamepadButton|GamepadHapticActuator)$/,
+
+  // DataTransfer / drag helpers
+  /^DataTransferItem(List)?$/,
+
+  // FragmentDirective + scroll-to-text-fragment
+  /^(FragmentDirective|DocumentTimeline)$/,
+
+  // Device motion event sub-objects
+  /^DeviceMotionEvent(Acceleration|RotationRate)$/,
+
+  // Text track / VTT helpers (HTMLMediaElement covers the use)
+  /^(TextTrack(Cue(List)?|List)?|VTTCue|TextMetrics|TextFormat|TimeRanges|VideoColorSpace|VideoPlaybackQuality)$/,
+
+  // Speech recognition / synthesis sub-types
+  /^(SpeechGrammar(List)?|SpeechRecognitionPhrase|SpeechSynthesisVoice)$/,
+
+  // WebCodecs internals
+  /^(EncodedAudioChunk|EncodedVideoChunk)$/,
+
+  // Canvas helpers
+  /^(CanvasGradient|CanvasPattern|CanvasCaptureMediaStreamTrack|BrowserCaptureMediaStreamTrack|CropTarget|RestrictionTarget|CaretPosition|ChapterInformation|ImageTrack(List)?|FontData)$/,
+
+  // Bluetooth GATT helpers (the chain that matters is catalogued)
+  /^(BluetoothCharacteristicProperties|BluetoothRemoteGATTDescriptor)$/,
+
+  // Media + MIDI helpers (catalogued surfaces cover the use cases)
+  /^(MediaCapabilities|MediaDeviceInfo|MediaDevices|MediaList|MediaMetadata|MediaSourceHandle|MediaStreamTrack(Audio|Video)Stats|SourceBufferList|MIDIPort)$/,
+
+  // Style sheet helpers
+  /^(StyleSheet|StyleSheetList)$/,
+
+  // Cache vs CacheStorage — cache instance is a type you receive, not an API
+  /^Cache$/,
+
+  // CryptoKey is a type, not an API surface
+  /^CryptoKey$/,
+
+  // Trusted Types siblings (TrustedHTML + TrustedTypePolicy[Factory] already catalogued)
+  /^(TrustedScript|TrustedScriptURL)$/,
+
+  // XPath / XSLT (legacy)
+  /^(XPathEvaluator|XPathExpression|XPathResult|XSLTProcessor)$/,
+
+  // Multi-screen Window Placement helpers
+  /^(ScreenDetailed|ScreenDetails|ScreenOrientation)$/,
+
+  // UserActivation + ViewTransitionTypeSet (sub-types)
+  /^(UserActivation|ViewTransitionTypeSet)$/,
+
+  // Stream queuing strategies (internal, you pass them to constructors)
+  /^(ByteLengthQueuingStrategy|CountQueuingStrategy)$/,
+
+  // Report API bodies (you receive them; not APIs to call)
+  /^(ReportBody|CSPViolationReportBody|CrashReportContext|IntegrityViolationReportBody|ReportingObserverEntry)$/,
+
+  // ElementInternals + Custom Element accessory types
+  /^(CustomStateSet|ElementInternals)$/,
+
+  // ImageCapture / ImageData / ImageBitmapRenderingContext
+  /^(ImageCapture|ImageData|ImageBitmapRenderingContext)$/,
+
+  // CSS rule sub-types (CSS.* APIs cover the surface)
+  /^CSS(Style)?Rule$/,
+  /^MediaQueryListEvent$/,
   // WebDriver / automation internals
   /^webdriver/i,
   /^automation/i,
@@ -109,6 +190,20 @@ const NOISE_PATTERNS = [
 
 /** Specific names to ignore even though they look API-ish. */
 const IGNORE_NAMES = new Set([
+  // Object.prototype getters that every property walk surfaces
+  'constructor',
+  'toString',
+  'valueOf',
+  'hasOwnProperty',
+  'isPrototypeOf',
+  'propertyIsEnumerable',
+  'toLocaleString',
+  '__proto__',
+  '__defineGetter__',
+  '__defineSetter__',
+  '__lookupGetter__',
+  '__lookupSetter__',
+  // Common global singletons + interface constructors
   'globalThis',
   'self',
   'window',
