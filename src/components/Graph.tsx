@@ -16,6 +16,7 @@ import '@xyflow/react/dist/style.css'
 import {useCallback, useEffect, useMemo, useState} from 'react'
 
 import {ApiNode, type ApiNodeData} from './ApiNode'
+import {FilteredHint} from './FilteredHint'
 import {layoutWithGroups} from '@/lib/layout'
 import {useFilteredEntries, useStore} from '@/store'
 
@@ -169,8 +170,11 @@ function GraphInner() {
 
 function EmptyState() {
   const resetFilters = useStore((s) => s.resetFilters)
+  const search = useStore((s) => s.search)
+  const hasSearch = search.trim().length > 1
+
   return (
-    <div className="pointer-events-auto absolute inset-0 flex items-center justify-center">
+    <div className="pointer-events-auto absolute inset-0 flex flex-col items-center justify-center gap-4 overflow-y-auto px-4 py-6">
       <div className="max-w-xs rounded-lg border border-dashed border-[var(--color-border)] bg-[var(--color-bg-soft)] px-6 py-5 text-center text-sm">
         <p className="font-medium">No APIs match your filters</p>
         <p className="mt-1 text-xs text-[var(--color-muted)]">
@@ -184,6 +188,7 @@ function EmptyState() {
           Reset filters
         </button>
       </div>
+      {hasSearch && <FilteredHint />}
     </div>
   )
 }
