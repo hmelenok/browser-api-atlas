@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T10:56:51.451Z",
+  "generatedAt": "2026-06-18T08:36:34.748Z",
   "bcdVersion": "8.0.2",
   "webFeaturesVersion": "3.30.0",
   "entries": [
@@ -2916,7 +2916,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/Document/startViewTransition",
       "specUrl": "https://drafts.csswg.org/css-view-transitions-1/#dom-document-startviewtransition",
       "webFeatureId": "view-transitions",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.HTMLElement.popover",
@@ -3125,7 +3125,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/HighlightRegistry",
       "specUrl": "https://drafts.csswg.org/css-highlight-api/#highlightregistry",
       "webFeatureId": "highlight",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.Document.requestStorageAccessFor",
@@ -3306,7 +3306,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/EyeDropper",
       "specUrl": "https://wicg.github.io/eyedropper-api/#eyedropper-interface",
       "webFeatureId": "eyedropper",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.BarcodeDetector",
@@ -3332,7 +3332,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/CloseWatcher",
       "specUrl": "https://html.spec.whatwg.org/multipage/interaction.html#closewatcher",
       "webFeatureId": "closewatcher",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.EditContext",
@@ -3437,7 +3437,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal",
       "specUrl": "https://tc39.es/proposal-temporal/#sec-temporal-objects",
       "webFeatureId": "temporal",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.Observable",
@@ -3462,7 +3462,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/DocumentPictureInPicture",
       "specUrl": "https://wicg.github.io/document-picture-in-picture/#documentpictureinpicture",
       "webFeatureId": "document-picture-in-picture",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.LaunchQueue",
@@ -3527,7 +3527,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/Sanitizer",
       "specUrl": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer",
       "webFeatureId": "sanitizer",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.TrustedHTML",
