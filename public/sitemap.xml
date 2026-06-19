@@ -2,2287 +2,2287 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Document.requestStorageAccess</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Document.hasStorageAccess</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Window.localStorage</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Window.sessionStorage</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.IDBDatabase</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.IDBObjectStore</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.IDBTransaction</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.IDBIndex</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.IDBKeyRange</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.CacheStorage</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.StorageManager</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.StorageBucketManager</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.CookieStore</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.BroadcastChannel</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.FileSystemHandle</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.FileSystemDirectoryHandle</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.FileSystemFileHandle</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.FileSystemWritableFileStream</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.FileSystemSyncAccessHandle</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.File</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.FileReader</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Blob</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.DataTransfer</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.FormData</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.ReadableStream</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.ReadableStreamDefaultReader</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.WritableStream</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.WritableStreamDefaultWriter</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.TransformStream</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.TextEncoder</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.TextDecoder</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.TextEncoderStream</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.TextDecoderStream</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.CompressionStream</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.DecompressionStream</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.fetch</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.NavigatorUAData</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Headers</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Request</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Response</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.AbortController</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.WebSocket</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.EventSource</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.WebTransport</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.RTCPeerConnection</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.URL</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.URLSearchParams</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.URLPattern</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.URL.canParse_static</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.URL.createObjectURL_static</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.AbortSignal.any_static</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Navigator.sendBeacon</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.NetworkInformation</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Worker</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.SharedWorker</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.ServiceWorker</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.LockManager</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MessageChannel</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MessagePort</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Worklet</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.queueMicrotask</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.IntersectionObserver</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.ResizeObserver</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MutationObserver</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PerformanceObserver</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.ReportingObserver</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Performance</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PerformanceMark</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PerformanceMeasure</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PerformanceNavigationTiming</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PerformancePaintTiming</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Window.requestIdleCallback</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Window.cancelIdleCallback</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Window.requestAnimationFrame</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Window.cancelAnimationFrame</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Performance.mark</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Performance.measure</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Performance.now</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Notification</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Navigator.share</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Navigator.canShare</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.WakeLock</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.IdleDetector</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Clipboard</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Navigator.vibrate</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Navigator.setAppBadge</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Navigator.clearAppBadge</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Selection</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Range</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Document.fullscreenEnabled</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Document.exitFullscreen</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Element.requestFullscreen</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Document.exitPointerLock</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Element.requestPointerLock</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Document.adoptedStyleSheets</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Document.elementFromPoint</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Element.scrollIntoView</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Element.toggleAttribute</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.HTMLInputElement.showPicker</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.HTMLInputElement.checkValidity</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.HTMLFormElement.requestSubmit</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.HTMLImageElement.decode</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.HTMLImageElement.loading</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.HTMLDialogElement.showModal</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.HTMLElement.dataset</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Document.elementsFromPoint</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Document.exitPictureInPicture</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.HTMLElement.inert</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MediaQueryList</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Navigator.getAutoplayPolicy</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.HTMLDetailsElement</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PaymentRequest</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.DOMParser</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.XMLSerializer</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.NodeIterator</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.TreeWalker</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PointerEvent</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.InputEvent</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.SubmitEvent</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.HashChangeEvent</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PopStateEvent</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.StorageEvent</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PageTransitionEvent</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.BeforeUnloadEvent</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PromiseRejectionEvent</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.CustomElementRegistry</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.ShadowRoot</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.HTMLTemplateElement</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.HTMLSlotElement</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.ElementInternals</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.CSSStyleSheet</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Element.attachShadow</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MediaDevices.getUserMedia</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MediaDevices.getDisplayMedia</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MediaRecorder</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PictureInPictureWindow</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MediaStream</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MediaStreamTrack</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.HTMLMediaElement</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.HTMLMediaElement.canPlayType</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MediaCapabilities</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MediaSource</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.SourceBuffer</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.AudioContext</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.AudioWorkletNode</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.AnalyserNode</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.OscillatorNode</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.GainNode</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.BiquadFilterNode</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.ConvolverNode</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.DelayNode</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.DynamicsCompressorNode</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MIDIAccess</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.SpeechSynthesis</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.SpeechSynthesisUtterance</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.SpeechRecognition</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MediaSession</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.HTMLVideoElement</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.VideoFrame</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.VideoDecoder</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.VideoEncoder</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.AudioData</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.AudioDecoder</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.AudioEncoder</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.ImageDecoder</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.CanvasRenderingContext2D</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Path2D</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.ImageBitmap</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.OffscreenCanvasRenderingContext2D</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.WebGLRenderingContext</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.WebGL2RenderingContext</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.GPU</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.GPUDevice</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.GPUBuffer</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.GPUTexture</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.GPUShaderModule</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.GPURenderPipeline</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.GPUCommandEncoder</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.OffscreenCanvas</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Animation</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.KeyframeEffect</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.ScrollTimeline</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.ViewTimeline</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.DOMRect</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.DOMMatrix</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.DOMPoint</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.DOMQuad</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Geolocation</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.DeviceOrientationEvent</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.BatteryManager</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.AmbientLightSensor</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PressureObserver</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Gamepad</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Accelerometer</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Gyroscope</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Magnetometer</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.LinearAccelerationSensor</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.RelativeOrientationSensor</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.USB</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.HID</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Serial</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Bluetooth</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.NDEFReader</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PresentationRequest</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PublicKeyCredential</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.CredentialsContainer</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Crypto</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.SubtleCrypto</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Crypto.randomUUID</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Permissions</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.OTPCredential</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.IdentityCredential</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Document.startViewTransition</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.HTMLElement.popover</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.CSS.supports_static</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.HTMLDialogElement</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.AbortSignal.timeout_static</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Scheduler</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Navigation</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.CSSLayerBlockRule</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.CSS.registerProperty_static</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.HTMLElement.attachInternals</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Element.checkVisibility</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.structuredClone</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.CSSContainerRule</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.CSSCounterStyleRule</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Highlight</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.HighlightRegistry</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Document.requestStorageAccessFor</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.crossOriginIsolated</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.CSS.escape_static</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.CSS.paintWorklet_static</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.XRSystem</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.XRSession</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.reportError</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.atob</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.btoa</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.LanguageModel</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.LanguageDetector</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Translator</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Summarizer</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.EyeDropper</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.BarcodeDetector</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.CloseWatcher</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.EditContext</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.ViewTransition</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.FontData</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.TaskController</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.TaskSignal</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=javascript.builtins.DisposableStack</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=javascript.builtins.AsyncDisposableStack</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=javascript.builtins.Temporal</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Observable</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.DocumentPictureInPicture</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.LaunchQueue</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.LaunchParams</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.WindowControlsOverlay</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.VirtualKeyboard</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Sanitizer</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.TrustedHTML</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.TrustedTypePolicy</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.TrustedTypePolicyFactory</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.DigitalCredential</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Profiler</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.LargestContentfulPaint</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.LayoutShift</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.FileSystemObserver</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.AnimationTrigger</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.RTCDataChannel</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.RTCSessionDescription</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.RTCIceCandidate</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.RTCRtpReceiver</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.RTCRtpSender</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.RTCRtpTransceiver</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.RTCStatsReport</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.RTCDtlsTransport</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.RTCIceTransport</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.RTCSctpTransport</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.RTCEncodedAudioFrame</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.RTCEncodedVideoFrame</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.OfflineAudioContext</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MediaElementAudioSourceNode</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MediaStreamAudioSourceNode</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MediaStreamAudioDestinationNode</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MediaStreamTrackAudioSourceNode</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PannerNode</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.IIRFilterNode</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.StereoPannerNode</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.ConstantSourceNode</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.ChannelMergerNode</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.ChannelSplitterNode</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.WaveShaperNode</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PeriodicWave</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.XRReferenceSpace</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.XRFrame</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.XRInputSource</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.XRRigidTransform</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.XRHitTestSource</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.XRWebGLLayer</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.XRAnchor</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.XRLightProbe</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.XRRay</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.XRPose</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Credential</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.AuthenticatorAssertionResponse</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.AuthenticatorAttestationResponse</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.AuthenticatorResponse</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PasswordCredential</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.FederatedCredential</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.IdentityProvider</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.BluetoothDevice</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.BluetoothRemoteGATTServer</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.BluetoothRemoteGATTService</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.BluetoothRemoteGATTCharacteristic</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.BluetoothUUID</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.USBDevice</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.USBConfiguration</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.USBInterface</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MIDIInput</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MIDIOutput</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MIDIInputMap</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MIDIOutputMap</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.IDBCursor</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.IDBCursorWithValue</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.IDBFactory</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.IDBRequest</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.IDBOpenDBRequest</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MediaKeys</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MediaKeySession</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MediaKeySystemAccess</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MediaKeyStatusMap</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Navigator.requestMediaKeySystemAccess</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MediaStreamTrackProcessor</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MediaStreamTrackGenerator</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.CaptureController</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Presentation</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PresentationAvailability</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PresentationConnection</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PresentationConnectionList</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PresentationReceiver</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.RemotePlayback</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PushManager</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PushSubscription</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PushSubscriptionOptions</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.BackgroundFetchManager</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.BackgroundFetchRegistration</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.BackgroundFetchRecord</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PeriodicSyncManager</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.SyncManager</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.NavigationHistoryEntry</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.NavigationActivation</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.NavigationDestination</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.NavigationTransition</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.NavigationPreloadManager</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.StylePropertyMap</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.StylePropertyMapReadOnly</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.AbsoluteOrientationSensor</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.GravitySensor</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.DevicePosture</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PressureRecord</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.CookieStoreManager</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.ClipboardItem</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PermissionStatus</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.WakeLockSentinel</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.IdleDeadline</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.ImageBitmap</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.ScreenOrientation</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MediaError</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.AudioSession</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Keyboard</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.Scheduling</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.NavigateEvent</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.NavigationCurrentEntryChangeEvent</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PageRevealEvent</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.PageSwapEvent</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.ClipboardEvent</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.CookieChangeEvent</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.BlobEvent</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.FormDataEvent</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.MessageEvent</loc>
-    <lastmod>2026-06-18</lastmod>
+    <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

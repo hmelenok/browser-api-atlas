@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T08:36:34.748Z",
+  "generatedAt": "2026-06-19T10:54:46.180Z",
   "bcdVersion": "8.0.2",
   "webFeaturesVersion": "3.30.0",
   "entries": [
@@ -863,7 +863,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/IntersectionObserver",
       "specUrl": "https://w3c.github.io/IntersectionObserver/#intersection-observer-interface",
       "webFeatureId": "intersection-observer",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.ResizeObserver",
@@ -877,7 +877,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/ResizeObserver",
       "specUrl": "https://drafts.csswg.org/resize-observer/#resize-observer-interface",
       "webFeatureId": "resize-observer",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.MutationObserver",
@@ -1098,7 +1098,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/Notification",
       "specUrl": "https://notifications.spec.whatwg.org/#notification",
       "webFeatureId": "notifications",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.Navigator.share",
@@ -1111,7 +1111,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/Navigator/share",
       "specUrl": "https://w3c.github.io/web-share/#share-method",
       "webFeatureId": "share",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.Navigator.canShare",
@@ -1165,7 +1165,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/Clipboard",
       "specUrl": "https://w3c.github.io/clipboard-apis/#clipboard-interface",
       "webFeatureId": "async-clipboard",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.Navigator.vibrate",
@@ -1985,7 +1985,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/AudioContext",
       "specUrl": "https://webaudio.github.io/web-audio-api/#AudioContext",
       "webFeatureId": "web-audio",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.AudioWorkletNode",
@@ -2472,7 +2472,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/Animation",
       "specUrl": "https://drafts.csswg.org/web-animations-1/#the-animation-interface",
       "webFeatureId": "web-animations",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.KeyframeEffect",
@@ -2848,7 +2848,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/SubtleCrypto",
       "specUrl": "https://w3c.github.io/webcrypto/#subtlecrypto-interface",
       "webFeatureId": "web-cryptography",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.Crypto.randomUUID",
