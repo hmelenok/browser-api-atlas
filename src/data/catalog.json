@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T10:54:46.180Z",
+  "generatedAt": "2026-06-24T07:22:01.072Z",
   "bcdVersion": "8.0.2",
   "webFeaturesVersion": "3.30.0",
   "entries": [
@@ -473,7 +473,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/CompressionStream",
       "specUrl": "https://compression.spec.whatwg.org/#compression-stream",
       "webFeatureId": "compression-streams",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.DecompressionStream",
@@ -570,7 +570,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/AbortController",
       "specUrl": "https://dom.spec.whatwg.org/#interface-abortcontroller",
       "webFeatureId": "aborting",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.WebSocket",
@@ -751,7 +751,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/Worker",
       "specUrl": "https://html.spec.whatwg.org/multipage/workers.html#dedicated-workers-and-the-worker-interface",
       "webFeatureId": "dedicated-workers",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.SharedWorker",
@@ -2124,7 +2124,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/SpeechSynthesis",
       "specUrl": "https://webaudio.github.io/web-speech-api/#tts-section",
       "webFeatureId": "speech-synthesis",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.SpeechSynthesisUtterance",
@@ -2876,7 +2876,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/Permissions",
       "specUrl": "https://w3c.github.io/permissions/#permissions-interface",
       "webFeatureId": "permissions",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.OTPCredential",
@@ -2930,7 +2930,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/HTMLElement/popover",
       "specUrl": "https://html.spec.whatwg.org/multipage/popover.html#dom-popover",
       "webFeatureId": "popover",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.CSS.supports_static",
@@ -2958,7 +2958,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/HTMLDialogElement",
       "specUrl": "https://html.spec.whatwg.org/multipage/interactive-elements.html#htmldialogelement",
       "webFeatureId": "dialog",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.AbortSignal.timeout_static",
@@ -3069,7 +3069,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/Window/structuredClone",
       "specUrl": "https://html.spec.whatwg.org/multipage/structured-data.html#dom-structuredclone",
       "webFeatureId": "structured-clone",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.CSSContainerRule",
