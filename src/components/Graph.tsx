@@ -129,7 +129,7 @@ function GraphInner() {
       prev.map((n) => {
         const entry = allEntries.find((e) => e.id === n.id)
         if (!entry) return n
-        const prevData = n.data as ApiNodeData
+        const prevData = n.data as unknown as ApiNodeData
         return {
           ...n,
           data: {
