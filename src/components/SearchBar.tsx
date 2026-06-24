@@ -196,6 +196,13 @@ export function SearchBar() {
                 key={id}
                 type="button"
                 onClick={() => toggle(id)}
+                title={
+                  allOn
+                    ? `Filter to only ${cat.title}. Click another category to add it.`
+                    : active
+                      ? `Hide ${cat.title}. (Click the last visible category to reset to all.)`
+                      : `Add ${cat.title} to the visible set.`
+                }
                 className={cn(
                   'inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs transition',
                   active
