@@ -16,11 +16,13 @@ import '@xyflow/react/dist/style.css'
 import {useCallback, useEffect, useMemo, useState} from 'react'
 
 import {ApiNode, type ApiNodeData} from './ApiNode'
+import {CategoryGroupNode, type CategoryGroupNodeData} from './CategoryGroupNode'
 import {FilteredHint} from './FilteredHint'
 import {layoutWithGroups} from '@/lib/layout'
 import {useFilteredEntries, useStore} from '@/store'
+import type {CategoryId} from '@/lib/types'
 
-const nodeTypes = {api: ApiNode}
+const nodeTypes = {api: ApiNode, 'category-group': CategoryGroupNode}
 
 function GraphInner() {
   const entries = useFilteredEntries()
@@ -63,7 +65,7 @@ function GraphInner() {
       visibleEdges.map((r, i) => ({id: `e${i}`, source: r.from, target: r.to})),
       sortMode
     )
-      .then(({nodes: positions}) => {
+      .then(({nodes: positions, groups}) => {
         if (cancelled) return
 
         // Which sides actually have an edge attached? Used to suppress the
@@ -75,19 +77,76 @@ function GraphInner() {
           hasIncoming.add(e.to)
         }
 
-        const flowNodes: Node[] = entries.map((entry) => ({
-          id: entry.id,
-          type: 'api',
-          position: positions[entry.id] ?? {x: 0, y: 0},
-          data: {
-            entry,
-            runtime: runtime[entry.id],
-            hasIncoming: hasIncoming.has(entry.id),
-            hasOutgoing: hasOutgoing.has(entry.id),
-          } satisfies ApiNodeData,
-          draggable: true,
-          selectable: true,
-        }))
+        // Subflows: only in category mode. Other modes are flat — grouping
+        // by Baseline / letter / connected-component into visual containers
+        // would be more visual noise than insight there.
+        const useSubflows = sortMode === 'category'
+
+        // Build a lookup: category-id → group rect. Used to (a) emit the
+        // parent nodes and (b) compute child positions relative to the
+        // parent (ReactFlow expects child positions to be parent-relative).
+        const groupByCat = new Map<CategoryId, (typeof groups)[number]>()
+        if (useSubflows) {
+          for (const g of groups) {
+            if (g.id.startsWith('cat:')) {
+              groupByCat.set(g.id.slice(4) as CategoryId, g)
+            }
+          }
+        }
+
+        // Count entries per category for the label tab badge
+        const countByCat = new Map<CategoryId, number>()
+        if (useSubflows) {
+          for (const e of entries) {
+            countByCat.set(e.category, (countByCat.get(e.category) ?? 0) + 1)
+          }
+        }
+
+        // Parent nodes FIRST in the array — ReactFlow needs to render
+        // containers before children to size and clip them correctly.
+        const parentNodes: Node[] = useSubflows
+          ? Array.from(groupByCat.entries()).map(([catId, g]) => ({
+              id: g.id,
+              type: 'category-group',
+              position: {x: g.x, y: g.y},
+              style: {width: g.width, height: g.height},
+              data: {
+                categoryId: catId,
+                count: countByCat.get(catId) ?? 0,
+              } satisfies CategoryGroupNodeData,
+              draggable: true,
+              selectable: false,
+              // Parent must render below children
+              zIndex: 0,
+            }))
+          : []
+
+        const childNodes: Node[] = entries.map((entry) => {
+          const abs = positions[entry.id] ?? {x: 0, y: 0}
+          const parent = useSubflows ? groupByCat.get(entry.category) : undefined
+          // ReactFlow: when parentId is set, position is relative to parent.
+          const position = parent
+            ? {x: abs.x - parent.x, y: abs.y - parent.y}
+            : abs
+          return {
+            id: entry.id,
+            type: 'api',
+            position,
+            parentId: parent?.id,
+            extent: parent ? ('parent' as const) : undefined,
+            data: {
+              entry,
+              runtime: runtime[entry.id],
+              hasIncoming: hasIncoming.has(entry.id),
+              hasOutgoing: hasOutgoing.has(entry.id),
+            } satisfies ApiNodeData,
+            draggable: true,
+            selectable: true,
+            zIndex: 1,
+          }
+        })
+
+        const flowNodes: Node[] = [...parentNodes, ...childNodes]
 
         const flowEdges: Edge[] = visibleEdges.map((r, i) => ({
           id: `e${i}-${r.from}-${r.to}`,
