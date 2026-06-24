@@ -62,6 +62,7 @@ interface State {
   setSearch: (s: string) => void
   toggleCategory: (id: CategoryId) => void
   setAllCategories: (visible: boolean) => void
+  setVisibleCategories: (cats: Iterable<CategoryId>) => void
   setOnlySupported: (v: boolean) => void
   setOnlyWithDemos: (v: boolean) => void
   setSortMode: (m: SortMode) => void
@@ -128,13 +129,37 @@ export const useStore = create<State>((set, get) => ({
   setUnknownPanelOpen: (v) => set({unknownPanelOpen: v}),
   setSearch: (s) => set({search: s}),
   toggleCategory: (id) => {
-    const next = new Set(get().visibleCategories)
+    const current = get().visibleCategories
+    const allSize = allCategories.size
+
+    // "Click filter to focus" pattern. If we're currently showing every
+    // category (i.e. no filter is active), clicking a chip means "only
+    // this one" — it doesn't make sense to subtract from the implicit
+    // "all" set.
+    if (current.size === allSize) {
+      set({visibleCategories: new Set([id])})
+      return
+    }
+
+    // Otherwise it's a normal toggle in the active filter set.
+    const next = new Set(current)
     if (next.has(id)) next.delete(id)
     else next.add(id)
+
+    // If toggling just emptied the set, revert to showing all — that's the
+    // user's way of saying "never mind, drop the filter". They can still
+    // get the empty state via the "none" bulk button.
+    if (next.size === 0) {
+      set({visibleCategories: new Set(allCategories)})
+      return
+    }
     set({visibleCategories: next})
   },
   setAllCategories: (visible) => {
     set({visibleCategories: visible ? new Set(allCategories) : new Set()})
+  },
+  setVisibleCategories: (cats) => {
+    set({visibleCategories: new Set(cats)})
   },
   setOnlySupported: (v) => set({onlySupported: v}),
   setOnlyWithDemos: (v) => set({onlyWithDemos: v}),

@@ -122,8 +122,7 @@ export function useUrlSync() {
   const setOnlySupported = useStore((s) => s.setOnlySupported)
   const setOnlyWithDemos = useStore((s) => s.setOnlyWithDemos)
   const setSortMode = useStore((s) => s.setSortMode)
-  const setAllCategories = useStore((s) => s.setAllCategories)
-  const toggleCategory = useStore((s) => s.toggleCategory)
+  const setVisibleCategories = useStore((s) => s.setVisibleCategories)
   useEffect(() => {
     const handler = () => {
       const next = readStateFromUrl()
@@ -132,20 +131,12 @@ export function useUrlSync() {
       setOnlySupported(next.onlySupported)
       setOnlyWithDemos(next.onlyWithDemos)
       setSortMode(next.sortMode)
-
-      // Reconcile category visibility set
-      const current = useStore.getState().visibleCategories
-      const wantsAll = next.visibleCategories.size === CATEGORY_ORDER.length
-      if (wantsAll) {
-        setAllCategories(true)
-      } else {
-        // Make current match next: toggle entries whose presence differs
-        for (const c of CATEGORY_ORDER) {
-          if (current.has(c) !== next.visibleCategories.has(c)) toggleCategory(c)
-        }
-      }
+      // Direct set rather than diff-and-toggle: the new toggleCategory()
+      // does "click filter to focus", which would misbehave when applied
+      // as a popstate reconcile loop.
+      setVisibleCategories(next.visibleCategories)
     }
     window.addEventListener('popstate', handler)
     return () => window.removeEventListener('popstate', handler)
-  }, [select, setSearch, setOnlySupported, setOnlyWithDemos, setSortMode, setAllCategories, toggleCategory])
+  }, [select, setSearch, setOnlySupported, setOnlyWithDemos, setSortMode, setVisibleCategories])
 }
