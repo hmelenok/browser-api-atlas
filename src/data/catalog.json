@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T07:22:01.072Z",
+  "generatedAt": "2026-06-24T08:05:33.259Z",
   "bcdVersion": "8.0.2",
   "webFeaturesVersion": "3.30.0",
   "entries": [
@@ -417,7 +417,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/TextEncoder",
       "specUrl": "https://encoding.spec.whatwg.org/#interface-textencoder",
       "webFeatureId": "text-encoding",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.TextDecoder",
@@ -501,7 +501,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/Window/fetch",
       "specUrl": "https://fetch.spec.whatwg.org/#fetch-method",
       "webFeatureId": "fetch",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.NavigatorUAData",
@@ -668,7 +668,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/URLPattern",
       "specUrl": "https://urlpattern.spec.whatwg.org/#urlpattern",
       "webFeatureId": "urlpattern",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.URL.canParse_static",
@@ -891,7 +891,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/MutationObserver",
       "specUrl": "https://dom.spec.whatwg.org/#interface-mutationobserver",
       "webFeatureId": "mutationobserver",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.PerformanceObserver",
@@ -1057,7 +1057,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/Performance/mark",
       "specUrl": "https://w3c.github.io/user-timing/#dom-performance-mark",
       "webFeatureId": "performance",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.Performance.measure",
@@ -1737,7 +1737,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/CustomElementRegistry",
       "specUrl": "https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-api",
       "webFeatureId": "autonomous-custom-elements",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.ShadowRoot",
@@ -2013,7 +2013,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/AnalyserNode",
       "specUrl": "https://webaudio.github.io/web-audio-api/#AnalyserNode",
       "webFeatureId": "web-audio",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.OscillatorNode",
@@ -2283,7 +2283,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/CanvasRenderingContext2D",
       "specUrl": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext",
       "webFeatureId": "canvas-2d",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.Path2D",
