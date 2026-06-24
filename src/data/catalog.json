@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T08:05:33.259Z",
+  "generatedAt": "2026-06-24T08:38:00.691Z",
   "bcdVersion": "8.0.2",
   "webFeaturesVersion": "3.30.0",
   "entries": [
@@ -208,7 +208,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/FileSystemHandle",
       "specUrl": "https://fs.spec.whatwg.org/#api-filesystemhandle",
       "webFeatureId": "origin-private-file-system",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.FileSystemDirectoryHandle",
@@ -319,7 +319,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/DataTransfer",
       "specUrl": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
       "webFeatureId": "draganddrop",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.FormData",
@@ -584,7 +584,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/WebSocket",
       "specUrl": "https://websockets.spec.whatwg.org/#the-websocket-interface",
       "webFeatureId": "websockets",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.EventSource",
@@ -737,7 +737,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/NetworkInformation",
       "specUrl": "https://wicg.github.io/netinfo/#networkinformation-interface",
       "webFeatureId": "network-information",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.Worker",
@@ -807,7 +807,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/MessageChannel",
       "specUrl": "https://html.spec.whatwg.org/multipage/web-messaging.html#message-channels",
       "webFeatureId": "channel-messaging",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.MessagePort",
@@ -1029,7 +1029,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/Window/requestAnimationFrame",
       "specUrl": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-animationframeprovider-requestanimationframe",
       "webFeatureId": "request-animation-frame",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.Window.cancelAnimationFrame",
@@ -2582,7 +2582,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/Geolocation",
       "specUrl": "https://w3c.github.io/geolocation/#geolocation_interface",
       "webFeatureId": "geolocation",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.DeviceOrientationEvent",
@@ -2649,7 +2649,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/Gamepad",
       "specUrl": "https://w3c.github.io/gamepad/#gamepad-interface",
       "webFeatureId": "gamepad",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.Accelerometer",
