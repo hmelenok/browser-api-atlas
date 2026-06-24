@@ -36,7 +36,7 @@ export function DemoButton({
       type="button"
       {...props}
       className={cn(
-        'h-8 rounded border px-3 text-sm font-medium transition',
+        'inline-flex h-8 items-center gap-1.5 whitespace-nowrap rounded border px-3 text-sm font-medium transition',
         variant === 'primary' &&
           'border-[var(--color-accent)] bg-[var(--color-accent)]/10 text-[var(--color-accent)] hover:bg-[var(--color-accent)]/20',
         variant === 'ghost' &&
