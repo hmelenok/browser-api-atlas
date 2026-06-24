@@ -66,6 +66,15 @@ function GraphInner() {
       .then(({nodes: positions}) => {
         if (cancelled) return
 
+        // Which sides actually have an edge attached? Used to suppress the
+        // little handle dots on otherwise-disconnected nodes.
+        const hasIncoming = new Set<string>()
+        const hasOutgoing = new Set<string>()
+        for (const e of visibleEdges) {
+          hasOutgoing.add(e.from)
+          hasIncoming.add(e.to)
+        }
+
         const flowNodes: Node[] = entries.map((entry) => ({
           id: entry.id,
           type: 'api',
@@ -73,6 +82,8 @@ function GraphInner() {
           data: {
             entry,
             runtime: runtime[entry.id],
+            hasIncoming: hasIncoming.has(entry.id),
+            hasOutgoing: hasOutgoing.has(entry.id),
           } satisfies ApiNodeData,
           draggable: true,
           selectable: true,
@@ -110,13 +121,24 @@ function GraphInner() {
     }
   }, [entries, visibleEdges, runtime, rf, sortMode])
 
-  // Update runtime on existing nodes without re-laying-out
+  // Update runtime on existing nodes without re-laying-out. Preserve the
+  // connectivity flags computed during layout — they only depend on edges,
+  // not runtime detection.
   useEffect(() => {
     setLayoutNodes((prev) =>
       prev.map((n) => {
         const entry = allEntries.find((e) => e.id === n.id)
         if (!entry) return n
-        return {...n, data: {entry, runtime: runtime[n.id]} satisfies ApiNodeData}
+        const prevData = n.data as ApiNodeData
+        return {
+          ...n,
+          data: {
+            entry,
+            runtime: runtime[n.id],
+            hasIncoming: prevData.hasIncoming,
+            hasOutgoing: prevData.hasOutgoing,
+          } satisfies ApiNodeData,
+        }
       })
     )
   }, [runtime, allEntries])

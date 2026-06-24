@@ -10,10 +10,12 @@ export interface ApiNodeData {
   entry: ApiEntry
   runtime?: RuntimeStatus
   selected?: boolean
+  hasIncoming?: boolean
+  hasOutgoing?: boolean
 }
 
 export function ApiNode({data, selected}: NodeProps & {data: ApiNodeData}) {
-  const {entry, runtime} = data
+  const {entry, runtime, hasIncoming, hasOutgoing} = data
   const status = resolveStatus(entry, runtime)
   const cat = CATEGORIES[entry.category]
   const CatIcon = cat.icon
@@ -32,8 +34,20 @@ export function ApiNode({data, selected}: NodeProps & {data: ApiNodeData}) {
         boxShadow: selected ? undefined : `inset 4px 0 0 0 ${cat.color}`,
       }}
     >
-      <Handle type="target" position={Position.Left} className="!h-2 !w-2 !border-0 !bg-[var(--color-border)]" />
-      <Handle type="source" position={Position.Right} className="!h-2 !w-2 !border-0 !bg-[var(--color-border)]" />
+      {hasIncoming && (
+        <Handle
+          type="target"
+          position={Position.Left}
+          className="!h-2 !w-2 !border-0 !bg-[var(--color-border)]"
+        />
+      )}
+      {hasOutgoing && (
+        <Handle
+          type="source"
+          position={Position.Right}
+          className="!h-2 !w-2 !border-0 !bg-[var(--color-border)]"
+        />
+      )}
 
       <div className="flex items-center gap-2">
         <span
