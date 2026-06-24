@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T08:38:00.691Z",
+  "generatedAt": "2026-06-24T14:28:15.462Z",
   "bcdVersion": "8.0.2",
   "webFeaturesVersion": "3.30.0",
   "entries": [
@@ -598,7 +598,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/EventSource",
       "specUrl": "https://html.spec.whatwg.org/multipage/server-sent-events.html#the-eventsource-interface",
       "webFeatureId": "server-sent-events",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.WebTransport",
@@ -905,7 +905,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/PerformanceObserver",
       "specUrl": "https://w3c.github.io/performance-timeline/#performanceobserver",
       "webFeatureId": "performance",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.ReportingObserver",
@@ -1138,7 +1138,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/WakeLock",
       "specUrl": "https://w3c.github.io/screen-wake-lock/#the-wakelock-interface",
       "webFeatureId": "screen-wake-lock",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.IdleDetector",
@@ -1835,7 +1835,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/MediaDevices/getUserMedia",
       "specUrl": "https://w3c.github.io/mediacapture-main/#dom-mediadevices-getusermedia",
       "webFeatureId": "media-capture",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.MediaDevices.getDisplayMedia",
@@ -1848,7 +1848,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/MediaDevices/getDisplayMedia",
       "specUrl": "https://w3c.github.io/mediacapture-screen-share/#dom-mediadevices-getdisplaymedia",
       "webFeatureId": "screen-capture",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.MediaRecorder",
@@ -1862,7 +1862,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/MediaRecorder",
       "specUrl": "https://w3c.github.io/mediacapture-record/#mediarecorder-api",
       "webFeatureId": "mediastream-recording",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.PictureInPictureWindow",
@@ -2458,7 +2458,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/OffscreenCanvas",
       "specUrl": "https://html.spec.whatwg.org/multipage/canvas.html#the-offscreencanvas-interface",
       "webFeatureId": "offscreen-canvas",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.Animation",
@@ -2806,7 +2806,7 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/PublicKeyCredential",
       "specUrl": "https://w3c.github.io/webauthn/#iface-pkcredential",
       "webFeatureId": "webauthn",
-      "hasDemo": false
+      "hasDemo": true
     },
     {
       "id": "api.CredentialsContainer",
