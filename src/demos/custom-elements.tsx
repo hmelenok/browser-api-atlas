@@ -100,7 +100,7 @@ function CustomElementsDemo() {
           onChange={(e: CustomEvent<number>) => setExternalValue(e.detail)}
         >
           {label}:
-          {/* @ts-expect-error */}
+          {/* @ts-expect-error atlas-counter is a runtime-registered custom element, not in JSX.IntrinsicElements */}
         </atlas-counter>
       </div>
 
