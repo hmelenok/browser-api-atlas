@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-05T06:03:55.771Z",
-  "bcdVersion": "8.0.9",
-  "webFeaturesVersion": "3.34.3",
+  "generatedAt": "2026-08-31T12:40:35.902Z",
+  "bcdVersion": "8.0.13",
+  "webFeaturesVersion": "3.36.0",
   "entries": [
     {
       "id": "api.Document.requestStorageAccess",
@@ -3252,6 +3252,7 @@
       "runtimeKey": "window.LanguageModel",
       "baseline": "limited",
       "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/LanguageModel",
       "specUrl": "https://webmachinelearning.github.io/prompt-api/#the-languagemodel-class",
       "webFeatureId": "languagemodel",
       "hasDemo": false

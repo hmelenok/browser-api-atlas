@@ -23,7 +23,7 @@
     "zustand": "^5.0.14"
   },
   "devDependencies": {
-    "@mdn/browser-compat-data": "^8.0.2",
+    "@mdn/browser-compat-data": "^8.0.13",
     "@tailwindcss/vite": "^4.3.0",
     "@types/node": "^26.1.2",
     "@types/react": "^19.2.14",
@@ -35,7 +35,7 @@
     "tsx": "^4.22.4",
     "typescript": "^7.0.2",
     "vite": "^8.0.12",
-    "web-features": "^3.30.0"
+    "web-features": "^3.36.0"
   },
   "description": "An interactive graph-based explorer for every modern browser API",
   "homepage": "https://hmelenok.github.io/browser-api-atlas/",
