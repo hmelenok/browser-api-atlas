@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T08:56:52.324Z",
+  "generatedAt": "2026-11-10T13:28:39.498Z",
   "bcdVersion": "8.1.8",
   "webFeaturesVersion": "3.45.0",
   "entries": [
@@ -3777,6 +3777,18 @@
       "hasDemo": false
     },
     {
+      "id": "api.RTCIceCandidatePair",
+      "title": "RTCIceCandidatePair",
+      "category": "network",
+      "description": "",
+      "runtimeKey": "window.RTCIceCandidatePair",
+      "baseline": "unknown",
+      "status": "experimental",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/RTCIceCandidatePair",
+      "specUrl": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidatepair",
+      "hasDemo": false
+    },
+    {
       "id": "api.RTCSctpTransport",
       "title": "RTCSctpTransport",
       "category": "network",
@@ -3816,6 +3828,30 @@
       "mdnUrl": "https://developer.mozilla.org/docs/Web/API/RTCEncodedVideoFrame",
       "specUrl": "https://w3c.github.io/webrtc-encoded-transform/#rtcencodedvideoframe",
       "webFeatureId": "webrtc-encoded-transform",
+      "hasDemo": false
+    },
+    {
+      "id": "api.WebTransportDatagramsWritable",
+      "title": "WebTransportDatagramsWritable",
+      "category": "network",
+      "description": "",
+      "runtimeKey": "window.WebTransportDatagramsWritable",
+      "baseline": "unknown",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/WebTransportDatagramsWritable",
+      "specUrl": "https://w3c.github.io/webtransport/#datagram-writable",
+      "hasDemo": false
+    },
+    {
+      "id": "api.WebTransportSendGroup",
+      "title": "WebTransportSendGroup",
+      "category": "network",
+      "description": "",
+      "runtimeKey": "window.WebTransportSendGroup",
+      "baseline": "unknown",
+      "status": "standard",
+      "mdnUrl": "https://developer.mozilla.org/docs/Web/API/WebTransportSendGroup",
+      "specUrl": "https://w3c.github.io/webtransport/#webtransportsendgroup",
       "hasDemo": false
     },
     {
@@ -5672,6 +5708,11 @@
       "to": "api.RTCPeerConnection"
     },
     {
+      "from": "api.RTCIceCandidatePair",
+      "to": "api.RTCIceTransport",
+      "label": "selected pair"
+    },
+    {
       "from": "api.RTCSctpTransport",
       "to": "api.RTCPeerConnection"
     },
@@ -5682,6 +5723,16 @@
     {
       "from": "api.RTCEncodedVideoFrame",
       "to": "api.RTCRtpSender"
+    },
+    {
+      "from": "api.WebTransportDatagramsWritable",
+      "to": "api.WebTransport",
+      "label": "send datagrams"
+    },
+    {
+      "from": "api.WebTransportSendGroup",
+      "to": "api.WebTransport",
+      "label": "group streams"
     },
     {
       "from": "api.OfflineAudioContext",

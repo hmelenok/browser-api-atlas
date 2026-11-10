@@ -165,9 +165,14 @@ export const RELATIONSHIPS: CatalogRelationship[] = [
   {from: 'api.RTCStatsReport', to: 'api.RTCPeerConnection'},
   {from: 'api.RTCDtlsTransport', to: 'api.RTCPeerConnection'},
   {from: 'api.RTCIceTransport', to: 'api.RTCPeerConnection'},
+  {from: 'api.RTCIceCandidatePair', to: 'api.RTCIceTransport', label: 'selected pair'},
   {from: 'api.RTCSctpTransport', to: 'api.RTCPeerConnection'},
   {from: 'api.RTCEncodedAudioFrame', to: 'api.RTCRtpSender'},
   {from: 'api.RTCEncodedVideoFrame', to: 'api.RTCRtpSender'},
+
+  // WebTransport family
+  {from: 'api.WebTransportDatagramsWritable', to: 'api.WebTransport', label: 'send datagrams'},
+  {from: 'api.WebTransportSendGroup', to: 'api.WebTransport', label: 'group streams'},
 
   // Web Audio nodes connected to context
   {from: 'api.OfflineAudioContext', to: 'api.AudioContext'},

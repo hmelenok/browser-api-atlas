@@ -1669,6 +1669,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.RTCIceCandidatePair</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.RTCSctpTransport</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
@@ -1682,6 +1688,18 @@
   </url>
   <url>
     <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.RTCEncodedVideoFrame</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.WebTransportDatagramsWritable</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hmelenok.github.io/browser-api-atlas/?api=api.WebTransportSendGroup</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

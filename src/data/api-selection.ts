@@ -354,9 +354,14 @@ export const API_SELECTION: ApiSelection[] = [
   {bcdKey: 'api.RTCStatsReport', category: 'network', runtimeKey: 'window.RTCStatsReport'},
   {bcdKey: 'api.RTCDtlsTransport', category: 'network', runtimeKey: 'window.RTCDtlsTransport'},
   {bcdKey: 'api.RTCIceTransport', category: 'network', runtimeKey: 'window.RTCIceTransport'},
+  {bcdKey: 'api.RTCIceCandidatePair', category: 'network', runtimeKey: 'window.RTCIceCandidatePair'},
   {bcdKey: 'api.RTCSctpTransport', category: 'network', runtimeKey: 'window.RTCSctpTransport'},
   {bcdKey: 'api.RTCEncodedAudioFrame', category: 'network', runtimeKey: 'window.RTCEncodedAudioFrame'},
   {bcdKey: 'api.RTCEncodedVideoFrame', category: 'network', runtimeKey: 'window.RTCEncodedVideoFrame'},
+
+  // ─── WebTransport primitives ──────────────────────────────────
+  {bcdKey: 'api.WebTransportDatagramsWritable', category: 'network', runtimeKey: 'window.WebTransportDatagramsWritable'},
+  {bcdKey: 'api.WebTransportSendGroup', category: 'network', runtimeKey: 'window.WebTransportSendGroup'},
 
   // ─── T2 — Web Audio nodes (more) ──────────────────────────────
   {bcdKey: 'api.OfflineAudioContext', category: 'audio-video', runtimeKey: 'window.OfflineAudioContext'},
