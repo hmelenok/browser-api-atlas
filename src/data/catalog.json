@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-10T13:28:39.498Z",
-  "bcdVersion": "8.1.8",
-  "webFeaturesVersion": "3.45.0",
+  "generatedAt": "2026-11-23T17:22:30.786Z",
+  "bcdVersion": "8.1.10",
+  "webFeaturesVersion": "3.47.0",
   "entries": [
     {
       "id": "api.Document.requestStorageAccess",
